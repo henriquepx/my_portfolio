@@ -1,7 +1,18 @@
 import { useState } from 'react';
-import styled from 'styled-components';
+import { CSSTransition } from 'react-transition-group';
+import styled, { keyframes } from 'styled-components';
 import { BsLinkedin, BsGithub, BsFillEnvelopeFill } from "react-icons/bs";
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
 const StyledHamburgerMenu = styled.div`
   cursor: pointer;
   z-index: 999;
@@ -35,6 +46,20 @@ const Menu = styled.ul`
   right: 50px;
   top: 20px;
   transition: opacity 0.4s;
+  &.menu-enter {
+    animation: ${fadeIn} 300ms both;
+  }
+
+  &.menu-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &.menu-exit-active {
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 300ms, transform 300ms;
+  }
 `;
 const MenuContent = styled.div`
   display: flex;
@@ -77,6 +102,12 @@ const HamburgerMenu = () => {
         <span></span>
         <span></span>
       </StyledHamburgerMenu>
+      <CSSTransition
+        in={isOpen}
+        timeout={300} // tempo da animação em milissegundos
+        classNames="menu"
+        unmountOnExit
+      >
       <Menu open={isOpen}>
         <MenuContent>
           <NavMenuContent>
@@ -97,6 +128,7 @@ const HamburgerMenu = () => {
           </SocialMediasHeader>
         </MenuContent>
       </Menu>
+      </CSSTransition>
     </div>
   );
 };

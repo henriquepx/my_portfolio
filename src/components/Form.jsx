@@ -20,7 +20,7 @@ const FormStyle = styled.form`
 `
 const LabelForm = styled.label`
     margin-bottom: 7px;
-    font-family: var(--roboto-mono);
+    font-family: 'Roboto Mono', monospace;
 `
 
 const InputStyle = styled.input`
@@ -29,11 +29,13 @@ const InputStyle = styled.input`
     height: 40px;
     width: 100%; 
     padding: 0 8px;
+    font-family: 'Roboto Mono', monospace;
 `
 
 const TextareaStyle = styled.textarea`
     margin-bottom: 14px;
     border-radius: 4px;
+    font-family: 'Roboto Mono', monospace;
     border: 0;
     padding: 8px;
     height: 200px;
@@ -50,7 +52,7 @@ const ButtonSubmitForm = styled.button`
     font-size: 1rem;
     width: 30%;
     color: #fff;
-    font-family: var(--roboto-mono);
+    font-family: 'Roboto Mono', monospace;
 `
 
 const Form = () => {

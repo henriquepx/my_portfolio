@@ -16,14 +16,14 @@ import Form from '../components/Form'
         padding: 2rem 0rem 3rem 8rem;
     `
     const TitleFooter = styled.h1`
-        font-family: var(--quaternary-font-josefin);
+        font-family: 'Josefin Sans', sans-serif;
         color: white;
         font-size: 2.3rem;
         font-weight: 750;
         margin-bottom: 1.3rem;
     `
      const SubitleFooter = styled.h1`
-        font-family: var(--roboto-mono);
+        font-family: 'Roboto Mono', monospace;
         color: white;
         font-size: 1.3rem;
     `
@@ -36,7 +36,7 @@ import Form from '../components/Form'
     `
     const Link = styled.a`
         color: white;
-        font-family: var(--roboto-mono);
+        font-family: 'Roboto Mono', monospace;
         font-size: 1.05rem;
         position: relative;
         width: 75px;
@@ -56,7 +56,7 @@ import Form from '../components/Form'
     `
     const LinkEmail = styled.a `
         position: relative;
-        font-family: var(--roboto-mono);
+        font-family: 'Roboto Mono', monospace;
         font-size: 1.3rem;
         width: 380px;
 
