@@ -28,6 +28,16 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Poppins', sans-serif;
   font-family: 'Roboto Mono', monospace;
   */
+
+  /*
+  PALETA DE CORES:
+  #134074;
+  #13315c;
+  #0b2545;
+  #00171f;
+  #8da9c4;
+  #eef4ed;
+  */
   
 `;
 

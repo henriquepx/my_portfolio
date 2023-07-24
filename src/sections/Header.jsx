@@ -3,7 +3,7 @@ import HamburgerMenu from '../components/HamburgerMenu'
 
 const HeaderContainer = styled.header`
     height: 12vh;
-    background: linear-gradient(to right, #6cc2b8 50%, #d4d4d4 50%);
+    background: linear-gradient(to right, #4831d4 75%, #ccf381 25%);
     display: flex;
     align-items: center;
 `
@@ -14,8 +14,9 @@ const HeaderContent = styled.div`
     align-items: center;
 `
 const TitleHeader = styled.h1`
-    font-family: var(--roboto-mono);
+    font-family: 'Josefin Sans', sans-serif;
     color: #fff;
+    font-size: 1.5rem;
     padding: 0rem 0rem 0rem 6rem;
 `
 
@@ -23,7 +24,7 @@ const Header = () => {
   return (
     <HeaderContainer>
         <HeaderContent>
-            <TitleHeader>Henrique</TitleHeader>
+            <TitleHeader>HenriqueDev</TitleHeader>
             <HamburgerMenu />
         </HeaderContent>
     </HeaderContainer>

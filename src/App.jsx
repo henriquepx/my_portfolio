@@ -2,6 +2,7 @@ import GlobalStyle from './GlobalStyles';
 import Footer from './sections/Footer';
 import Header from './sections/Header';
 import Main from './sections/Main';
+import Project from './sections/Project';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     <GlobalStyle />
     <Header />
     <Main />
+    <Project />
     <Footer />
     </>
   )

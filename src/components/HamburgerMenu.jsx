@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import styled, { keyframes } from 'styled-components';
-import { BsLinkedin, BsGithub, BsFillEnvelopeFill } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const fadeIn = keyframes`
   from {
@@ -20,19 +20,19 @@ const StyledHamburgerMenu = styled.div`
   padding: 0rem 6rem 0rem 0rem;
   span {
     display: block;
-    width: 25px;
-    height: 3px;
+    width: 30px;
+    height: 5px;
     margin: 5px auto;
-    background-color: #568d87;
+    background-color: #4831d4;
     transition: opacity 0.3s, transform 0.3s;
     &:nth-child(2) {
       opacity: ${({ open }) => (open ? '0' : '1')};
     }
     &:nth-child(1) {
-      transform: ${({ open }) => (open ? 'translateY(8px) rotate(45deg)' : 'none')};
+      transform: ${({ open }) => (open ? 'translateY(11px) rotate(45deg)' : 'none')};
     }
     &:nth-child(3) {
-      transform: ${({ open }) => (open ? 'translateY(-8px) rotate(-45deg)' : 'none')};
+      transform: ${({ open }) => (open ? 'translateY(-9px) rotate(-45deg)' : 'none')};
     }
   }
 `;
@@ -40,10 +40,11 @@ const Menu = styled.ul`
   display: ${({ open }) => (open ? 'block' : 'none')};
   position: absolute;
   z-index: 888;
-  width: 300px;
-  height: 250px;
-  background-color: #6cc2b8;
+  width: 400px;
+  height: 450px;
+  background-color: #eef4ed;
   right: 50px;
+  padding: 2rem;
   top: 20px;
   transition: opacity 0.4s;
   &.menu-enter {
@@ -64,27 +65,40 @@ const Menu = styled.ul`
 const MenuContent = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 3rem 2rem 0rem 2rem;
+  gap: 20px;
+  padding: 3rem 2rem 0rem 1rem;
 `;
 const NavMenuContent = styled.nav`
   display: flex;
   flex-direction: column;
+  gap: 20px;
   padding-bottom: 1rem;
 `
 const LinksNavMenuContent = styled.a`
-  color: #037a6c;
+  color: #4831d4;
+  font-size: 1.3rem;
+  font-family: 'Belanosima', sans-serif;
+`
+const LinkEmailMenu = styled.a`
+  color: #4831d4;
   font-size: 1.3rem;
   font-family: 'Belanosima', sans-serif;
 `
 const SocialMediasHeader = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 25px;
-  padding-top: 2rem;
-  border-top: 1px solid white;
+  padding-top: 1rem;
   a {
-    color: #037a6c;
-    font-size: 1.6rem;
+    color: #4831d4;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    p {
+      font-family: 'Belanosima', sans-serif;
+      font-size: 1.2rem;
+    }
   }
 `
 
@@ -115,17 +129,20 @@ const HamburgerMenu = () => {
             <LinksNavMenuContent href="#">Education</LinksNavMenuContent>
             <LinksNavMenuContent href="#">Contact</LinksNavMenuContent>
           </NavMenuContent>
+          <LinkEmailMenu href="mailto:henriquepinheiroxavier" target='_blank' rel='noreferrer'>/henriquepinheiroxavier@gmail.com</LinkEmailMenu>
           <SocialMediasHeader>
             <a href="https://www.linkedin.com/in/henriquepinheiroxavier/" target='_blank' rel='noreferrer'>
               <BsLinkedin />
+              <p>LinkedIn</p>
             </a>
             <a href="https://github.com/henriquepx" target='_blank' rel='noreferrer'>
               <BsGithub />
-            </a>
-            <a href="mailto:henriquepinheiroxavier@gmail.com" target='_blank' rel='noreferrer'>
-              <BsFillEnvelopeFill /> 
+              <p>Github</p>
             </a>
           </SocialMediasHeader>
+          <div>
+            <p>lua</p>
+          </div>
         </MenuContent>
       </Menu>
       </CSSTransition>
