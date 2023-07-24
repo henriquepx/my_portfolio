@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import styled, { keyframes } from 'styled-components';
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const fadeIn = keyframes`
   from {
@@ -23,8 +24,8 @@ const StyledHamburgerMenu = styled.div`
     width: 30px;
     height: 5px;
     margin: 5px auto;
-    background-color: #4831d4;
-    transition: opacity 0.3s, transform 0.3s;
+    background-color: ${({ open }) => (open ? '#e4e4e4' : '#1a1a1a')};
+    transition: opacity 0.3s, transform 300ms;
     &:nth-child(2) {
       opacity: ${({ open }) => (open ? '0' : '1')};
     }
@@ -41,14 +42,14 @@ const Menu = styled.ul`
   position: absolute;
   z-index: 888;
   width: 400px;
-  height: 450px;
-  background-color: #eef4ed;
+  height: 550px;
+  background-color: #000000;
   right: 50px;
   padding: 2rem;
   top: 20px;
   transition: opacity 0.4s;
   &.menu-enter {
-    animation: ${fadeIn} 300ms both;
+    animation: ${fadeIn} 150ms both;
   }
 
   &.menu-exit {
@@ -58,14 +59,14 @@ const Menu = styled.ul`
 
   &.menu-exit-active {
     opacity: 0;
-    transform: scale(0);
-    transition: opacity 300ms, transform 300ms;
+    transform: scale(0.2);
+    transition: opacity 150ms, transform 150ms;
   }
 `;
 const MenuContent = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
   padding: 3rem 2rem 0rem 1rem;
 `;
 const NavMenuContent = styled.nav`
@@ -75,12 +76,12 @@ const NavMenuContent = styled.nav`
   padding-bottom: 1rem;
 `
 const LinksNavMenuContent = styled.a`
-  color: #4831d4;
+  color: #e4e4e4;
   font-size: 1.3rem;
   font-family: 'Belanosima', sans-serif;
 `
 const LinkEmailMenu = styled.a`
-  color: #4831d4;
+  color: #e4e4e4;
   font-size: 1.3rem;
   font-family: 'Belanosima', sans-serif;
 `
@@ -90,7 +91,7 @@ const SocialMediasHeader = styled.div`
   gap: 25px;
   padding-top: 1rem;
   a {
-    color: #4831d4;
+    color: #e4e4e4;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
@@ -99,6 +100,14 @@ const SocialMediasHeader = styled.div`
       font-family: 'Belanosima', sans-serif;
       font-size: 1.2rem;
     }
+  }
+`
+const ContainerChangeTheme = styled.div`
+  display: flex;
+  gap: 10px;
+  a {
+    color: #e4e4e4;
+    font-size: 1.2rem;
   }
 `
 
@@ -140,9 +149,10 @@ const HamburgerMenu = () => {
               <p>Github</p>
             </a>
           </SocialMediasHeader>
-          <div>
-            <p>lua</p>
-          </div>
+          <ContainerChangeTheme>
+            <a href="#"><FaMoon /></a>
+            <a href="#"><FaSun /></a>
+          </ContainerChangeTheme>
         </MenuContent>
       </Menu>
       </CSSTransition>

@@ -4,8 +4,7 @@ import Form from '../components/Form'
     const ContainerFooter = styled.footer`
         height: 70vh;
         width: 100%;
-        background-color: black;
-        
+        background-color: #1a1a1a;
         display: flex;
         align-items: center;
     `
