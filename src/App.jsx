@@ -1,14 +1,14 @@
 import GlobalStyle from './GlobalStyles';
 import Footer from './sections/Footer';
-import Header from './sections/Header';
 import Main from './sections/Main';
+import Profile from './sections/Profile';
 import Project from './sections/Project';
 
 function App() {
   return (
     <>
     <GlobalStyle />
-    <Header />
+    <Profile />
     <Main />
     <Project />
     <Footer />
