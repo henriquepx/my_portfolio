@@ -31,7 +31,6 @@ const InputStyle = styled.input`
     padding: 0 8px;
     font-family: 'Roboto Mono', monospace;
 `
-
 const TextareaStyle = styled.textarea`
     margin-bottom: 14px;
     border-radius: 4px;
@@ -42,7 +41,6 @@ const TextareaStyle = styled.textarea`
     width: 100%;
     resize: none;
 `
-
 const ButtonSubmitForm = styled.button`
     height: 34px;
     border-radius: 4px;
