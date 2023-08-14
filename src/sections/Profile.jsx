@@ -85,6 +85,7 @@ const Profile = () => {
             name="Skills"
             active={activeTab === 'Skills'}
             onClick={() => handleTabClick('Skills')}
+            link="#skills"
           />
           <LinkNavegation
             icon={<FaEnvelope />}

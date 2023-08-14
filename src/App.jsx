@@ -1,9 +1,9 @@
 import GlobalStyle from './GlobalStyles';
 import About from './sections/About';
 import Footer from './sections/Footer';
-import Main from './sections/Main';
 import Profile from './sections/Profile';
 import Project from './sections/Project';
+import Skills from './sections/Skills';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
     <GlobalStyle />
     <Profile />
     <About />
-    <Main />
+    <Skills />
     <Project />
     <Footer />
     </>

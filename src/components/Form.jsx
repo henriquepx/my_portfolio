@@ -46,7 +46,7 @@ const ButtonSubmitForm = styled.button`
     border-radius: 4px;
     border: 0;
     cursor: pointer;
-    background-color: #2e5157;
+    background-color: #3f3f3f;
     font-size: 1rem;
     width: 30%;
     color: #fff;
