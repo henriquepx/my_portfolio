@@ -22,11 +22,11 @@ const LinkContainer = styled.li`
     }
 `
 
-const LinkNavegation = ({ name, link, icon }) => {
+const LinkNavegation = ({ name, icon, active, onClick, link }) => {
   return (
-    <LinkContainer>
+    <LinkContainer active={active} onClick={onClick}>
         {icon}
-        <a href={link} target='_blank' rel='noreferrer'>{name}</a>
+        <a href={link}>{name}</a>
     </LinkContainer>
   )
 }
@@ -34,7 +34,9 @@ const LinkNavegation = ({ name, link, icon }) => {
 LinkNavegation.propTypes = {
     name: PropTypes.string.isRequired,
     icon: PropTypes.node,
-    link: PropTypes.string.isRequired,
+    active: PropTypes.bool,
+    onClick: PropTypes.func,
+    link: PropTypes.string,
   };
 
 export default LinkNavegation

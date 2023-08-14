@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useState } from 'react';
 import LinkNavegation from '../components/LinkNavegation';
 import { FaInfoCircle, FaCode, FaEnvelope, FaLinkedin, FaGithub, FaFilePdf, FaDatabase, FaDesktop, FaServer } from 'react-icons/fa'; // Importe os ícones que desejar
 
@@ -52,6 +53,13 @@ const Nav2 = styled.nav`
 `
 
 const Profile = () => {
+
+    const [activeTab, setActiveTab] = useState('Contact');
+
+    const handleTabClick = (tab) => {
+      setActiveTab(tab);
+    };
+
   return (
     <ContainerProfile>
         <ProfileApresentation>
@@ -63,28 +71,59 @@ const Profile = () => {
         </ProfileApresentation>
 
         <Nav2>
-            <h2>Sections</h2>
-            <ul>
-                <LinkNavegation icon={<FaInfoCircle />} name="About" />
-                <LinkNavegation icon={<FaCode />} name="Skills" />
-                <LinkNavegation icon={<FaEnvelope />} name="Contact" link="#footer" />
-            </ul>
-        </Nav2>
+        <h2>Sections</h2>
+        <ul>
+          <LinkNavegation
+            icon={<FaInfoCircle />}
+            name="About"
+            active={activeTab === 'About'}
+            onClick={() => handleTabClick('About')}
+          />
+          <LinkNavegation
+            icon={<FaCode />}
+            name="Skills"
+            active={activeTab === 'Skills'}
+            onClick={() => handleTabClick('Skills')}
+          />
+          <LinkNavegation
+            icon={<FaEnvelope />}
+            name="Contact"
+            active={activeTab === 'Contact'}
+            onClick={() => handleTabClick('Contact')}
+            link="#footer"
+          />
+        </ul>
+      </Nav2>
 
-        <Nav2>
-            <h2>Stacks</h2>
-            <ul>
-                <LinkNavegation icon={<FaDesktop  />} name="Front-end" />
-                <LinkNavegation icon={<FaServer  />} name="Back-end" />
-                <LinkNavegation icon={<FaDatabase  />} name="Banco de Dados" />
-            </ul>
-        </Nav2>
+      <Nav2>
+        <h2>Stacks</h2>
+        <ul>
+          <LinkNavegation
+            icon={<FaDesktop />}
+            name="Front-end"
+            active={activeTab === 'Front-end'}
+            onClick={() => handleTabClick('Front-end')}
+          />
+          <LinkNavegation
+            icon={<FaServer />}
+            name="Back-end"
+            active={activeTab === 'Back-end'}
+            onClick={() => handleTabClick('Back-end')}
+          />
+          <LinkNavegation
+            icon={<FaDatabase />}
+            name="Banco de Dados"
+            active={activeTab === 'Banco de Dados'}
+            onClick={() => handleTabClick('Banco de Dados')}
+          />
+        </ul>
+      </Nav2>
 
         <Nav2>
             <h2>Social</h2>
             <ul>
-                <LinkNavegation icon={<FaLinkedin />} name="LinkedIn" link="https://www.linkedin.com/in/henriquepinheiroxavier/" />
-                <LinkNavegation icon={<FaGithub/>} name="Github" link="https://github.com/henriquepx" />
+                <LinkNavegation icon={<FaLinkedin />} name="LinkedIn" link="https://www.linkedin.com/in/henriquepinheiroxavier/" target='_blank' rel='noreferrer' />
+                <LinkNavegation icon={<FaGithub/>} name="Github" link="https://github.com/henriquepx" target='_blank' rel='noreferrer' />
                 <LinkNavegation icon={<FaFilePdf />} name="CV" link="#footer" />
             </ul>
         </Nav2>
