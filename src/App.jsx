@@ -2,7 +2,7 @@ import GlobalStyle from './GlobalStyles';
 import About from './sections/About';
 import Footer from './sections/Footer';
 import Profile from './sections/Profile';
-import Project from './sections/Project';
+import Projects from './sections/Projects';
 import Skills from './sections/Skills';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <Profile />
     <About />
     <Skills />
-    <Project />
+    <Projects />
     <Footer />
     </>
   )

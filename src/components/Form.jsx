@@ -30,6 +30,8 @@ const InputStyle = styled.input`
     width: 100%; 
     padding: 0 8px;
     font-family: 'Roboto Mono', monospace;
+    background-color: transparent;
+    border: 1px solid white;
 `
 const TextareaStyle = styled.textarea`
     margin-bottom: 14px;
@@ -37,6 +39,8 @@ const TextareaStyle = styled.textarea`
     font-family: 'Roboto Mono', monospace;
     border: 0;
     padding: 8px;
+    background-color: transparent;
+    border: 1px solid white;
     height: 200px;
     width: 100%;
     resize: none;

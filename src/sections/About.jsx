@@ -17,7 +17,7 @@ const ContainerAbout = styled.div`
 `
 const AboutSize = styled.div`
     width: 100%;
-    max-width: 550px;
+    max-width: 800px;
     margin: 0 auto;
 `
 const TitleAbout = styled.h1`
@@ -59,8 +59,8 @@ const About = () => {
                     />
                         <LinkNavegation
                         icon={<FaDesktop />}
-                        name="Front-end"
-                        link="#frontend"
+                        name="Projects"
+                        link="#projects"
                     />
                 </ul>
             </NavAbout>

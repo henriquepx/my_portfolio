@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { useState } from 'react';
 import LinkNavegation from '../components/LinkNavegation';
 import { FaInfoCircle, FaCode, FaEnvelope, FaLinkedin, FaGithub, FaFilePdf, FaDesktop } from 'react-icons/fa';
 
@@ -38,7 +37,6 @@ const DescProfile = styled.p`
     font-size: .9rem;
     color: #6b6b6b;
 `
-
 const Nav2 = styled.nav`
     margin-top: 2rem;
 
@@ -53,12 +51,6 @@ const Nav2 = styled.nav`
 `
 
 const Profile = () => {
-
-    const [activeTab, setActiveTab] = useState('Contact');
-
-    const handleTabClick = (tab) => {
-      setActiveTab(tab);
-    };
 
   return (
     <ContainerProfile>
@@ -76,35 +68,22 @@ const Profile = () => {
           <LinkNavegation
             icon={<FaInfoCircle />}
             name="About"
-            active={activeTab === 'About'}
-            onClick={() => handleTabClick('About')}
             link="#about"
           />
           <LinkNavegation
             icon={<FaCode />}
             name="Skills"
-            active={activeTab === 'Skills'}
-            onClick={() => handleTabClick('Skills')}
             link="#skills"
+          />
+          <LinkNavegation
+            icon={<FaDesktop />}
+            name="Projects"
+            link="#projects"
           />
           <LinkNavegation
             icon={<FaEnvelope />}
             name="Contact"
-            active={activeTab === 'Contact'}
-            onClick={() => handleTabClick('Contact')}
             link="#footer"
-          />
-        </ul>
-      </Nav2>
-
-      <Nav2>
-        <h2>Stacks</h2>
-        <ul>
-          <LinkNavegation
-            icon={<FaDesktop />}
-            name="Front-end"
-            active={activeTab === 'Front-end'}
-            onClick={() => handleTabClick('Front-end')}
           />
         </ul>
       </Nav2>
