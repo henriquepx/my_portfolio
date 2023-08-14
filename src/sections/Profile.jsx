@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import LinkNavegation from '../components/LinkNavegation';
-import { FaInfoCircle, FaCode, FaEnvelope, FaLinkedin, FaGithub, FaFilePdf, FaDatabase, FaDesktop, FaServer } from 'react-icons/fa'; // Importe os ícones que desejar
+import { FaInfoCircle, FaCode, FaEnvelope, FaLinkedin, FaGithub, FaFilePdf, FaDesktop } from 'react-icons/fa';
 
 const ContainerProfile = styled.div`
     position: fixed;
     height: 100%;
-    width: 15vw;
+    width: 18rem;
     left: 0;
 
     background-color: #222222;
 
     display: flex;
     flex-direction: column;
-    padding: 2rem 1.7rem;
+    padding: 1.7rem;
 
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 `
@@ -78,6 +78,7 @@ const Profile = () => {
             name="About"
             active={activeTab === 'About'}
             onClick={() => handleTabClick('About')}
+            link="#about"
           />
           <LinkNavegation
             icon={<FaCode />}
@@ -103,18 +104,6 @@ const Profile = () => {
             name="Front-end"
             active={activeTab === 'Front-end'}
             onClick={() => handleTabClick('Front-end')}
-          />
-          <LinkNavegation
-            icon={<FaServer />}
-            name="Back-end"
-            active={activeTab === 'Back-end'}
-            onClick={() => handleTabClick('Back-end')}
-          />
-          <LinkNavegation
-            icon={<FaDatabase />}
-            name="Banco de Dados"
-            active={activeTab === 'Banco de Dados'}
-            onClick={() => handleTabClick('Banco de Dados')}
           />
         </ul>
       </Nav2>

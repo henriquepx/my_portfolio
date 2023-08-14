@@ -1,4 +1,5 @@
 import GlobalStyle from './GlobalStyles';
+import About from './sections/About';
 import Footer from './sections/Footer';
 import Main from './sections/Main';
 import Profile from './sections/Profile';
@@ -9,6 +10,7 @@ function App() {
     <>
     <GlobalStyle />
     <Profile />
+    <About />
     <Main />
     <Project />
     <Footer />
