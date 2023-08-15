@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import LinkNavegation from '../components/LinkNavegation';
 import {  FaCode,  FaDesktop } from 'react-icons/fa'; 
 
 
@@ -39,6 +38,25 @@ const NavAbout = styled.nav`
         gap: 20px;
     }
 `
+const LinkAbout = styled.li`
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+
+    color: #9e9b9b;
+    &:hover {
+        color: #cccbcb;
+    }
+    &:hover a {
+        color: #cccbcb;  
+    }
+    a {
+        color: #9e9b9b;
+        font-family: 'Montserrat', sans-serif;
+    }
+`
 
 const About = () => {
   return (
@@ -51,17 +69,14 @@ const About = () => {
             <DescAbout>Veja abaixo meus projetos e minhas skills:</DescAbout>
             <NavAbout>
                 <ul>
-                    <LinkNavegation
-                        icon={<FaCode />}
-                        name="Skills"
-                        link="#skills"
-                        
-                    />
-                        <LinkNavegation
-                        icon={<FaDesktop />}
-                        name="Projects"
-                        link="#projects"
-                    />
+                    <LinkAbout>
+                        <FaCode />
+                        <a href="#skills">Skills</a>
+                    </LinkAbout>
+                    <LinkAbout>
+                    <FaDesktop />
+                        <a href="#projects">Projects</a>
+                    </LinkAbout>
                 </ul>
             </NavAbout>
         </AboutSize>
