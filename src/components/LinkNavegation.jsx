@@ -5,13 +5,17 @@ const LinkContainer = styled.li`
     display: flex;
     align-items: center;
     gap: 10px;
-    cursor: pointer;
 
-    margin-top: 15px;
+    cursor: pointer;
+    
+    border: 1px solid transparent;
+    padding: .7rem 0rem .7rem .7rem;
 
     color: #9e9b9b;
     &:hover {
         color: #cccbcb;
+        background-color: #333232;
+        border-radius: 10px;
     }
     &:hover a {
         color: #cccbcb;  

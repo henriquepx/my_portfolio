@@ -3,20 +3,14 @@ import { useRef  } from 'react';
 import emailjs from '@emailjs/browser';
 
 const ContainerForm = styled.div`
-   display: flex;
-   justify-content: center;
-   align-items: center;
+
    width: 100%;
 `
 const FormStyle = styled.form`
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: left;
     color: #FFF;
-    width: 100%;
-    max-width: 600px; 
-    margin: 0 auto;
 `
 const LabelForm = styled.label`
     margin-bottom: 7px;
