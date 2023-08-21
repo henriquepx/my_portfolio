@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import LinkNavegation from '../components/LinkNavegation';
 import { FaInfoCircle, FaCode, FaEnvelope, FaLinkedin, FaGithub, FaFilePdf, FaDesktop } from 'react-icons/fa';
-import { useState } from 'react';
 
 const ContainerProfile = styled.div`
     position: fixed;
@@ -54,8 +53,6 @@ const Nav2 = styled.nav`
 `
 
 const Profile = () => {
-  const [activeSection, setActiveSection] = useState('');
-
   return (
     <ContainerProfile>
         <ProfileApresentation>
@@ -73,29 +70,21 @@ const Profile = () => {
               icon={<FaInfoCircle />}
               name="About"
               link="#about"
-              active={activeSection === 'about'}
-              onClick={() => setActiveSection('#about')}
           />
             <LinkNavegation
               icon={<FaCode />}
               name="Skills"
               link="#skills"
-              active={activeSection === 'skills'}
-              onClick={() => setActiveSection('#skills')}
           />
           <LinkNavegation
               icon={<FaDesktop />}
               name="Projects"
               link="#projects"
-              active={activeSection === 'projects'}
-              onClick={() => setActiveSection('#projects')}
           />
           <LinkNavegation
               icon={<FaEnvelope />}
               name="Contact"
               link="#footer"
-              active={activeSection === 'contact'}
-              onClick={() => setActiveSection('#contact')}
           />
         </ul>
       </Nav2>
