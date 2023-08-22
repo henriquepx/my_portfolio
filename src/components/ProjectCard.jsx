@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import LanguageProject from './LanguageProject';
-import { BiLinkExternal, BiLogoGithub } from 'react-icons/Bi';
+import { FaLink, FaGithub } from 'react-icons/Fa';
 
 const ProjectContainerCard = styled.div`
     display: flex;
@@ -60,8 +60,8 @@ const ProjectCard = ({
             ))}
           </LinksContainerProject>
           <LinksProjectCard>
-            <a href={linkdeploy} target='_blank' rel='noreferrer'><BiLinkExternal /></a>
-            <a href={linkrepository} target='_blank' rel='noreferrer'><BiLogoGithub /></a>
+            <a href={linkdeploy} target='_blank' rel='noreferrer'><FaLink /></a>
+            <a href={linkrepository} target='_blank' rel='noreferrer'><FaGithub /></a>
           </LinksProjectCard>
         </div>
       </ProjectContainerCard>
