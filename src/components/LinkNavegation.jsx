@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const LinkContainer = styled.li`
+const LinkContainer = styled.a`
     display: flex;
     align-items: center;
     gap: 10px;
@@ -28,9 +28,9 @@ const LinkContainer = styled.li`
 
 const LinkNavegation = ({ name, icon, active, onClick, link }) => {
   return (
-    <LinkContainer active={active} onClick={onClick}>
+    <LinkContainer href={link} active={active} onClick={onClick}>
         {icon}
-        <a href={link}>{name}</a>
+        <a>{name}</a>
     </LinkContainer>
   )
 }
