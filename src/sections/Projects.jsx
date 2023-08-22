@@ -49,6 +49,15 @@ const Projects = () => {
       linkrepository: "https://github.com/henriquepx/ecommerce_rexpeita",
       linkdeploy: "https://rexpeita-ecommerce.netlify.app/index.html",
     },
+    {
+      img: "/japascreen.png",
+      alt: "Japapou Tela",
+      title: "Japapou?",
+      desc: "React Practice Project for honing React skills.",
+      languages: ["React", "CSS Modules"],
+      linkrepository: "https://github.com/henriquepx/app-order-food",
+      linkdeploy: "https://app-order-food.vercel.app/",
+    },
   ];
 
   return (
@@ -62,7 +71,9 @@ const Projects = () => {
             altproject={project.alt}
             titleproject={project.title}
             descproject={project.desc}
-            languages={project.languages} 
+            languages={project.languages}
+            linkrepository={project.linkrepository}
+            linkdeploy={project.linkdeploy}
           />
         ))}
       </ProjectSize>
