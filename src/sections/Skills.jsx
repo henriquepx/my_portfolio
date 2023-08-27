@@ -12,7 +12,8 @@ const SkillsContainer = styled.div`
 
     padding-left: 17rem;
     @media (max-width: 1024px) {
-      padding: 1rem;
+      padding: 2rem 1rem 5rem 1rem;
+      height: 100%;
     }
 `
 const SkillsSize = styled.div`
@@ -22,6 +23,10 @@ const SkillsSize = styled.div`
 
     display: flex;
     flex-direction: column;
+    @media (max-width: 1024px) {
+        justify-content: center;
+        align-items: center;
+    }
 `
 const TitleSkills = styled.h1`
     font-family: 'Montserrat', sans-serif;
@@ -34,6 +39,10 @@ const SkillsWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    @media (max-width: 1024px) {
+        justify-content: center;
+        align-items: center;
+    }
 `
 const LearningSkills = styled.h2`
     font-family: 'Montserrat', sans-serif;

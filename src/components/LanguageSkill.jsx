@@ -11,7 +11,7 @@ const LanguageContainer = styled.div`
     cursor: pointer;
     border: 1px solid #1f1f1f;
 
-    width: 370px;
+    width: 300px;
     &:hover {
         background-color: #242323;
         border: 1px solid #333232;
