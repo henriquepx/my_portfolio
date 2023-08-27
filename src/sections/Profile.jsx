@@ -55,7 +55,6 @@ const Nav2 = styled.nav`
 `
 
 const Profile = () => {
-    
 
   return (
     <ContainerProfile>

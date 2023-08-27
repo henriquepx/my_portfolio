@@ -97,14 +97,12 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (showProfile && !event.target.closest(".ProfileContainer")) {
+    const handleOutsideClick = () => {
+      if (showProfile) {
         setShowProfile(true);
       }
     };
-  
     document.addEventListener("click", handleOutsideClick);
-  
     return () => {
       document.removeEventListener("click", handleOutsideClick);
     };
