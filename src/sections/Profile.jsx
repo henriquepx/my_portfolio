@@ -7,6 +7,7 @@ const ContainerProfile = styled.div`
     height: 100%;
     width: 18rem;
     left: 0;
+    top: 0;
     z-index: 999;
 
     background-color: #222222;
@@ -54,6 +55,8 @@ const Nav2 = styled.nav`
 `
 
 const Profile = () => {
+    
+
   return (
     <ContainerProfile>
         <ProfileApresentation>
