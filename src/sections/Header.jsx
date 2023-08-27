@@ -9,6 +9,9 @@ const HeaderContainer = styled.div`
     
 
     padding: 1rem 2rem;
+    @media (max-width: 1024px) {
+      padding: 1rem;
+    }
 `
 const HeaderSize = styled.div`
     width: 100%;

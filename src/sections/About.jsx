@@ -13,6 +13,9 @@ const ContainerAbout = styled.div`
     justify-content: center;
 
     padding-left: 17rem;
+    @media (max-width: 1024px) {
+      padding: 1rem;
+    }
 `
 const AboutSize = styled.div`
     width: 100%;

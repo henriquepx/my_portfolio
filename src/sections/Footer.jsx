@@ -12,6 +12,9 @@ const ContainerFooter = styled.footer`
     justify-content: center;
 
     padding-left: 17rem;
+    @media (max-width: 1024px) {
+      padding: 1rem;
+    }
 `
 const FooterSize = styled.div`
     width: 100%;
