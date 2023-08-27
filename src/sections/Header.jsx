@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 
 const HeaderContainer = styled.div`
@@ -95,10 +94,6 @@ const Header = () => {
       )}
     </div>
   );
-};
-
-Header.propTypes = {
-  onShowProfile: PropTypes.func.isRequired,
 };
 
 export default Header;
