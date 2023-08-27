@@ -57,29 +57,24 @@ const MenuHamburger = styled.div`
     transition: all 0.3s ease-in-out;
     background-color: #cccaca;
     &:nth-child(1) {
-      transform: translateY(${props => (props.open && props.isFirstSpanTransformed ? '8px' : '0')}) rotate(${props => (props.open && props.isFirstSpanTransformed ? '45deg' : '0')});
+      transform: translateY(${props => (props.open ? '8px' : '0')}) rotate(${props => (props.open ? '45deg' : '0')});
     }
+
     &:nth-child(2) {
-      opacity: ${props => (props.open && props.isSecondSpanTransformed ? '0' : '1')};
+      opacity: ${props => (props.open ? '0' : '1')};
     }
+
     &:nth-child(3) {
-      transform: translateY(${props => (props.open && props.isThirdSpanTransformed ? '-8px' : '0')}) rotate(${props => (props.open && props.isThirdSpanTransformed ? '-45deg' : '0')});
+      transform: translateY(${props => (props.open ? '-8px' : '0')}) rotate(${props => (props.open ? '-45deg' : '0')});
     }
   }
 `;
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isFirstSpanTransformed, setIsFirstSpanTransformed] = useState(false);
-  const [isSecondSpanTransformed, setIsSecondSpanTransformed] = useState(false);
-  const [isThirdSpanTransformed, setIsThirdSpanTransformed] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    setIsFirstSpanTransformed(!isFirstSpanTransformed);
-    setIsSecondSpanTransformed(!isSecondSpanTransformed);
-    setIsThirdSpanTransformed(!isThirdSpanTransformed);
   };
-
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [showHeader, setShowHeader] = useState(windowWidth <= 1024);
@@ -108,7 +103,7 @@ const Header = () => {
                   <DescProfile>Desenvolvedor Front-end</DescProfile>
                 </div>
               </ProfileApresentation>
-              <MenuHamburger open={isOpen} isFirstSpanTransformed={isFirstSpanTransformed} isSecondSpanTransformed={isSecondSpanTransformed} isThirdSpanTransformed={isThirdSpanTransformed} onClick={toggleMenu}>
+              <MenuHamburger open={isOpen} onClick={toggleMenu}>
                 <span></span>
                 <span></span>
                 <span></span>
