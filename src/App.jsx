@@ -6,7 +6,6 @@ import Profile from './sections/Profile';
 import Projects from './sections/Projects';
 import Skills from './sections/Skills';
 import Home from './sections/Home';
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {

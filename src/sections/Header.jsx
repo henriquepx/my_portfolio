@@ -44,22 +44,43 @@ const DescProfile = styled.p`
     color: #6b6b6b;
 `
 const MenuHamburger = styled.div`
-    cursor: pointer;
+  cursor: pointer;
 
-    border: 1px solid #d6d4d4;
-    padding: 3px 5px;
-    border-radius: 10px;
-    span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        -webkit-transition: all 0.3 ease-in-out;
-        transition: all 0.3 ease-in-out;
-        background-color: #3f3e3e;
+  border: 1px solid #d6d4d4;
+  padding: 3px 5px;
+  border-radius: 10px;
+  span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #cccaca;
+    &:nth-child(1) {
+      transform: translateY(${props => (props.open && props.isFirstSpanTransformed ? '8px' : '0')}) rotate(${props => (props.open && props.isFirstSpanTransformed ? '45deg' : '0')});
     }
-`
+    &:nth-child(2) {
+      opacity: ${props => (props.open && props.isSecondSpanTransformed ? '0' : '1')};
+    }
+    &:nth-child(3) {
+      transform: translateY(${props => (props.open && props.isThirdSpanTransformed ? '-8px' : '0')}) rotate(${props => (props.open && props.isThirdSpanTransformed ? '-45deg' : '0')});
+    }
+  }
+`;
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isFirstSpanTransformed, setIsFirstSpanTransformed] = useState(false);
+  const [isSecondSpanTransformed, setIsSecondSpanTransformed] = useState(false);
+  const [isThirdSpanTransformed, setIsThirdSpanTransformed] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    setIsFirstSpanTransformed(!isFirstSpanTransformed);
+    setIsSecondSpanTransformed(!isSecondSpanTransformed);
+    setIsThirdSpanTransformed(!isThirdSpanTransformed);
+  };
+
+
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [showHeader, setShowHeader] = useState(windowWidth <= 1024);
   
@@ -87,7 +108,7 @@ const Header = () => {
                   <DescProfile>Desenvolvedor Front-end</DescProfile>
                 </div>
               </ProfileApresentation>
-              <MenuHamburger>
+              <MenuHamburger open={isOpen} isFirstSpanTransformed={isFirstSpanTransformed} isSecondSpanTransformed={isSecondSpanTransformed} isThirdSpanTransformed={isThirdSpanTransformed} onClick={toggleMenu}>
                 <span></span>
                 <span></span>
                 <span></span>
