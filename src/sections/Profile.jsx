@@ -64,29 +64,32 @@ const Profile = () => {
         </ProfileApresentation>
 
         <Nav2>
-        <h2>Sections</h2>
-        <ul>
-          <LinkNavegation
-              icon={<FaInfoCircle />}
-              name="About"
-              link="#about"
-          />
-            <LinkNavegation
-              icon={<FaCode />}
-              name="Skills"
-              link="#skills"
-          />
-          <LinkNavegation
-              icon={<FaDesktop />}
-              name="Projects"
-              link="#projects"
-          />
-          <LinkNavegation
-              icon={<FaEnvelope />}
-              name="Contact"
-              link="#footer"
-          />
-        </ul>
+            <h2>Sections</h2>
+            <ul>
+                <LinkNavegation
+                icon={<FaInfoCircle />}
+                name="About"
+                link="about" 
+                />
+
+                <LinkNavegation
+                icon={<FaCode />}
+                name="Skills"
+                link="skills"
+                />
+
+                <LinkNavegation
+                icon={<FaDesktop />}
+                name="Projects"
+                link="projects"
+                />
+
+                <LinkNavegation
+                icon={<FaEnvelope />}
+                name="Contact"
+                link="footer"
+                />
+            </ul>
       </Nav2>
 
         <Nav2>
