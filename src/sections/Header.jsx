@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
+import Profile from './Profile';
 
 const HeaderContainer = styled.div`
     height: 10vh;
@@ -71,25 +72,44 @@ const MenuHamburger = styled.div`
 `;
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [showHeader, setShowHeader] = useState(windowWidth <= 1024);
+  const [showProfile, setShowProfile] = useState(false); // Estado para controlar a exibição do perfil
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [showHeader, setShowHeader] = useState(windowWidth <= 1024);
+  const toggleProfile = () => {
+    setShowProfile(!showProfile);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      setShowHeader(window.innerWidth <= 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (showProfile && !event.target.closest(".ProfileContainer")) {
+        setShowProfile(true);
+      }
+    };
   
-    useEffect(() => {
-      const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-        setShowHeader(window.innerWidth <= 1024);
-      };
+    document.addEventListener("click", handleOutsideClick);
   
-      window.addEventListener('resize', handleResize);
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [showProfile]);
+
   
     return (
       <div>
@@ -103,7 +123,7 @@ const Header = () => {
                   <DescProfile>Desenvolvedor Front-end</DescProfile>
                 </div>
               </ProfileApresentation>
-              <MenuHamburger open={isOpen} onClick={toggleMenu}>
+              <MenuHamburger open={isOpen} onClick={() => { toggleMenu(); toggleProfile(); }}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -111,6 +131,7 @@ const Header = () => {
             </HeaderSize>
           </HeaderContainer>
         )}
+         {showProfile && <Profile />}
       </div>
     );
   };
