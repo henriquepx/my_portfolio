@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import {  FaCode,  FaDesktop } from 'react-icons/fa'; 
 
 
 const ContainerAbout = styled.div`
@@ -34,32 +33,6 @@ const DescAbout = styled.p`
     color: #707070;
     margin-top: 15px;
 `
-const NavAbout = styled.nav`
-    margin-top: 1rem;
-    ul {
-        display: flex;
-        gap: 20px;
-    }
-`
-const LinkAbout = styled.li`
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    cursor: pointer;
-
-    color: #9e9b9b;
-    &:hover {
-        color: #cccbcb;
-    }
-    &:hover a {
-        color: #cccbcb;  
-    }
-    a {
-        color: #9e9b9b;
-        font-family: 'Montserrat', sans-serif;
-    }
-`
 
 const About = () => {
   return (
@@ -70,18 +43,6 @@ const About = () => {
             <DescAbout>Comecei a estudar e tive uma conexão direta com o desenvolvimento Front-end, desde então realizo alguns projetos e diariamente busco me aperfeiçoar cada vez mais, aprendendo e entendendo que o estudo constante é a chave pro sucesso.</DescAbout>
             <DescAbout>Me considero uma pessoa esforçada, resiliente e preparado, busco apenas uma oportunidade para mostrar o quão posso agregar no time e no desenvolvimento da empresa.</DescAbout>
             <DescAbout>Veja abaixo meus projetos e minhas skills:</DescAbout>
-            <NavAbout>
-                <ul>
-                    <LinkAbout>
-                        <FaCode />
-                        <a href="#skills">Skills</a>
-                    </LinkAbout>
-                    <LinkAbout>
-                    <FaDesktop />
-                        <a href="#projects">Projects</a>
-                    </LinkAbout>
-                </ul>
-            </NavAbout>
         </AboutSize>
     </ContainerAbout>
   )
