@@ -3,10 +3,11 @@ import LinkNavegation from '../components/LinkNavegation';
 import { FaInfoCircle, FaCode, FaEnvelope, FaLinkedin, FaGithub, FaFilePdf, FaDesktop } from 'react-icons/fa';
 
 const ContainerProfile = styled.div`
-    position: fixed;
+    position: absolute;
     height: 100%;
     width: 18rem;
     left: 0;
+    z-index: 999;
 
     background-color: #222222;
 

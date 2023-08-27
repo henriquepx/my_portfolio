@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 
 const HeaderContainer = styled.div`
@@ -57,43 +58,47 @@ const MenuHamburger = styled.div`
     }
 `
 const Header = () => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [showHeader, setShowHeader] = useState(windowWidth <= 1024);
-  
-    useEffect(() => {
-      const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-        setShowHeader(window.innerWidth <= 1024);
-      };
-  
-      window.addEventListener('resize', handleResize);
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
-  
-    return (
-      <div>
-        {showHeader && (
-          <HeaderContainer>
-            <HeaderSize>
-              <ProfileApresentation>
-                <ImgProfile src="profile.jpeg" alt="Foto profile do Henrique" />
-                <div>
-                  <TitleProfile>Henrique Pinheiro</TitleProfile>
-                  <DescProfile>Desenvolvedor Front-end</DescProfile>
-                </div>
-              </ProfileApresentation>
-              <MenuHamburger>
-                <span></span>
-                <span></span>
-                <span></span>
-              </MenuHamburger>
-            </HeaderSize>
-          </HeaderContainer>
-        )}
-      </div>
-    );
-  };
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [showHeader, setShowHeader] = useState(windowWidth <= 1024);
 
-export default Header
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      setShowHeader(window.innerWidth <= 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return (
+    <div>
+      {showHeader && (
+        <HeaderContainer>
+          <HeaderSize>
+            <ProfileApresentation>
+              <ImgProfile src="profile.jpeg" alt="Foto profile do Henrique" />
+              <div>
+                <TitleProfile>Henrique Pinheiro</TitleProfile>
+                <DescProfile>Desenvolvedor Front-end</DescProfile>
+              </div>
+            </ProfileApresentation>
+            <MenuHamburger>
+              <span></span>
+              <span></span>
+              <span></span>
+            </MenuHamburger>
+          </HeaderSize>
+        </HeaderContainer>
+      )}
+    </div>
+  );
+};
+
+Header.propTypes = {
+  onShowProfile: PropTypes.func.isRequired,
+};
+
+export default Header;

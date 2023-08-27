@@ -12,17 +12,11 @@ const LinkContainer = styled.a`
     padding: .7rem 0rem .7rem .7rem;
 
     color: #9e9b9b;
+    font-family: 'Montserrat', sans-serif;
     &:hover {
         color: #cccbcb;
         background-color: #333232;
         border-radius: 10px;
-    }
-    &:hover a {
-        color: #cccbcb;  
-    }
-    a {
-        color: #9e9b9b;
-        font-family: 'Montserrat', sans-serif;
     }
 `
 
@@ -30,7 +24,7 @@ const LinkNavegation = ({ name, icon, active, onClick, link }) => {
   return (
     <LinkContainer href={link} active={active} onClick={onClick}>
         {icon}
-        <a>{name}</a>
+        {name}
     </LinkContainer>
   )
 }
