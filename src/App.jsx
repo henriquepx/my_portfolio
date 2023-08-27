@@ -5,6 +5,7 @@ import Header from './sections/Header';
 import Profile from './sections/Profile';
 import Projects from './sections/Projects';
 import Skills from './sections/Skills';
+import Home from './sections/Home';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -16,6 +17,7 @@ function App() {
       <Header />
 
       <Routes>
+        <Route path='/' element={<Home />}/>
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
