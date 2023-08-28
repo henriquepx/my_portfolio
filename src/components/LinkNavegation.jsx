@@ -9,7 +9,7 @@ const LinkContainer = styled.a`
     cursor: pointer;
     
     border: 1px solid transparent;
-    padding: .7rem 0rem .7rem .7rem;
+    padding: .4rem 0rem .4rem .4rem;
 
     color: #9e9b9b;
     font-family: 'Montserrat', sans-serif;
