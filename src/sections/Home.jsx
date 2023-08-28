@@ -11,7 +11,6 @@ const ContainerHome = styled.div`
     justify-content: center;
 
     padding-left: 17rem;
-
     h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 5.5rem;
@@ -20,6 +19,9 @@ const ContainerHome = styled.div`
       transform: skewY(-2deg);
       letter-spacing: 3px;
       color: #504f4f;
+      @media (max-width: 450px) {
+        font-size: 2.5rem;
+      }
         }
     h2 {
       font-family: 'Montserrat', sans-serif;
@@ -29,6 +31,10 @@ const ContainerHome = styled.div`
         transform: skewY(-2deg);
         letter-spacing: 3px;
         color: #504f4f;
+        @media (max-width: 450px) {
+        font-size: 1.5rem;
+        text-align: center;
+      }
     }
 
     @media (max-width: 1024px) {

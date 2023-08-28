@@ -10,9 +10,6 @@ const HeaderContainer = styled.div`
     
 
     padding: 1rem 2rem;
-    @media (max-width: 1024px) {
-      padding: 1rem;
-    }
 `
 const HeaderSize = styled.div`
     width: 100%;
@@ -20,7 +17,6 @@ const HeaderSize = styled.div`
     margin: 0 auto;
     
     display: flex;
-    align-items: center;
     justify-content: space-between;
 `
 const ProfileApresentation = styled.div`
@@ -29,10 +25,6 @@ const ProfileApresentation = styled.div`
     gap: 10px;
 
     margin-bottom: 1rem;
-`
-const ImgProfile = styled.img`
-    border-radius: 50%;
-    width: 3%;
 `
 const TitleProfile = styled.h1`
     font-family: 'Montserrat', sans-serif;
@@ -47,9 +39,9 @@ const DescProfile = styled.p`
 const MenuHamburger = styled.div`
   cursor: pointer;
 
-  border: 1px solid #d6d4d4;
   padding: 3px 5px;
   border-radius: 10px;
+  z-index: 999;
   span {
     display: block;
     width: 25px;
@@ -115,7 +107,6 @@ const Header = () => {
           <HeaderContainer>
             <HeaderSize>
               <ProfileApresentation>
-                <ImgProfile src="profile.jpeg" alt="Foto profile do Henrique" />
                 <div>
                   <TitleProfile>Henrique Pinheiro</TitleProfile>
                   <DescProfile>Desenvolvedor Front-end</DescProfile>

@@ -18,6 +18,9 @@ const ContainerProfile = styled.div`
     padding: 1.7rem;
 
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    @media (max-width: 320px) {
+        width: 75%;
+    }
 `
 const ProfileApresentation = styled.div`
     display: flex;
@@ -29,6 +32,9 @@ const ProfileApresentation = styled.div`
 const ImgProfile = styled.img`
     border-radius: 50%;
     width: 15%;
+    @media (max-width: 320px) {
+        display: none;
+    }
 `
 const TitleProfile = styled.h1`
     font-family: 'Montserrat', sans-serif;
