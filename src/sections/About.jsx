@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-
+import { IoMdMail } from 'react-icons/io';
+import { MdLocationOn } from 'react-icons/md';
 
 const ContainerAbout = styled.div`
     height: 100vh;
@@ -18,7 +19,7 @@ const ContainerAbout = styled.div`
 `
 const AboutSize = styled.div`
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 `
 const TitleAbout = styled.h1`
@@ -33,16 +34,54 @@ const DescAbout = styled.p`
     color: #707070;
     margin-top: 15px;
 `
+const DescriptionAbout = styled.div`
+  display: flex;
+  gap: 30px;
+  align-items: center;
+`
+const ImgAbout = styled.img`
+  width: 250px;
+`
+const InfosAboutMe = styled.div`
+  margin-top: 2rem;
+  display: flex;
+  gap: 50px;
+`
+const DivIconsDescAbout = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #707070;
+  font-size: 1.1rem;
+  a {
+    color: #707070;
+  }
+`
 
 const About = () => {
   return (
     <ContainerAbout id='about'>
         <AboutSize>       
-            <TitleAbout>About</TitleAbout>
-            <DescAbout>Olá, me chamo Henrique, tenho 21 anos e sou graduando de Análise e Desenvolvimento de Sistemas.</DescAbout>
-            <DescAbout>Comecei a estudar e tive uma conexão direta com o desenvolvimento Front-end, desde então realizo alguns projetos e diariamente busco me aperfeiçoar cada vez mais, aprendendo e entendendo que o estudo constante é a chave pro sucesso.</DescAbout>
-            <DescAbout>Me considero uma pessoa esforçada, resiliente e preparado, busco apenas uma oportunidade para mostrar o quão posso agregar no time e no desenvolvimento da empresa.</DescAbout>
-            <DescAbout>Veja abaixo meus projetos e minhas skills:</DescAbout>
+            <TitleAbout>Sobre mim</TitleAbout>
+            <DescriptionAbout>
+              <ImgAbout src="pic.jpeg" alt="Foto do Henrique" />
+              <div>
+                <DescAbout>Comecei a estudar e tive uma conexão direta com o desenvolvimento Front-end, desde então realizo alguns projetos e diariamente busco me aperfeiçoar cada vez mais, aprendendo e entendendo que o estudo constante é a chave pro sucesso.</DescAbout>
+                <DescAbout>Construo websites modernos que mudam a cara de qualquer empreendimento. Estou disponível para Freelancer!</DescAbout>
+                <DescAbout>Me considero uma pessoa esforçada, resiliente e preparada, busco apenas uma oportunidade para mostrar o quão posso agregar no time e no desenvolvimento da empresa.</DescAbout>
+                <InfosAboutMe>
+                  <DivIconsDescAbout>
+                    <IoMdMail  />
+                    <a href='mailto:henriquepinheiroxavier@gmail.com' target='_blank' rel='noreferrer'>henriquepinheiroxavier@gmail.com</a>
+                  </DivIconsDescAbout>
+                  <DivIconsDescAbout>
+                    <MdLocationOn />
+                    <p>Rio de Janeiro, RJ</p>
+                  </DivIconsDescAbout>
+                </InfosAboutMe> 
+              </div>
+            </DescriptionAbout>
         </AboutSize>
     </ContainerAbout>
   )

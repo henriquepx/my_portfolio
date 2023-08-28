@@ -11,6 +11,26 @@ const ContainerHome = styled.div`
     justify-content: center;
 
     padding-left: 17rem;
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 5.5rem;
+      font-weight: 800;
+      text-align: center;
+      transform: skewY(-2deg);
+      letter-spacing: 3px;
+      color: #504f4f;
+        }
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 600;
+        font-style: italic;
+        transform: skewY(-2deg);
+        letter-spacing: 3px;
+        color: #504f4f;
+    }
+
     @media (max-width: 1024px) {
       padding: 1rem;
     }
@@ -18,7 +38,10 @@ const ContainerHome = styled.div`
 
 const Home = () => {
   return (
-    <ContainerHome>Home</ContainerHome>
+    <ContainerHome>
+      <h1>Henrique Pinheiro</h1>
+      <h2>Desenvolvedor Front-end</h2>
+    </ContainerHome>
   )
 }
 
