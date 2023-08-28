@@ -71,25 +71,25 @@ const Profile = () => {
             <ul>
                 <LinkNavegation
                 icon={<FaInfoCircle />}
-                name="About"
+                name="Sobre mim"
                 link="about" 
                 />
 
                 <LinkNavegation
                 icon={<FaCode />}
-                name="Skills"
+                name="Habilidades"
                 link="skills"
                 />
 
                 <LinkNavegation
                 icon={<FaDesktop />}
-                name="Projects"
+                name="Projetos"
                 link="projects"
                 />
 
                 <LinkNavegation
                 icon={<FaEnvelope />}
-                name="Contact"
+                name="Contato"
                 link="footer"
                 />
             </ul>
