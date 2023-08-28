@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import LinkNavegation from '../components/LinkNavegation';
-import { FaInfoCircle, FaCode, FaEnvelope, FaLinkedin, FaGithub, FaFilePdf, FaDesktop } from 'react-icons/fa';
+import { FaInfoCircle, FaCode, FaEnvelope, FaGraduationCap, FaTrophy, FaLinkedin, FaGithub, FaFilePdf, FaDesktop } from 'react-icons/fa';
 
 const ContainerProfile = styled.div`
     position: fixed;
@@ -76,6 +76,23 @@ const Profile = () => {
                 />
 
                 <LinkNavegation
+                icon={<FaGraduationCap />}
+                name="Trajetória"
+                link="trajectory"
+                />
+
+                <LinkNavegation
+                icon={<FaEnvelope />}
+                name="Contato"
+                link="footer"
+                />
+            </ul>
+      </Nav2>
+
+      <Nav2>
+        <h2>Front-end</h2>
+        <ul>
+                <LinkNavegation
                 icon={<FaCode />}
                 name="Habilidades"
                 link="skills"
@@ -88,11 +105,11 @@ const Profile = () => {
                 />
 
                 <LinkNavegation
-                icon={<FaEnvelope />}
-                name="Contato"
-                link="footer"
+                icon={<FaTrophy />}
+                name="Certificados"
+                link="certificates"
                 />
-            </ul>
+        </ul>
       </Nav2>
 
         <Nav2>

@@ -8,6 +8,8 @@ import Skills from './sections/Skills';
 import Home from './sections/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Profile from './sections/Profile';
+import Certificates from './sections/Certificates';
+import Trajectory from './sections/Trajectory';
 
 
 function App() {
@@ -37,8 +39,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path="/about" element={<About />} />
+        <Route path="/trajectory" element={<Trajectory />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/certificates" element={<Certificates />} />
         <Route path="/footer" element={<Footer />} />
       </Routes>
     </BrowserRouter>
