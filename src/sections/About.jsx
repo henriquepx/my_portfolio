@@ -13,6 +13,9 @@ const ContainerAbout = styled.div`
     justify-content: center;
 
     padding-left: 17rem;
+    @media (max-width: 425px) {
+      height: 100%;
+    }
     @media (max-width: 1024px) {
       padding: 1rem;
     }
@@ -21,6 +24,10 @@ const AboutSize = styled.div`
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+
+    @media (max-width: 320px) {
+      padding-top: 10rem;
+    }
 `
 const TitleAbout = styled.h1`
     font-family: 'Montserrat', sans-serif;
@@ -37,15 +44,24 @@ const DescAbout = styled.p`
 const DescriptionAbout = styled.div`
   display: flex;
   gap: 30px;
-  align-items: center;
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
 `
 const ImgAbout = styled.img`
   width: 250px;
+  @media (min-width: 751px) and (max-width: 835px) {
+    height: 250px;
+  }
 `
 const InfosAboutMe = styled.div`
   margin-top: 2rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
+  @media (max-width: 1150px) {
+    gap: 20px;
+  }
 `
 const DivIconsDescAbout = styled.div`
   display: flex;
