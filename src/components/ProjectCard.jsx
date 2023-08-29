@@ -5,9 +5,12 @@ import { FaLink, FaGithub } from 'react-icons/fa';
 
 const ProjectContainerCard = styled.div`
     display: flex;
-    align-items: center;
-
     gap: 50px;
+    @media (max-width: 530px) {
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 4rem;
+    }
 `
 const ImgProject = styled.img`
     width: 40%;

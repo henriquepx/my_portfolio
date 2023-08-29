@@ -14,6 +14,9 @@ const ProjectsContainer = styled.div`
     @media (max-width: 1024px) {
       padding: 1rem;
     }
+    @media (max-width: 530px) {
+      height: 100%;
+    }
 `
 const ProjectSize = styled.div`
     width: 100%;
