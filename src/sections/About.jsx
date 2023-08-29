@@ -74,6 +74,10 @@ const DivIconsDescAbout = styled.div`
     color: #707070;
   }
 `
+const DivInfoDescMe = styled.div`
+  display: flex;
+  flex-direction: column;
+`
 
 const About = () => {
   return (
@@ -82,10 +86,7 @@ const About = () => {
             <TitleAbout>Sobre mim</TitleAbout>
             <DescriptionAbout>
               <ImgAbout src="pic.jpeg" alt="Foto do Henrique" />
-              <div>
-                <DescAbout>Comecei a estudar e tive uma conexão direta com o desenvolvimento Front-end, desde então realizo alguns projetos e diariamente busco me aperfeiçoar cada vez mais, aprendendo e entendendo que o estudo constante é a chave pro sucesso.</DescAbout>
-                <DescAbout>Construo websites modernos que mudam a cara de qualquer empreendimento. Estou disponível para Freelancer!</DescAbout>
-                <DescAbout>Me considero uma pessoa esforçada, resiliente e preparada, busco apenas uma oportunidade para mostrar o quão posso agregar no time e no desenvolvimento da empresa.</DescAbout>
+              <DivInfoDescMe>
                 <InfosAboutMe>
                   <DivIconsDescAbout>
                     <IoMdMail  />
@@ -96,7 +97,10 @@ const About = () => {
                     <p>Rio de Janeiro, RJ</p>
                   </DivIconsDescAbout>
                 </InfosAboutMe> 
-              </div>
+                <DescAbout>Comecei a estudar e tive uma conexão direta com o desenvolvimento Front-end, desde então realizo alguns projetos e diariamente busco me aperfeiçoar cada vez mais, aprendendo e entendendo que o estudo constante é a chave pro sucesso.</DescAbout>
+                <DescAbout>Construo websites modernos que mudam a cara de qualquer empreendimento. Estou disponível para Freelancer!</DescAbout>
+                <DescAbout>Me considero uma pessoa esforçada, resiliente e preparada, busco apenas uma oportunidade para mostrar o quão posso agregar no time e no desenvolvimento da empresa.</DescAbout>
+              </DivInfoDescMe>
             </DescriptionAbout>
         </AboutSize>
     </ContainerAbout>
