@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Form from '../components/Form'
 
 const ContainerFooter = styled.footer`
-     height: 100vh;
+    height: 100vh;
     width: 100%;
 
     background-color: #1a1a1a;
@@ -13,7 +13,8 @@ const ContainerFooter = styled.footer`
 
     padding-left: 17rem;
     @media (max-width: 1024px) {
-      padding: 1rem;
+        height: 90vh;
+        padding: 1rem;
     }
 `
 const FooterSize = styled.div`
