@@ -11,6 +11,8 @@
   </tr>
 </table>
 
+<br>
+
 # My Portfolio | 
 
 ![Portfolio Logo](./public/henriqdevreadme.png)
