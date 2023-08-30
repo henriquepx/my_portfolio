@@ -48,12 +48,6 @@ const DescriptionAbout = styled.div`
     flex-direction: column;
   }
 `
-const ImgAbout = styled.img`
-  width: 250px;
-  @media (min-width: 751px) and (max-width: 835px) {
-    height: 250px;
-  }
-`
 const InfosAboutMe = styled.div`
   margin-top: 2rem;
   display: flex;
@@ -85,7 +79,6 @@ const About = () => {
         <AboutSize>       
             <TitleAbout>Sobre mim</TitleAbout>
             <DescriptionAbout>
-              <ImgAbout src="pic.jpeg" alt="Foto do Henrique" />
               <DivInfoDescMe>
                 <InfosAboutMe>
                   <DivIconsDescAbout>

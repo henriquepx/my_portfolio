@@ -7,9 +7,10 @@ const HeaderContainer = styled.div`
     width: 100%;
 
     background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
     
-
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
 `
 const HeaderSize = styled.div`
     width: 100%;
@@ -17,14 +18,13 @@ const HeaderSize = styled.div`
     margin: 0 auto;
     
     display: flex;
+    align-items: center;
     justify-content: space-between;
 `
 const ProfileApresentation = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
-
-    margin-bottom: 1rem;
 `
 const TitleProfile = styled.h1`
     font-family: 'Montserrat', sans-serif;
@@ -39,14 +39,14 @@ const DescProfile = styled.p`
 const MenuHamburger = styled.div`
   cursor: pointer;
 
-  padding: 3px 5px;
+  padding: 3px 5px 0px 5px;
   border-radius: 10px;
   z-index: 999;
   span {
     display: block;
     width: 25px;
     height: 3px;
-    margin: 5px auto;
+    margin: 5px auto 0px auto;
     transition: all 0.3s ease-in-out;
     background-color: #cccaca;
     &:nth-child(1) {
@@ -100,7 +100,6 @@ const Header = () => {
     };
   }, [showProfile]);
 
-  
     return (
       <div>
         {showHeader && (
