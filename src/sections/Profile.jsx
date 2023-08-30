@@ -11,13 +11,12 @@ const ContainerProfile = styled.div`
     top: 0;
     z-index: 999;
 
-    background-color: #222222;
+    background-color:#1b1b1b;
 
     display: flex;
     flex-direction: column;
     padding: 1.7rem;
-
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
     @media (max-width: 320px) {
         width: 75%;
     }
@@ -39,7 +38,7 @@ const ImgProfile = styled.img`
 const TitleProfile = styled.h1`
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    color: #d6d4d4;
+    color: #f2f2f2;
 `
 const DescProfile = styled.p`
     font-family: 'Montserrat', sans-serif;
