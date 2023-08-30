@@ -21,13 +21,6 @@ const ContainerProfile = styled.div`
         width: 75%;
     }
 `
-const ProfileApresentation = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    margin-bottom: 1rem;
-`
 const ImgProfile = styled.img`
     border-radius: 50%;
     width: 15%;
@@ -41,9 +34,43 @@ const TitleProfile = styled.h1`
     color: #f2f2f2;
 `
 const DescProfile = styled.p`
-    font-family: 'Montserrat', sans-serif;
-    font-size: .9rem;
-    color: #6b6b6b;
+    a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: .9rem;
+        color: #6b6b6b;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+        }
+        &::after {
+            content: attr(data-replace);
+            height: 100%;
+            top: 0;
+            transform-origin: 50% 100%;
+            transform: translate3d(0, 100%, 0);
+            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+            color: #6b6b6b;
+        }
+        &:hover::before {
+            transform-origin: 50% 50%;
+            transform: scaleY(0);
+        }
+        &:hover::after {
+            transform: translate3d(0, 0, 0);
+        }
+        span {
+            display: inline-block;
+            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+        &:hover span {
+            transform: translate3d(0, 100%, 0);
+        }
+    }
 `
 const Nav2 = styled.nav`
     margin-top: .5rem;
@@ -79,17 +106,23 @@ const ChangeLanguage = styled.div`
     }
     }
 `
+const LinkToHome = styled.a`
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+`
 const Profile = () => {
 
   return (
     <ContainerProfile>
-        <ProfileApresentation>
-            <ImgProfile src="profile.jpeg" alt="Foto profile do Henrique" />
-            <div>
-                <TitleProfile>Henrique Pinheiro</TitleProfile>
-                <DescProfile>Desenvolvedor Front-end</DescProfile>
-            </div>
-        </ProfileApresentation>
+            <LinkToHome href="/">
+                <ImgProfile src="profile.jpeg" alt="Foto profile do Henrique" />
+                <div>
+                    <TitleProfile>Henrique Pinheiro</TitleProfile>
+                    <DescProfile><a href="#" data-replace="Freelancer"><span>Desenvolvedor Front-end</span></a></DescProfile>
+                </div>
+            </LinkToHome>
 
         <Nav2>
             <h2>Sections</h2>
