@@ -90,7 +90,7 @@ const Home = () => {
     <ContainerHome>
       <h1>Desenvolvedor Front-end</h1>
       <p>Jovem desenvolvedor especializado na construção de experiências digitais excepcionais. Com proficiência nos frameworks mais utilizados pra Web, concentro-me em transformar ideias em realidade, criando interfaces intuitivas e atraentes.</p>
-      <p>Navegue por meu portfólio para descobrir os <LinkHome href="#">projetos</LinkHome> que tenho orgulho de ter contribuído. Estou comprometido em demonstrar como minha paixão pelo desenvolvimento Front-end se traduz em resultados concretos. E caso queira ter esse Desenvolvedor Front-end na sua equipe ou realizar um trabalho Freelancer, basta entrar em <LinkHome href="">contato</LinkHome> e vamos ao trabalho.</p>
+      <p>Navegue por meu portfólio para descobrir os <LinkHome href="projects">projetos</LinkHome> que tenho orgulho de ter contribuído. Estou comprometido em demonstrar como minha paixão pelo desenvolvimento Front-end se traduz em resultados concretos. E caso queira ter esse Desenvolvedor Front-end na sua equipe ou realizar um trabalho Freelancer, basta entrar em <LinkHome href="footer">contato</LinkHome> e vamos ao trabalho.</p>
       <ArrowToAbout href="about"><span>Veja mais sobre mim <BsArrowUpRight /></span></ArrowToAbout>
     </ContainerHome>
   )
