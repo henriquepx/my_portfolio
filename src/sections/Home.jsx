@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { BsArrowUpRight } from 'react-icons/bs';
 
@@ -15,9 +16,15 @@ const ContainerHome = styled.div`
     position: relative;
 
     text-align: left;
-    @media (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       height: 90vh;
-      padding: 5rem 1rem 1rem 1rem;
+      padding: 8rem 1rem 1rem 1rem;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    @media (max-width: 767px) {
+      height: 90vh;
+      padding: 4rem 1rem 1rem 1rem;
       justify-content: flex-start;
       text-align: left;
     }
@@ -101,15 +108,34 @@ const Faixa = styled.div`
   }
 `
 
-
-
-
 const Home = () => {
+
+  const [typedText, setTypedText] = useState('');
+  const titleText = "Desenvolvedor Front-end";
+  const typingSpeed = 100; 
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const interval = setInterval(() => {
+      if (currentIndex <= titleText.length) {
+        setTypedText(titleText.substring(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(interval);
+      }
+    }, typingSpeed);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+
   return (
     <ContainerHome>
-      <h1>Desenvolvedor Front-end</h1>
-      <p>Jovem desenvolvedor especializado na construção de experiências digitais excepcionais. Com proficiência nos frameworks mais utilizados pra Web, concentro-me em transformar ideias em realidade, criando interfaces intuitivas e atraentes.</p>
-      <p>Navegue por meu portfólio para descobrir os <LinkHome href="projects">projetos</LinkHome> que tenho orgulho de ter contribuído. Estou comprometido em demonstrar como minha paixão pelo desenvolvimento Front-end se traduz em resultados concretos. E caso queira ter esse Desenvolvedor Front-end na sua equipe ou realizar um trabalho Freelancer, basta entrar em <LinkHome href="footer">contato</LinkHome> e vamos ao trabalho.</p>
+      <h1>{typedText}</h1>
+      <p>Jovem desenvolvedor especializado na construção de experiências digitais excepcionais. Com proficiência nos frameworks mais utilizados pra Web, tenho foco em transformar ideias em realidade, criando interfaces intuitivas e atraentes.</p>
+      <p>Navegue pelo meu portfólio para descobrir os <LinkHome href="projects">projetos</LinkHome> que tenho orgulho de ter contribuído. Estou comprometido em demonstrar como minha paixão pelo desenvolvimento Front-end se traduz em resultados concretos. E caso queira ter esse Desenvolvedor Front-end na sua equipe ou realizar um trabalho Freelancer, basta entrar em <LinkHome href="footer">contato</LinkHome> e vamos ao trabalho.</p>
       <ArrowToAbout href="about"><span>Veja mais sobre mim <BsArrowUpRight /></span></ArrowToAbout>
       <Faixa>
         <p>Disponível pra trabalhos.</p>
