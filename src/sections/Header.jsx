@@ -21,7 +21,7 @@ const HeaderSize = styled.div`
     align-items: center;
     justify-content: space-between;
 `
-const ProfileApresentation = styled.div`
+const LinkToHome = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
@@ -105,12 +105,12 @@ const Header = () => {
         {showHeader && (
           <HeaderContainer>
             <HeaderSize>
-              <ProfileApresentation>
+              <LinkToHome>
                 <div>
                   <TitleProfile>Henrique Pinheiro</TitleProfile>
                   <DescProfile>Desenvolvedor Front-end</DescProfile>
                 </div>
-              </ProfileApresentation>
+              </LinkToHome>
               <MenuHamburger open={isOpen} onClick={() => { toggleMenu(); toggleProfile(); }}>
                 <span></span>
                 <span></span>

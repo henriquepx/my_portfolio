@@ -5,7 +5,7 @@ const ContainerFooter = styled.footer`
     height: 100vh;
     width: 100%;
 
-    background-color: #1a1a1a;
+    background-color: #161616;
     display: flex;
     flex-direction: column;
     align-items: center;

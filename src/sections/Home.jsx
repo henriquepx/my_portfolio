@@ -14,12 +14,13 @@ const ContainerHome = styled.div`
     text-align: left;
     @media (max-width: 1024px) {
       height: 90vh;
-      padding: 1rem;
+      padding: 5rem 1rem 1rem 1rem;
+      justify-content: flex-start;
       text-align: left;
     }
     h1 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 4.5rem;
+      font-size: 4.1rem;
       font-weight: 800;
       margin-bottom: 1rem;
       color: #f2f2f2;

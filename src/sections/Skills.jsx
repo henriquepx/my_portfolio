@@ -5,12 +5,12 @@ const SkillsContainer = styled.div`
     height: 100vh;
     width: 100%;
 
-    background-color: #1a1a1a;
+    background-color: #161616;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    padding-left: 17rem;
+    padding-left: 10rem;
     @media (max-width: 1024px) {
       padding: 2rem 1rem 5rem 1rem;
       height: 100%;
