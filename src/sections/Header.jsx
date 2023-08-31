@@ -105,7 +105,7 @@ const Header = () => {
         {showHeader && (
           <HeaderContainer>
             <HeaderSize>
-              <LinkToHome>
+              <LinkToHome href="/">
                 <div>
                   <TitleProfile>Henrique Pinheiro</TitleProfile>
                   <DescProfile>Desenvolvedor Front-end</DescProfile>

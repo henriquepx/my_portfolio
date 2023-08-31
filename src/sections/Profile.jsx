@@ -34,7 +34,7 @@ const TitleProfile = styled.h1`
     color: #f2f2f2;
 `
 const DescProfile = styled.p`
-    a {
+    h3 {
         font-family: 'Montserrat', sans-serif;
         font-size: .9rem;
         color: #6b6b6b;
@@ -120,7 +120,7 @@ const Profile = () => {
                 <ImgProfile src="profile.jpeg" alt="Foto profile do Henrique" />
                 <div>
                     <TitleProfile>Henrique Pinheiro</TitleProfile>
-                    <DescProfile><a href="#" data-replace="Freelancer"><span>Desenvolvedor Front-end</span></a></DescProfile>
+                    <DescProfile><h3 href="#" data-replace="Freelancer"><span>Desenvolvedor Front-end</span></h3></DescProfile>
                 </div>
             </LinkToHome>
 

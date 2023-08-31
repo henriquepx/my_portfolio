@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { BsArrowUpRight } from 'react-icons/bs';
 
+
 const ContainerHome = styled.div`
     height: 100vh;
     width: 100%;
@@ -10,6 +11,8 @@ const ContainerHome = styled.div`
     flex-direction: column;
     justify-content: center;
     padding-left: 25rem;
+    overflow: hidden;
+    position: relative;
 
     text-align: left;
     @media (max-width: 1024px) {
@@ -85,6 +88,21 @@ const ArrowToAbout = styled.a`
   }
   }
 `;
+const Faixa = styled.div`
+  position: absolute;
+  right: -160px;
+  overflow: hidden;
+  bottom: 70px;
+  padding: .8rem 10rem;
+  transform: rotate(-45deg);
+  background-color: #272727;
+  p {
+    color: #dad9d9;
+  }
+`
+
+
+
 
 const Home = () => {
   return (
@@ -93,6 +111,9 @@ const Home = () => {
       <p>Jovem desenvolvedor especializado na construção de experiências digitais excepcionais. Com proficiência nos frameworks mais utilizados pra Web, concentro-me em transformar ideias em realidade, criando interfaces intuitivas e atraentes.</p>
       <p>Navegue por meu portfólio para descobrir os <LinkHome href="projects">projetos</LinkHome> que tenho orgulho de ter contribuído. Estou comprometido em demonstrar como minha paixão pelo desenvolvimento Front-end se traduz em resultados concretos. E caso queira ter esse Desenvolvedor Front-end na sua equipe ou realizar um trabalho Freelancer, basta entrar em <LinkHome href="footer">contato</LinkHome> e vamos ao trabalho.</p>
       <ArrowToAbout href="about"><span>Veja mais sobre mim <BsArrowUpRight /></span></ArrowToAbout>
+      <Faixa>
+        <p>Disponível pra trabalhos.</p>
+      </Faixa>
     </ContainerHome>
   )
 }
