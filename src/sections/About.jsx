@@ -39,13 +39,17 @@ const AboutSize = styled.div`
 const TitleAbout = styled.h1`
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
+    margin-bottom: .4rem;
     color: white;
     font-weight: 610;
 `
 const DescAbout = styled.p`
     font-family: 'Montserrat', sans-serif;
     color: #9e9b9b;
-    margin-top: 30px;
+    margin-top: 1.8rem;
+    &:nth-child(1) {
+      margin-top: 1rem;
+    }
 `
 const DescriptionAbout = styled.div`
   display: flex;
@@ -87,7 +91,7 @@ const LinkAbout = styled.a`
   }
 `
 const TextAtt = styled.h3`
-  text-align: right;
+  text-align: left;
   font-family: 'Montserrat', sans-serif;
   padding-right: 1rem;
   color: #5f5f5f;
