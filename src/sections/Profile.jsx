@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import LinkNavegation from '../components/LinkNavegation';
-import { FaInfoCircle, FaCode, FaEnvelope, FaGraduationCap, FaTrophy, FaLinkedin, FaGithub, FaFilePdf, FaDesktop } from 'react-icons/fa';
+import { FaInfoCircle, FaCode, FaEnvelope, FaTrophy, FaLinkedin, FaGithub, FaFilePdf, FaDesktop } from 'react-icons/fa';
 
 const ContainerProfile = styled.div`
     position: relative;
@@ -131,12 +131,6 @@ const Profile = () => {
                 icon={<FaInfoCircle />}
                 name="Sobre mim"
                 link="about" 
-                />
-
-                <LinkNavegation
-                icon={<FaGraduationCap />}
-                name="Trajetória"
-                link="trajectory"
                 />
 
                 <LinkNavegation

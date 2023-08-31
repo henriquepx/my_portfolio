@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
   vertical-align: baseline;
   list-style: none;
   text-decoration: none;
+  line-height: 1.4;
 }
 
   /* Variables */
