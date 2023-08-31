@@ -14,29 +14,31 @@ const FormStyle = styled.form`
 `
 const LabelForm = styled.label`
     margin-bottom: 7px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Montserrat', monospace;
 `
 
 const InputStyle = styled.input`
     margin-bottom: 14px;
     border-radius: 4px;
     height: 40px;
+    color: #fff;
     width: 100%; 
     padding: 0 8px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Montserrat', monospace;
     background-color: transparent;
     border: 1px solid white;
 `
 const TextareaStyle = styled.textarea`
     margin-bottom: 14px;
     border-radius: 4px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Montserrat', monospace;
     border: 0;
     padding: 8px;
     background-color: transparent;
     border: 1px solid white;
     height: 200px;
     width: 100%;
+    color: #fff;
     resize: none;
 `
 const ButtonSubmitForm = styled.button`
@@ -48,7 +50,7 @@ const ButtonSubmitForm = styled.button`
     font-size: 1rem;
     width: 30%;
     color: #fff;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Montserrat', monospace;
 `
 
 const Form = () => {
@@ -57,7 +59,7 @@ const Form = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_prhx52s', 'template_qon6s7h', form.current, '6XCPVQDlEI-egjo2f')
+    emailjs.sendForm('service_webqtko', 'template_kxj8ru8', form.current, '6XCPVQDlEI-egjo2f')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -73,14 +75,14 @@ const Form = () => {
                 <InputStyle 
                     type="text"
                     placeholder="Digite seu nome"
-                    name="user_name"
+                    name="from_name"
                     id="user_name"
                 />
                 <LabelForm htmlFor="user_email">E-mail:</LabelForm>
                 <InputStyle 
                     type="text"
                     placeholder="Digite seu email"
-                    name="user_email"
+                    name="reply_to"
                     id="user_email"
                 />
                 <LabelForm htmlFor="message">Mensagem:</LabelForm>
