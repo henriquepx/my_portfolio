@@ -25,9 +25,16 @@ const FooterSize = styled.div`
 const TitleFooter = styled.h1`
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
-    margin-bottom: 2rem;
     color: white;
     font-weight: 610;
+    text-align: center;
+`
+const DescFooter = styled.p`
+    font-family: 'Montserrat', sans-serif;
+    color: #9e9b9b;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+    text-align: center;
 `
 
 const Footer = () => {
@@ -35,6 +42,7 @@ return (
         <ContainerFooter id='footer'>
             <FooterSize>
                 <TitleFooter>Contact</TitleFooter>
+                <DescFooter>Tem uma dúvida, proposta ou quer apenas conversar? Mande uma mensagem.</DescFooter>
                 <Form />
             </FooterSize>
         </ContainerFooter>
