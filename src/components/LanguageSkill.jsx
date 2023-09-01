@@ -12,6 +12,9 @@ const LanguageContainer = styled.div`
     border: 1px solid #1d1d1d;
 
     width: 350px;
+    @media (max-width: 350px) {
+        width: 300px;
+    }
     &:hover {
         background-color: #242323;
         border: 1px solid #333232;
