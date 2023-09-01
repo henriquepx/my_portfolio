@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import LanguageSkill from '../components/LanguageSkill';
 
 const SkillsContainer = styled.div`
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
     background-color: #161616;
@@ -10,7 +10,7 @@ const SkillsContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    padding-left: 10rem;
+    padding: 12rem 0rem 10rem 10rem;
     @media (max-width: 1024px) {
       padding: 2rem 1rem 5rem 1rem;
       height: 100%;
@@ -128,10 +128,22 @@ const Skills = () => {
                     title="Angular" 
                     description="Framework escalável."
                 />
+                <LanguageSkill
+                    icon="/skills/sql.png" 
+                    title="SQL" 
+                    description="Gerenciamento de Dados Relacionais."
+                />
+                <LanguageSkill
+                    icon="/skills/nodejs.png" 
+                    title="NodeJS" 
+                    description="Ambiente de Servidor JavaScript."
+                />
             </SkillsWrap>
             <TextAboutSkills>
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptatibus id natus deserunt eligendi alias at odio, earum nisi eaque ipsam placeat voluptas doloribus consectetur reiciendis! Ipsum sunt numquam doloremque!</p>
+                <h3>Planos pro futuro.</h3>
+                <p>Atualmente, meu foco principal é no desenvolvimento front-end. Acredito que a experiência do usuário é fundamental, e estou empenhado em criar interfaces de usuário atraentes e intuitivas que proporcionem uma ótima experiência aos usuários finais.</p>
+                <p>Além disso, estou sempre em busca de aprendizado contínuo. Estou explorando novas tecnologias, como TypeScript e Angular, para expandir ainda mais meu conjunto de habilidades e abraçar desafios mais amplos no futuro.</p>
+                <p>Meu objetivo final é me tornar um desenvolvedor Fullstack, mas estou ciente da importância de construir uma base sólida no front-end antes de prosseguir para o back-end. Estou comprometido em me manter atualizado com as últimas tendências e melhores práticas do setor, para que eu possa contribuir de maneira significativa para projetos empolgantes e desafiadores.</p>
             </TextAboutSkills>
         </SkillsSize>
     </SkillsContainer>
