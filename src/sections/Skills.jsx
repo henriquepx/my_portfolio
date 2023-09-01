@@ -51,12 +51,29 @@ const LearningSkills = styled.h2`
     color: white;
     font-weight: 610;
 `
+const TextAboutSkills = styled.div`
+    padding: 1rem;
+    background-color: #1d1d1d;
+
+    margin-top: 3rem;
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: .9rem;
+        color: white;
+    }
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: .8rem;
+        color: #8a8a8a;
+        margin-top: 10px;
+    }
+`
 
 const Skills = () => {
   return (
     <SkillsContainer id='skills'>
         <SkillsSize>
-            <TitleSkills>Skills</TitleSkills>
+            <TitleSkills>Habilidades</TitleSkills>
             <SkillsWrap>
                 <LanguageSkill
                     icon="/skills/react.png" 
@@ -99,7 +116,7 @@ const Skills = () => {
                     description="Marcação de páginas web."
                 />
             </SkillsWrap>
-            <LearningSkills>Learning:</LearningSkills>
+            <LearningSkills>Aprendendo:</LearningSkills>
             <SkillsWrap>
                 <LanguageSkill
                     icon="/skills/typescript.png" 
@@ -112,6 +129,10 @@ const Skills = () => {
                     description="Framework escalável."
                 />
             </SkillsWrap>
+            <TextAboutSkills>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptatibus id natus deserunt eligendi alias at odio, earum nisi eaque ipsam placeat voluptas doloribus consectetur reiciendis! Ipsum sunt numquam doloremque!</p>
+            </TextAboutSkills>
         </SkillsSize>
     </SkillsContainer>
   )

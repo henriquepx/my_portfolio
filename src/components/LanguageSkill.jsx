@@ -5,22 +5,24 @@ const LanguageContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: #1f1f1f;
-    padding: .7rem;
+    background-color: #1d1d1d;
+    padding: .5rem .4rem .5rem .6rem;
     border-radius: 10px;
     cursor: pointer;
-    border: 1px solid #1f1f1f;
+    border: 1px solid #1d1d1d;
 
-    width: 300px;
+    width: 350px;
     &:hover {
         background-color: #242323;
         border: 1px solid #333232;
+    }
+    img {
+        width: 30px;
     }
     div {
         h1 {
             font-family: 'Montserrat', sans-serif;
             color: #fffdfd;
-            margin-bottom: 5px;
         }
         p {
             font-family: 'Montserrat', sans-serif;
