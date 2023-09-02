@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import ProjectCard from '../components/ProjectCard';
 
 const ProjectsContainer = styled.div`
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
     background-color: #161616;
@@ -10,9 +10,10 @@ const ProjectsContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    padding-left: 17rem;
+    padding: 10rem 0rem 10rem 10rem;
     @media (max-width: 1024px) {
       padding: 1rem;
+      height: 100%;
     }
     @media (max-width: 530px) {
       height: 100%;
@@ -24,12 +25,11 @@ const ProjectSize = styled.div`
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
 `
 const TitleProject = styled.h1`
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: white;
     font-weight: 610;
 `
@@ -42,7 +42,7 @@ const Projects = () => {
       alt: "Spotify Tela",
       title: "Spotify",
       desc: "Projeto clone do site oficial do Spotify. O clone inclui todas as páginas principais do site original!",
-      languages: ["HTML", "CSS", "JavaScript", "Sass"],
+      language: "HTML, CSS, JavaScript e Sass",
       linkrepository: "https://github.com/henriquepx/spotify_clone",
       linkdeploy: "https://spotify-clone-henriqdev.netlify.app/index.html",
     },
@@ -51,7 +51,7 @@ const Projects = () => {
       alt: "Rexpeita Tela",
       title: "Rexpeita",
       desc: "Projeto completo de um e-commerce, com tela de login, registo, carrinho de compras, páginas de produtos individuais e etc...",
-      languages: ["HTML", "CSS", "JavaScript", "Sass"],
+      language: "HTML, CSS, JavaScript e Sass",
       linkrepository: "https://github.com/henriquepx/ecommerce_rexpeita",
       linkdeploy: "https://rexpeita-ecommerce.netlify.app/index.html",
     },
@@ -60,7 +60,7 @@ const Projects = () => {
       alt: "Japapou Tela",
       title: "Japapou?",
       desc: "Projeto de prática do React para aprimorar as habilidades, utilizando hooks e props pra comunicação de componentes, useState e useContext.",
-      languages: ["React", "CSS Modules"],
+      language: "ReactJS e CSS Modules",
       linkrepository: "https://github.com/henriquepx/app-order-food",
       linkdeploy: "https://app-order-food.vercel.app/",
     },
@@ -77,7 +77,7 @@ const Projects = () => {
             altproject={project.alt}
             titleproject={project.title}
             descproject={project.desc}
-            languages={project.languages}
+            language={project.language}
             linkrepository={project.linkrepository}
             linkdeploy={project.linkdeploy}
           />

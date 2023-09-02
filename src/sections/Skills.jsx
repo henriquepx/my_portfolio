@@ -54,7 +54,7 @@ const LearningSkills = styled.h2`
 const TextAboutSkills = styled.div`
     padding: 1rem;
     background-color: #1d1d1d;
-
+    max-width: 720px;
     margin-top: 3rem;
     h3 {
         font-family: 'Montserrat', sans-serif;
