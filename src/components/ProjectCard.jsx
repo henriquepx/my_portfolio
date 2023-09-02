@@ -8,19 +8,23 @@ const ProjectContainerCard = styled.div`
     max-width: 900px;
     @media (max-width: 1240px) {
       flex-direction: column;
+      margin-bottom: 3rem;
     }
 `
 const ImgProject = styled.img`
   height: 65%;
+  max-width: 100%;
   background: #1f1f1f;
   padding: 1.5rem 2rem 0rem 2rem;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  @media (max-width: 1240px) {
-    height: auto;
-    max-width: 100%;
-  }
   object-fit: cover;
+  @media (max-width: 1240px) {
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  
 `;
 const DivTextProject = styled.div`
   background: #252525;
@@ -31,6 +35,11 @@ const DivTextProject = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: 1240px) {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  }
 `
 const TitleProject = styled.h2`
     font-family: 'Montserrat', sans-serif;
