@@ -2,36 +2,55 @@ import styled from 'styled-components';
 import ProjectCard from '../components/ProjectCard';
 
 const ProjectsContainer = styled.div`
+  height: 100%;
+  width: 100%;
+
+  background-color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10rem 0rem 10rem 10rem;
+  @media (max-width: 1024px) {
+    padding: 1rem;
     height: 100%;
-    width: 100%;
-
-    background-color: #161616;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 10rem 0rem 10rem 10rem;
-    @media (max-width: 1024px) {
-      padding: 1rem;
-      height: 100%;
-    }
-    @media (max-width: 530px) {
-      height: 100%;
-    }
+  }
 `
 const ProjectSize = styled.div`
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 `
 const TitleProject = styled.h1`
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: white;
-    font-weight: 610;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: white;
+  font-weight: 610;
+`
+const DescriptionProject = styled.p`
+ font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+  color: #9e9b9b;
+`
+const EstimatePrice = styled.a`
+  max-width: 220px;
+  color: #FFF;
+  border: 2px solid rgb(61, 61, 61);
+  border-radius: 0px;
+  padding: 1rem 1rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif, monospace;
+  font-size: .9rem;
+  box-shadow: inset 0 0 0 0 #6d6d6d;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  &:hover {
+    box-shadow: inset 400px 0 0 0 #4d4d4d;
+  }
 `
 
 const Projects = () => {
@@ -70,6 +89,8 @@ const Projects = () => {
     <ProjectsContainer id="projects">
       <ProjectSize>
         <TitleProject>Projetos</TitleProject>
+        <DescriptionProject>Bem-vindo ao meu portfólio de projetos! Aqui, você encontrará uma coleção de trabalhos que representam minha paixão e dedicação ao mundo da programação. Cada projeto é uma expressão da minha criatividade e habilidades técnicas, cuidadosamente desenvolvidos para oferecer soluções práticas e funcionais.<br /><br />Explore esses projetos abaixo e sinta-se à vontade para entrar em contato caso deseje solicitar um orçamento. Estou animado para trabalhar em novos desafios e transformar suas ideias em realidade.</DescriptionProject>
+        <EstimatePrice href="/contact">Fazer um orçamento</EstimatePrice>
         {projectData.map((project, index) => (
           <ProjectCard
             key={index}

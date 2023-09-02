@@ -1,44 +1,41 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { FaLink, FaGithub } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { BiLinkExternal } from 'react-icons/bi';
 
 const ProjectContainerCard = styled.div`
     display: flex;
     flex-direction: flex;
-    max-width: 900px;
     @media (max-width: 1240px) {
       flex-direction: column;
       margin-bottom: 3rem;
     }
 `
 const ImgProject = styled.img`
-  height: 65%;
-  max-width: 100%;
   background: #1f1f1f;
   padding: 1.5rem 2rem 0rem 2rem;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
   @media (max-width: 1240px) {
-    border-top-right-radius: 15px;
+    max-width: 100%;
+    border-top-right-radius: 25px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
-  
 `;
 const DivTextProject = styled.div`
   background: #252525;
   padding: 1.1rem 2rem;
   max-height: 65%;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   @media (max-width: 1240px) {
   border-top-right-radius: 0px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
   }
 `
 const TitleProject = styled.h2`
@@ -77,6 +74,15 @@ const LanguageProject = styled.a`
     font-size: .8rem;
     color: #797979;
 `
+const LinkToWeb = styled.a`
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: .5rem 2rem;
+  background-color: white;
+  max-width: 250px;
+  margin-top: 2rem
+`
 
 const ProjectCard = ({
     imgproject,
@@ -98,16 +104,16 @@ const ProjectCard = ({
           <div>
             <LanguageProject>{language}</LanguageProject>
             <LinksProjectCard>
-              <LinkToRepoDeploy href={linkdeploy} target='_blank' rel='noreferrer'>
-                <p>Deploy</p>
-                <span><FaLink /></span>
-              </LinkToRepoDeploy>
               <LinkToRepoDeploy href={linkrepository} target='_blank' rel='noreferrer'>
                 <p>Repositório</p>
                 <span><FaGithub /></span>
-                </LinkToRepoDeploy>
+              </LinkToRepoDeploy>
             </LinksProjectCard>
           </div>
+          <LinkToWeb href={linkdeploy} target='_blank' rel='noreferrer'>
+            <span>Ver na web</span>
+            <BiLinkExternal />
+          </LinkToWeb>
         </DivTextProject>
       </ProjectContainerCard>
     );
