@@ -169,7 +169,7 @@ const Profile = () => {
             <ul>
                 <LinkNavegation icon={<FaLinkedin />} name="LinkedIn" link="https://www.linkedin.com/in/henriquepinheiroxavier/" target='_blank' rel='noreferrer' />
                 <LinkNavegation icon={<FaGithub/>} name="Github" link="https://github.com/henriquepx" target='_blank' rel='noreferrer' />
-                <LinkNavegation icon={<FaFilePdf />} name="CV" link="#footer" />
+                <LinkNavegation icon={<FaFilePdf />} href="/cv.pdf" name="CV" download />
             </ul>
       </Nav2>
 

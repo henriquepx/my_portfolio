@@ -38,7 +38,7 @@ const DescriptionProject = styled.p`
 const EstimatePrice = styled.a`
   max-width: 220px;
   color: #FFF;
-  border: 2px solid rgb(61, 61, 61);
+  border: 2px solid #3d3d3d;
   border-radius: 0px;
   padding: 1rem 1rem;
   text-align: center;
@@ -90,7 +90,7 @@ const Projects = () => {
       <ProjectSize>
         <TitleProject>Projetos</TitleProject>
         <DescriptionProject>Bem-vindo ao meu portfólio de projetos! Aqui, você encontrará uma coleção de trabalhos que representam minha paixão e dedicação ao mundo da programação. Cada projeto é uma expressão da minha criatividade e habilidades técnicas, cuidadosamente desenvolvidos para oferecer soluções práticas e funcionais.<br /><br />Explore esses projetos abaixo e sinta-se à vontade para entrar em contato caso deseje solicitar um orçamento. Estou animado para trabalhar em novos desafios e transformar suas ideias em realidade.</DescriptionProject>
-        <EstimatePrice href="/contact">Fazer um orçamento</EstimatePrice>
+        <EstimatePrice href="https://api.whatsapp.com/send?phone=5521964823939&text=Ol%C3%A1,%20Henrique.%20Gostaria%20de%20um%20or%C3%A7amento!" target='_blank' rel='noreferrer'>Fazer um orçamento</EstimatePrice>
         {projectData.map((project, index) => (
           <ProjectCard
             key={index}
