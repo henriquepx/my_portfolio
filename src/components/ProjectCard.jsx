@@ -79,9 +79,43 @@ const LinkToWeb = styled.a`
   gap: 10px;
   align-items: center;
   padding: .5rem 2rem;
-  background-color: white;
-  max-width: 250px;
-  margin-top: 2rem
+  background-color: #6d6d6d;
+  max-width: 175px;
+  border: none;
+  position: relative;
+  transition:800ms ease all;
+  outline: none;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+  color: #ffffff;
+
+  margin-top: 2rem;
+  &:hover {
+    background: #6d6d6d;
+    color: #fff;
+  }
+  &:before, &:after {
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #c0c0c0;
+    transition:400ms ease all;
+  }
+  &:after {
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  &:hover::before,
+  &:hover::after {
+    width:100%;
+    transition:800ms ease all;
+  }
 `
 
 const ProjectCard = ({
