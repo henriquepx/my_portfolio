@@ -103,6 +103,7 @@ const ChangeLanguage = styled.div`
         color: #cccbcb;
         background-color: #333232;
         border-radius: 10px;
+        cursor: pointer;
     }
     }
 `
