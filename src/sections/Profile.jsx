@@ -177,8 +177,8 @@ const Profile = () => {
 
       <Language>
         <ChangeLanguage>
-             <img src="/src/assets/brazilflag.png" alt="Bandeira do Brasil" />
-             <img src="/src/assets/euaflag.png" alt="Bandeira dos Estados Unidos" />
+             <img src="brazilflag.png" alt="Bandeira do Brasil" />
+             <img src="euaflag.png" alt="Bandeira dos Estados Unidos" />
         </ChangeLanguage>
       </Language>
 
