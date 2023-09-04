@@ -1,0 +1,25 @@
+{
+    "translation": {
+    
+    },
+    "profile": {
+        "sections": "Sections",
+        "aboutmesections": "About me",
+        "contactsections": "Contact",
+        "developer": "Front-end Developer",
+        "skillssections": "Skills",
+        "projectssections": "Projects",
+        "certificatessections": "Certificates"
+    },
+    "home": {
+        "TitleHome": "Front-end Developer",
+        "Home1": "Young developer specialized in building exceptional digital experiences. With proficiency in the most widely used web frameworks, I focus on turning ideas into reality, creating intuitive and attractive interfaces.",
+        "Home2A": "Browse my portfolio to discover the",
+        "Home2Aprojects": "projects",
+        "Home2B": "that I am proud to have contributed to. I am committed to demonstrating how my passion for Front-end development translates into concrete results. And if you'd like to have this Front-end Developer on your team or do Freelance work, just get in touch at",
+        "Home2Bcontact": "contact",
+        "Home2C": "and let's get to work.",
+        "HomeOpenToWork": "Available for work.",
+        "SeeMore": "See more about me"
+    }
+}

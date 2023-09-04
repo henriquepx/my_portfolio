@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import LinkNavegation from '../components/LinkNavegation';
 import { FaInfoCircle, FaCode, FaEnvelope, FaTrophy, FaLinkedin, FaGithub, FaFilePdf, FaDesktop } from 'react-icons/fa';
+import { useTranslation } from "react-i18next";
+import { useState } from 'react';
 
 const ContainerProfile = styled.div`
     position: relative;
@@ -116,28 +118,39 @@ const LinkToHome = styled.a`
 `
 const Profile = () => {
 
+    const { t, i18n } = useTranslation();
+
+    const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+
+    const handleChangeLanguage = (newLanguage) => {
+        if (newLanguage !== currentLanguage) {
+            i18n.changeLanguage(newLanguage);
+            setCurrentLanguage(newLanguage);
+        }
+    };
+
   return (
     <ContainerProfile>
             <LinkToHome href="/">
                 <ImgProfile src="profile.jpeg" alt="Foto profile do Henrique" />
                 <div>
                     <TitleProfile>Henrique Pinheiro</TitleProfile>
-                    <DescProfile><h3 href="#" data-replace="Freelancer"><span>Desenvolvedor Front-end</span></h3></DescProfile>
+                    <DescProfile><h3 href="#" data-replace="Freelancer"><span>{t('profile.developer')}</span></h3></DescProfile>
                 </div>
             </LinkToHome>
 
         <Nav2>
-            <h2>Sections</h2>
+            <h2>{t('profile.sections')}</h2>
             <ul>
                 <LinkNavegation
                 icon={<FaInfoCircle />}
-                name="Sobre mim"
+                name={t('profile.aboutmesections')}
                 link="about" 
                 />
 
                 <LinkNavegation
                 icon={<FaEnvelope />}
-                name="Contato"
+                name={t('profile.contactsections')}
                 link="footer"
                 />
             </ul>
@@ -148,19 +161,19 @@ const Profile = () => {
         <ul>
                 <LinkNavegation
                 icon={<FaCode />}
-                name="Habilidades"
+                name={t('profile.skillssections')}
                 link="skills"
                 />
 
                 <LinkNavegation
                 icon={<FaDesktop />}
-                name="Projetos"
+                name={t('profile.projectssections')}
                 link="projects"
                 />
 
                 <LinkNavegation
                 icon={<FaTrophy />}
-                name="Certificados"
+                name={t('profile.certificatessections')}
                 link="certificates"
                 />
         </ul>
@@ -176,11 +189,11 @@ const Profile = () => {
       </Nav2>
 
       <Language>
-        <ChangeLanguage>
-             <img src="brazilflag.png" alt="Bandeira do Brasil" />
-             <img src="euaflag.png" alt="Bandeira dos Estados Unidos" />
-        </ChangeLanguage>
-      </Language>
+                <ChangeLanguage>
+                    <img onClick={() => handleChangeLanguage('pt')} src="/brazilflag.png" alt="Bandeira do Brasil" />
+                    <img onClick={() => handleChangeLanguage('en')} src="/euaflag.png" alt="Bandeira dos Estados Unidos" />
+                </ChangeLanguage>
+            </Language>
 
     </ContainerProfile>
   )

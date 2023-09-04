@@ -1,0 +1,25 @@
+{
+    "translation": {
+    
+    },
+    "profile": {
+        "sections": "Sessões",
+        "aboutmesections": "Sobre mim",
+        "contactsections": "Contato",
+        "developer": "Desenvolvedor Front-end",
+        "skillssections": "Habilidades",
+        "projectssections": "Projetos",
+        "certificatessections": "Certificados"
+    },
+    "home": {
+        "TitleHome": "Desenvolvedor Front-end",
+        "Home1": "Jovem desenvolvedor especializado na construção de experiências digitais excepcionais. Com proficiência nos frameworks mais utilizados pra Web, tenho foco em transformar ideias em realidade, criando interfaces intuitivas e atraentes.",
+        "Home2A": "Navegue pelo meu portfólio para descobrir os",
+        "Home2Aprojects": "projetos",
+        "Home2B": "que tenho orgulho de ter contribuído. Estou comprometido em demonstrar como minha paixão pelo desenvolvimento Front-end se traduz em resultados concretos. E caso queira ter esse Desenvolvedor Front-end na sua equipe ou realizar um trabalho Freelancer, basta entrar em",
+        "Home2Bcontact": "contato",
+        "Home2C": "e vamos ao trabalho.",
+        "HomeOpenToWork": "Disponível pra trabalhos.",
+        "SeeMore": "Veja mais sobre mim"
+    }
+}

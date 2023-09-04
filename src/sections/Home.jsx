@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { BsArrowUpRight } from 'react-icons/bs';
+import { useTranslation } from "react-i18next";
 
 
 const ContainerHome = styled.div`
@@ -110,35 +110,16 @@ const Faixa = styled.div`
 
 const Home = () => {
 
-  const [typedText, setTypedText] = useState('');
-  const titleText = "Desenvolvedor Front-end";
-  const typingSpeed = 100; 
-
-  useEffect(() => {
-    let currentIndex = 0;
-    const interval = setInterval(() => {
-      if (currentIndex <= titleText.length) {
-        setTypedText(titleText.substring(0, currentIndex));
-        currentIndex++;
-      } else {
-        clearInterval(interval);
-      }
-    }, typingSpeed);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
+  const { t } = useTranslation();
 
   return (
     <ContainerHome>
-      <h1>{typedText}</h1>
-      <p>Jovem desenvolvedor especializado na construção de experiências digitais excepcionais. Com proficiência nos frameworks mais utilizados pra Web, tenho foco em transformar ideias em realidade, criando interfaces intuitivas e atraentes.</p>
-      <p>Navegue pelo meu portfólio para descobrir os <LinkHome href="projects">projetos</LinkHome> que tenho orgulho de ter contribuído. Estou comprometido em demonstrar como minha paixão pelo desenvolvimento Front-end se traduz em resultados concretos. E caso queira ter esse Desenvolvedor Front-end na sua equipe ou realizar um trabalho Freelancer, basta entrar em <LinkHome href="footer">contato</LinkHome> e vamos ao trabalho.</p>
-      <ArrowToAbout href="about"><span>Veja mais sobre mim <BsArrowUpRight /></span></ArrowToAbout>
+      <h1>{t("home.TitleHome")}</h1>
+      <p> {t("home.Home1")}</p>
+      <p>{t("home.Home2A")} <LinkHome href="projects">{t("home.Home2Aprojects")}</LinkHome> {t("home.Home2B")} <LinkHome href="footer">{t("home.Home2Bcontact")}</LinkHome> {t("home.Home2C")}</p>
+      <ArrowToAbout href="about"><span>{t("home.SeeMore")} <BsArrowUpRight /></span></ArrowToAbout>
       <Faixa>
-        <p>Disponível pra trabalhos.</p>
+        <p>{t("home.HomeOpenToWork")}</p>
       </Faixa>
     </ContainerHome>
   )
