@@ -21,5 +21,18 @@
         "Home2C": "and let's get to work.",
         "HomeOpenToWork": "Available for work.",
         "SeeMore": "See more about me"
+    },
+    "about": {
+        "AboutTitle": "About Henrique",
+        "AboutLastAtt": "last update: 31/08/2023",
+        "About1": "My name is Henrique Pinheiro, I'm 21 years old and I'm a Front-end Software Developer living in Rio de Janeiro.",
+        "About2": "At the time, I remember asking my mother to set up a PayPal account, but she didn't think much of it and I had a very peculiar idea: I started asking for games as payment. The result? Today, many of the games I own on Steam were obtained through exchanges for thumbnail creation work.",
+        "About3": "As time progressed, my priorities began to change, I directed my energy towards my studies in high school and preparing for the university entrance exam. During high school, I wondered about my professional future. Considering alternatives such as Chemical Engineering, Statistics, and Mathematics, it was by exploring the vastness of the web that I found the answer. The decision to become a Front-end Developer, building websites and immersing myself in the world of technology, appealed to me irresistibly. My affinity with design and ability to create attractive and functional digital solutions aligned with this choice.",
+        "About4A": "My journey intensified when I started studying Systems Analysis and Development and when I signed up for the Alura course.In just 30 days, my first",
+        "About4Aproject": "project",
+        "About4B": "gained great recognition on LinkedIn, strengthening my determination. Since then, I've been creating projects with a focus on quality and the continuous search for improvement, aware that constant learning is the key to success.",
+        "About5": "The field of technology, and especially Software Development, requires dedication to constant updating.I am aware that the industry evolves rapidly, and I am committed to staying ahead of these changes. As a professional, investing time in study and experimentation is essential to staying relevant and competitive. I believe that learning is a continuous journey, and I am eager to embrace new challenges and opportunities.",
+        "About6": "My personality is characterized by perseverance, resilience and preparation. I see every obstacle as a chance to grow, and my pursuit of excellence drives my daily actions.I am committed to making a significant contribution to any team and project I get involved in.",
+        "About7": "Fun facts about me: I like running, reading books on economics and investments, and my favorite hobbies are dining out and getting to know different cuisines with the woman in my life, traveling, and watching soccer."
     }
 }

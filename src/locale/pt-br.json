@@ -21,5 +21,18 @@
         "Home2C": "e vamos ao trabalho.",
         "HomeOpenToWork": "Disponível pra trabalhos.",
         "SeeMore": "Veja mais sobre mim"
+    },
+    "about": {
+        "AboutTitle": "Sobre o Henrique",
+        "AboutLastAtt": "última atualização: 31/08/2023",
+        "About1": "Meu nome é Henrique Pinheiro, tenho 21 anos e sou Desenvolvedor de Software Front-end, residente no Rio de Janeiro.",
+        "About2": "Naquela época, lembro-me de ter solicitado à minha mãe que criasse uma conta no PayPal, ela acabou não dando tanto ideia e tive uma ideia bem peculiar: passei a pedir jogos como forma de pagamento. O resultado? Hoje, muitos dos jogos que possuo na Steam foram obtidos por meio de trocas por trabalhos de criação de thumbnails.",
+        "About3": "À medida que o tempo avançava, minhas prioridades começaram a mudar, direcionei minha energia para meus estudos no ensino médio e a preparação para o vestibular. No período do ensino médio, me questionei sobre meu futuro profissional. Considerando alternativas como Engenharia Química, Estatística e Matemática, foi ao explorar a vastidão da web que encontrei a resposta. A decisão de me tornar um Desenvolvedor Front-end, construindo websites e imergindo no mundo da tecnologia, me atraiu de forma irresistível. Minha afinidade com o design e a capacidade de criar soluções digitais atraentes e funcionais se alinharam com essa escolha.",
+        "About4A": "Minha jornada se intensificou ao ingressar na faculdade de Análise e Desenvolvimento de Sistemas, bem como ao assinar o curso da Alura. Em apenas 30 dias, meu primeiro", 
+        "About4Aproject": "projeto",
+        "About4B": "ganhou grande reconhecimento no LinkedIn, fortalecendo minha determinação. Desde então, tenho criado projetos com foco na qualidade e na contínua busca por aperfeiçoamento, ciente de que a aprendizagem constante é a chave para o sucesso.",
+        "About5": "A área de tecnologia, e especialmente o Desenvolvimento de Software, exige dedicação à constante atualização. Estou consciente de que a indústria evolui rapidamente, e estou comprometido em estar sempre à frente dessas mudanças. Como profissional, investir tempo em estudo e experimentação é essencial para me manter relevante e competitivo. Acredito que o aprendizado é uma jornada contínua, e estou ansioso para abraçar novos desafios e oportunidades.",
+        "About6": "Minha personalidade é caracterizada pela perseverança, resiliência e preparação. Encaro cada obstáculo como uma chance de crescimento, e minha busca pela excelência impulsiona minhas ações diárias. Estou comprometido em contribuir de forma significativa em qualquer equipe e projeto em que eu me envolva.",
+        "About7": "Curiosidades sobre mim: gosto de correr, ler livros sobre Economia e Investimentos, meu hobbie preferido é jantar fora e conhecer culinária diferente com a companhia da mulher da minha vida, viajar e assistir futebol."
     }
 }

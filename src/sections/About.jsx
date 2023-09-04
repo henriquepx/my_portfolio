@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useTranslation } from "react-i18next";
 
 const ContainerAbout = styled.div`
     height: 100%;
@@ -100,24 +101,26 @@ const TextAtt = styled.h3`
 `
 
 const About = () => {
+
+  const { t } = useTranslation();
+
   return (
     <ContainerAbout id='about'>
         <AboutSize>
           <AboutPhotoText>
             <ImgAboutHenrique src="pic.jpeg" alt="Foto do Henrique" />
             <div>
-              <TitleAbout>Sobre o Henrique</TitleAbout>
-              <TextAtt>última atualização: 31/08/2023</TextAtt>
+              <TitleAbout>{t("about.AboutTitle")}</TitleAbout>
+              <TextAtt>{t("about.AboutLastAtt")}</TextAtt>
               <DescriptionAbout>
                 <DivInfoDescMe>
-                  <DescAbout>Meu nome é Henrique Pinheiro, tenho 21 anos e sou Desenvolvedor de Software Front-end, residente no Rio de Janeiro.</DescAbout>
-                  <DescAbout>Na minha adolescência, enquanto passava horas diante do computador, comecei minha jornada criando thumbnails para criadores de conteúdo de Minecraft. Mostrando dedicação sempre que algo me interessava, aprendi rapidamente a mexer no Cinema 4D. Apreciador do design, sempre encontrei prazer em construir aplicações. Por um período, também me aventurei na criação de animações relacionadas ao universo do Minecraft. No entanto, à medida que fui parando de jogar, acabei me distânciando.</DescAbout>
-                  <DescAbout>Naquela época, lembro-me de ter solicitado à minha mãe que criasse uma conta no PayPal, ela acabou não dando tanto ideia e tive uma ideia bem peculiar: passei a pedir jogos como forma de pagamento. O resultado? Hoje, muitos dos jogos que possuo na Steam foram obtidos por meio de trocas por trabalhos de criação de thumbnails.</DescAbout>
-                  <DescAbout>À medida que o tempo avançava, minhas prioridades começaram a mudar, direcionei minha energia para meus estudos no ensino médio e a preparação para o vestibular. No período do ensino médio, me questionei sobre meu futuro profissional. Considerando alternativas como Engenharia Química, Estatística e Matemática, foi ao explorar a vastidão da web que encontrei a resposta. A decisão de me tornar um Desenvolvedor Front-end, construindo websites e imergindo no mundo da tecnologia, me atraiu de forma irresistível. Minha afinidade com o design e a capacidade de criar soluções digitais atraentes e funcionais se alinharam com essa escolha.</DescAbout>
-                  <DescAbout>Minha jornada se intensificou ao ingressar na faculdade de Análise e Desenvolvimento de Sistemas, bem como ao assinar o curso da Alura. Em apenas 30 dias, meu primeiro <LinkAbout href="https://www.linkedin.com/posts/henriquepinheiroxavier_primeiro-per%C3%ADodo-na-faculdade-de-an%C3%A1lise-activity-6924080275446468608-3hl1?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">projeto</LinkAbout> ganhou grande reconhecimento no LinkedIn, fortalecendo minha determinação. Desde então, tenho criado projetos com foco na qualidade e na contínua busca por aperfeiçoamento, ciente de que a aprendizagem constante é a chave para o sucesso.</DescAbout>
-                  <DescAbout>A área de tecnologia, e especialmente o Desenvolvimento de Software, exige dedicação à constante atualização. Estou consciente de que a indústria evolui rapidamente, e estou comprometido em estar sempre à frente dessas mudanças. Como profissional, investir tempo em estudo e experimentação é essencial para me manter relevante e competitivo. Acredito que o aprendizado é uma jornada contínua, e estou ansioso para abraçar novos desafios e oportunidades.</DescAbout>
-                  <DescAbout>Minha personalidade é caracterizada pela perseverança, resiliência e preparação. Encaro cada obstáculo como uma chance de crescimento, e minha busca pela excelência impulsiona minhas ações diárias. Estou comprometido em contribuir de forma significativa em qualquer equipe e projeto em que eu me envolva.</DescAbout>
-                  <DescAbout>Curiosidades sobre mim: gosto de correr, ler livros sobre Economia e Investimentos, meu hobbie preferido é jantar fora e conhecer culinária diferente com a companhia da mulher da minha vida, viajar e assistir futebol.</DescAbout>
+                  <DescAbout>{t("about.About1")}</DescAbout>
+                  <DescAbout>{t("about.About2")}</DescAbout>
+                  <DescAbout>{t("about.About3")}</DescAbout>
+                  <DescAbout>{t("about.About4A")} <LinkAbout href="https://www.linkedin.com/posts/henriquepinheiroxavier_primeiro-per%C3%ADodo-na-faculdade-de-an%C3%A1lise-activity-6924080275446468608-3hl1?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">{t("about.About4Aproject")}</LinkAbout> {t("about.About4B")}</DescAbout>
+                  <DescAbout>{t("about.About5")}</DescAbout>
+                  <DescAbout>{t("about.About6")}</DescAbout>
+                  <DescAbout>{t("about.About7")}</DescAbout>
                 </DivInfoDescMe>
               </DescriptionAbout>
             </div> 
