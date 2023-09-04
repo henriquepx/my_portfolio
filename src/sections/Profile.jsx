@@ -89,22 +89,18 @@ const Nav2 = styled.nav`
 const Language = styled.div`
     position: absolute;
     bottom: 20px;
+    width: 100%;
 `
 const ChangeLanguage = styled.div`
     display: flex;
-    justify-content: space-around;
-
+    align-items: center;
+    gap: 10px;
     color: #9e9b9b;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
-    p {
-        padding: .4rem;
-        border: 1px solid transparent;
-        &:hover {
-        color: #cccbcb;
-        background-color: #333232;
-        border-radius: 10px;
-        cursor: pointer;
-    }
+    img {
+        height: 100%;
+        width: 13%;
     }
 `
 const LinkToHome = styled.a`
@@ -176,10 +172,11 @@ const Profile = () => {
 
       <Language>
         <ChangeLanguage>
-             <p>Português</p>
-             <p>English</p>
+             <img src="/src/assets/brazilflag.png" alt="Bandeira do Brasil" />
+             <img src="/src/assets/euaflag.png" alt="Bandeira dos Estados Unidos" />
         </ChangeLanguage>
       </Language>
+
     </ContainerProfile>
   )
 }
