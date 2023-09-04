@@ -100,7 +100,12 @@ const ChangeLanguage = styled.div`
     font-family: 'Montserrat', sans-serif;
     img {
         height: 100%;
-        width: 13%;
+        width: 12%;
+        cursor: pointer;
+        filter: grayscale(100%);
+        &:hover {
+            filter: grayscale(0%);
+        }
     }
 `
 const LinkToHome = styled.a`
