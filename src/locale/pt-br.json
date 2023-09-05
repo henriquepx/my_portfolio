@@ -62,7 +62,7 @@
 	    "SkillsText1": "Atualmente, meu foco principal é no desenvolvimento front-end. Acredito que a experiência do usuário é fundamental, e estou empenhado em criar interfaces de usuário atraentes e intuitivas que proporcionem uma ótima experiência aos usuários finais.",
 	    "SkillsText2": "Além disso, estou sempre em busca de aprendizado contínuo. Estou explorando novas tecnologias, como TypeScript e Angular, para expandir ainda mais meu conjunto de habilidades e abraçar desafios mais amplos no futuro.",
 	    "SkillsText3": "Meu objetivo final é me tornar um desenvolvedor Fullstack, mas estou ciente da importância de construir uma base sólida no front-end antes de prosseguir para o back-end. Estou comprometido em me manter atualizado com as últimas tendências e melhores práticas do setor, para que eu possa contribuir de maneira significativa para projetos empolgantes e desafiadores."
-},
+    },
     "project": {
         "ProjectName": "Projetos",
 	    "ProjectDesc1": "Bem-vindo ao meu portfólio de projetos! Aqui, você encontrará uma coleção de trabalhos que representam minha paixão e dedicação ao mundo da programação. Cada projeto é uma expressão da minha criatividade e habilidades técnicas, cuidadosamente desenvolvidos para oferecer soluções práticas e funcionais.",
@@ -74,9 +74,12 @@
 	    "RXDescription": "Projeto completo de um e-commerce, com tela de login, registo, carrinho de compras, páginas de produtos individuais e etc...",
  	    "JapapouAlt": "Japapou Tela",
 	    "JapapouDescription": "Projeto de prática do React para aprimorar as habilidades, utilizando hooks e props pra comunicação de componentes, useState e useContext."
-},
+    },
     "footer": {
         "FooterName": "Contato",
         "FooterDesc": "Tem uma dúvida, proposta ou quer apenas conversar? Mande uma mensagem."
+    },
+    "header": {
+        "HeaderDesc": "Desenvolvedor Front-end"
     }
 }

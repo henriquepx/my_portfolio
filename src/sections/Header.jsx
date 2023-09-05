@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
 import Profile from './Profile';
+import { useTranslation } from "react-i18next";
 
 const HeaderContainer = styled.div`
     height: 10vh;
@@ -63,6 +64,8 @@ const MenuHamburger = styled.div`
   }
 `;
 const Header = () => {
+  const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [showHeader, setShowHeader] = useState(windowWidth <= 1024);
@@ -108,7 +111,7 @@ const Header = () => {
               <LinkToHome href="/">
                 <div>
                   <TitleProfile>Henrique Pinheiro</TitleProfile>
-                  <DescProfile>Desenvolvedor Front-end</DescProfile>
+                  <DescProfile>{t("header.HeaderDesc")}</DescProfile>
                 </div>
               </LinkToHome>
               <MenuHamburger open={isOpen} onClick={() => { toggleMenu(); toggleProfile(); }}>
