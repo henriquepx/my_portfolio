@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import ProjectCard from '../components/ProjectCard';
+import { useTranslation } from "react-i18next";
 
 const ProjectsContainer = styled.div`
   height: 100%;
@@ -54,43 +55,45 @@ const EstimatePrice = styled.a`
 `
 
 const Projects = () => {
+  
+const { t } = useTranslation();
 
-  const projectData = [
-    {
-      img: "/spotifyscreen.png",
-      alt: "Spotify Tela",
-      title: "Spotify",
-      desc: "Projeto clone do site oficial do Spotify. O clone inclui todas as páginas principais do site original!",
-      language: "HTML, CSS, JavaScript e Sass",
-      linkrepository: "https://github.com/henriquepx/spotify_clone",
-      linkdeploy: "https://spotify-clone-henriqdev.netlify.app/index.html",
-    },
-    {
-      img: "/rexpeitascreen.png",
-      alt: "Rexpeita Tela",
-      title: "Rexpeita",
-      desc: "Projeto completo de um e-commerce, com tela de login, registo, carrinho de compras, páginas de produtos individuais e etc...",
-      language: "HTML, CSS, JavaScript e Sass",
-      linkrepository: "https://github.com/henriquepx/ecommerce_rexpeita",
-      linkdeploy: "https://rexpeita-ecommerce.netlify.app/index.html",
-    },
-    {
-      img: "/japascreen.png",
-      alt: "Japapou Tela",
-      title: "Japapou?",
-      desc: "Projeto de prática do React para aprimorar as habilidades, utilizando hooks e props pra comunicação de componentes, useState e useContext.",
-      language: "ReactJS e CSS Modules",
-      linkrepository: "https://github.com/henriquepx/app-order-food",
-      linkdeploy: "https://app-order-food.vercel.app/",
-    },
-  ];
+const projectData = [
+  {
+    img: "/spotifyscreen.png",
+    alt: t("project.SpotifyAlt"), 
+    title: "Spotify",
+    desc: t("project.SpotifyDescription"), 
+    language: "HTML, CSS, JavaScript e Sass",
+    linkrepository: "https://github.com/henriquepx/spotify_clone",
+    linkdeploy: "https://spotify-clone-henriqdev.netlify.app/index.html",
+  },
+  {
+    img: "/rexpeitascreen.png",
+    alt: t("project.RXAlt"),
+    title: "Rexpeita",
+    desc: t("project.RXDescription"),
+    language: "HTML, CSS, JavaScript e Sass",
+    linkrepository: "https://github.com/henriquepx/ecommerce_rexpeita",
+    linkdeploy: "https://rexpeita-ecommerce.netlify.app/index.html",
+  },
+  {
+    img: "/japascreen.png",
+    alt: t("project.JapapouAlt"),
+    title: "Japapou?",
+    desc: t("project.JapapouDescription"),
+    language: "ReactJS e CSS Modules",
+    linkrepository: "https://github.com/henriquepx/app-order-food",
+    linkdeploy: "https://app-order-food.vercel.app/",
+  },
+];
 
   return (
     <ProjectsContainer id="projects">
       <ProjectSize>
-        <TitleProject>Projetos</TitleProject>
-        <DescriptionProject>Bem-vindo ao meu portfólio de projetos! Aqui, você encontrará uma coleção de trabalhos que representam minha paixão e dedicação ao mundo da programação. Cada projeto é uma expressão da minha criatividade e habilidades técnicas, cuidadosamente desenvolvidos para oferecer soluções práticas e funcionais.<br /><br />Explore esses projetos abaixo e sinta-se à vontade para entrar em contato caso deseje solicitar um orçamento. Estou animado para trabalhar em novos desafios e transformar suas ideias em realidade.</DescriptionProject>
-        <EstimatePrice href="https://api.whatsapp.com/send?phone=5521964823939&text=Ol%C3%A1,%20Henrique.%20Gostaria%20de%20um%20or%C3%A7amento!" target='_blank' rel='noreferrer'>Fazer um orçamento</EstimatePrice>
+        <TitleProject>{t("project.ProjectName")}</TitleProject>
+        <DescriptionProject>{t("project.ProjectDesc1")}<br /><br />{t("project.ProjectDesc2")}</DescriptionProject>
+        <EstimatePrice href="https://api.whatsapp.com/send?phone=5521964823939&text=Ol%C3%A1,%20Henrique.%20Gostaria%20de%20um%20or%C3%A7amento!" target='_blank' rel='noreferrer'>{t("project.ProjectPrice")}</EstimatePrice>
         {projectData.map((project, index) => (
           <ProjectCard
             key={index}

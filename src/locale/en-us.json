@@ -62,5 +62,17 @@
 	    "SkillsText1": "Currently, my main focus is on front-end development. I believe that user experience is key, and I'm committed to creating attractive and intuitive user interfaces that provide a great experience for end users.",
 	    "SkillsText2": "What's more, I'm always on the lookout for continuous learning. I'm exploring new technologies, such as TypeScript and Angular, to further expand my skill set and embrace broader challenges in the future.",
 	    "SkillsText3": "My ultimate goal is to become a Fullstack developer, but I'm aware of the importance of building a solid foundation on the front end before moving on to the back end. I'm committed to keeping up to date with the latest industry trends and best practices so that I can make a meaningful contribution to exciting and challenging projects."
+},
+    "project": {
+        "ProjectName": "Projects",
+        "ProjectDesc1": "Welcome to my project portfolio! Here you'll find a collection of work that represents my passion and dedication to the world of programming. Each project is an expression of my creativity and technical skills, carefully developed to offer practical and functional solutions.",
+        "ProjectDesc2": "Explore these projects below and feel free to get in touch if you'd like to request a quote. I'm excited to work on new challenges and turn your ideas into reality.",
+        "ProjectPrice": "Make an estimate",
+        "SpotifyAlt": "Spotify Screen",
+        "SpotifyDescription": "Clone project of Spotify's official website. The clone includes all the main pages of the original site!",
+        "RXAlt": "Rexpeita Screen",
+        "RXDescription": "Complete e-commerce project, with login screen, registration, shopping cart, individual product pages, etc...",
+        "JapapouAlt": "Japapou Screen",
+        "JapapouDescription": "React practice project to improve skills, using hooks and props to communicate components, useState and useContext."
 }
 }
