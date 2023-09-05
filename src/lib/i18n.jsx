@@ -13,7 +13,7 @@ i18n.use(initReactI18next).init({
             translation: ptTranslations,
         },
     },
-    lng: 'pt',
+    lng: localStorage.getItem("newLanguage") || 'pt',
 });
 
 export default i18n;

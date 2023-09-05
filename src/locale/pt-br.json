@@ -74,6 +74,9 @@
 	    "RXDescription": "Projeto completo de um e-commerce, com tela de login, registo, carrinho de compras, páginas de produtos individuais e etc...",
  	    "JapapouAlt": "Japapou Tela",
 	    "JapapouDescription": "Projeto de prática do React para aprimorar as habilidades, utilizando hooks e props pra comunicação de componentes, useState e useContext."
-}
-
+},
+    "footer": {
+        "FooterName": "Contato",
+        "FooterDesc": "Tem uma dúvida, proposta ou quer apenas conversar? Mande uma mensagem."
+    }
 }

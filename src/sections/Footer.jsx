@@ -1,5 +1,6 @@
-import styled from 'styled-components'
-import Form from '../components/Form'
+import styled from 'styled-components';
+import Form from '../components/Form';
+import { useTranslation } from "react-i18next";
 
 const ContainerFooter = styled.footer`
     height: 100vh;
@@ -38,11 +39,14 @@ const DescFooter = styled.p`
 `
 
 const Footer = () => {
+
+const { t } = useTranslation();
+
 return (
         <ContainerFooter id='footer'>
             <FooterSize>
-                <TitleFooter>Contact</TitleFooter>
-                <DescFooter>Tem uma dúvida, proposta ou quer apenas conversar? Mande uma mensagem.</DescFooter>
+                <TitleFooter>{t("footer.FooterName")}</TitleFooter>
+                <DescFooter>{t("footer.FooterDesc")}</DescFooter>
                 <Form />
             </FooterSize>
         </ContainerFooter>

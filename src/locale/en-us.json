@@ -74,5 +74,9 @@
         "RXDescription": "Complete e-commerce project, with login screen, registration, shopping cart, individual product pages, etc...",
         "JapapouAlt": "Japapou Screen",
         "JapapouDescription": "React practice project to improve skills, using hooks and props to communicate components, useState and useContext."
-}
+},
+    "footer": {
+        "FooterName": "Contact",
+        "FooterDesc": "Do you have a question, a proposal or just want to chat? Send us a message."
+    }
 }

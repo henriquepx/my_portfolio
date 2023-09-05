@@ -126,6 +126,7 @@ const Profile = () => {
         if (newLanguage !== currentLanguage) {
             i18n.changeLanguage(newLanguage);
             setCurrentLanguage(newLanguage);
+            localStorage.setItem("newLanguage", newLanguage);
         }
     };
 
