@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useRef  } from 'react';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from "react-i18next";
 
 const ContainerForm = styled.div`
    width: 100%;
@@ -67,6 +68,9 @@ const EveryInput = styled.div`
 `
 
 const Form = () => {
+
+    const { t } = useTranslation();
+
     const form = useRef();
 
   const sendEmail = (e) => {
@@ -86,10 +90,10 @@ const Form = () => {
             <FormStyle ref={form} onSubmit={sendEmail}>
                 <NameEmail>
                     <EveryInput>
-                        <LabelForm htmlFor="user_name">Nome:</LabelForm>
+                        <LabelForm htmlFor="user_name">{t("contact.ContactName")}</LabelForm>
                         <InputStyle 
                             type="text"
-                            placeholder="Digite seu nome"
+                            placeholder={t("contact.ContactPlaceName")}
                             name="from_name"
                             id="user_name"
                         />
@@ -98,20 +102,20 @@ const Form = () => {
                     <LabelForm htmlFor="user_email">E-mail:</LabelForm>
                     <InputStyle 
                         type="text"
-                        placeholder="Digite seu email"
+                        placeholder={t("contact.ContactPlaceEmail")}
                         name="reply_to"
                         id="user_email"
                     />
                     </EveryInput>
                 </NameEmail>
-                <LabelForm htmlFor="message">Mensagem:</LabelForm>
+                <LabelForm htmlFor="message">{t("contact.ContactMessage")}</LabelForm>
                 <TextareaStyle 
-                    placeholder="Digite sua mensagem..."
+                    placeholder={t("contact.ContactPlaceMessage")}
                     name="message"
                     id="message"
                 />
 
-                <ButtonSubmitForm type="submit" value="Send">Enviar</ButtonSubmitForm>
+                <ButtonSubmitForm type="submit" value="Send">{t("contact.Submit")}</ButtonSubmitForm>
             </FormStyle>
         </ContainerForm>
     );

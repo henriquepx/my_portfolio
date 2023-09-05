@@ -10,7 +10,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Profile from './sections/Profile';
 import Certificates from './sections/Certificates';
 
-
 function App() {
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

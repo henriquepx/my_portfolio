@@ -34,5 +34,13 @@
         "About5": "A área de tecnologia, e especialmente o Desenvolvimento de Software, exige dedicação à constante atualização. Estou consciente de que a indústria evolui rapidamente, e estou comprometido em estar sempre à frente dessas mudanças. Como profissional, investir tempo em estudo e experimentação é essencial para me manter relevante e competitivo. Acredito que o aprendizado é uma jornada contínua, e estou ansioso para abraçar novos desafios e oportunidades.",
         "About6": "Minha personalidade é caracterizada pela perseverança, resiliência e preparação. Encaro cada obstáculo como uma chance de crescimento, e minha busca pela excelência impulsiona minhas ações diárias. Estou comprometido em contribuir de forma significativa em qualquer equipe e projeto em que eu me envolva.",
         "About7": "Curiosidades sobre mim: gosto de correr, ler livros sobre Economia e Investimentos, meu hobbie preferido é jantar fora e conhecer culinária diferente com a companhia da mulher da minha vida, viajar e assistir futebol."
+    },
+    "contact": {
+        "ContactName": "Nome: ",
+        "ContactPlaceName": "Digite seu nome: ",
+        "ContactPlaceEmail": "Digite seu e-mail: ",
+        "ContactMessage": "Mensagem: ",
+        "ContactPlaceMessage": "Digite seu e-mail: ",
+        "Submit": "Enviar" 
     }
 }

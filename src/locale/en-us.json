@@ -34,5 +34,13 @@
         "About5": "The field of technology, and especially Software Development, requires dedication to constant updating.I am aware that the industry evolves rapidly, and I am committed to staying ahead of these changes. As a professional, investing time in study and experimentation is essential to staying relevant and competitive. I believe that learning is a continuous journey, and I am eager to embrace new challenges and opportunities.",
         "About6": "My personality is characterized by perseverance, resilience and preparation. I see every obstacle as a chance to grow, and my pursuit of excellence drives my daily actions.I am committed to making a significant contribution to any team and project I get involved in.",
         "About7": "Fun facts about me: I like running, reading books on economics and investments, and my favorite hobbies are dining out and getting to know different cuisines with the woman in my life, traveling, and watching soccer."
+    },
+    "contact": {
+        "ContactName": "Name: ",
+        "ContactPlaceName": "Write your name: ",
+        "ContactPlaceEmail": "Write your e-mail: ",
+        "ContactMessage": "Message: ",
+        "ContactPlaceMessage": "Write your e-mail: ",
+        "Submit": "Submit" 
     }
 }
