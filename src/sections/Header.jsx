@@ -22,7 +22,7 @@ const HeaderSize = styled.div`
     align-items: center;
     justify-content: space-between;
 `
-const LinkToHome = styled.div`
+const LinkToHome = styled.a`
     display: flex;
     align-items: center;
     gap: 10px;
