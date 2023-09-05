@@ -43,8 +43,8 @@
         "ContactPlaceMessage": "Write your e-mail: ",
         "Submit": "Submit" 
     },
-    "project": {
-        "ProjectName": "Skills",
+    "skill": {
+        "SkillName": "Skills",
         "ReactDescription": "Library of interactive interfaces.",
         "JavaScriptDescription": "Language for web development.",
         "StyledCompoDescription": "Component styling.",
@@ -57,7 +57,7 @@
         "NodeDescription": "JavaScript Server Environment.",
 	    "SQLDescription": "Relational Data Management.",
         "AngularDescription": "Scalable framework.",
-	    "ProjectLearning": "Learning",
+	    "SkillLearning": "Learning",
 	    "SkillsTextT": "Future plans.",
 	    "SkillsText1": "Currently, my main focus is on front-end development. I believe that user experience is key, and I'm committed to creating attractive and intuitive user interfaces that provide a great experience for end users.",
 	    "SkillsText2": "What's more, I'm always on the lookout for continuous learning. I'm exploring new technologies, such as TypeScript and Angular, to further expand my skill set and embrace broader challenges in the future.",

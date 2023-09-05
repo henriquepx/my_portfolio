@@ -78,77 +78,77 @@ const Skills = () => {
     <SkillsContainer id='skills'>
         <SkillsSize>
            
-<TitleSkills>{t("project.ProjectName")}</TitleSkills>
+<TitleSkills>{t("skill.SkillName")}</TitleSkills>
             <SkillsWrap>
                 <LanguageSkill
                     icon="/skills/react.png" 
                     title="React" 
-                    description={t("project.ReactDescription")}
+                    description={t("skill.ReactDescription")}
                 />
                 <LanguageSkill
                     icon="/skills/javascript.png" 
                     title="JavaScript" 
-                    description={t("project.JavaScriptDescription")}
+                    description={t("skill.JavaScriptDescription")}
                 />
                 <LanguageSkill
                     icon="/skills/styledcomponents.png" 
                     title="Styled Components" 
-                    description={t("project.StyledCompoDescription")}
+                    description={t("skill.StyledCompoDescription")}
                 />
                 <LanguageSkill
                     icon="/skills/sass.png" 
                     title="Sass" 
-                    description={t("project.SassDescription")}
+                    description={t("skill.SassDescription")}
                 />
                 <LanguageSkill
                     icon="/skills/tailwind.png" 
                     title="Tailwind" 
-                    description={t("project.TailwindDescription")}
+                    description={t("skill.TailwindDescription")}
                 />
                 <LanguageSkill
                     icon="/skills/bootstrap.png" 
                     title="Bootstrap" 
-                    description={t("project.BoostrapDescription")}
+                    description={t("skill.BoostrapDescription")}
                 />
                 <LanguageSkill
                     icon="/skills/css.png" 
                     title="CSS" 
-                    description={t("project.CSSDescription")}
+                    description={t("skill.CSSDescription")}
                 />
                 <LanguageSkill
                     icon="/skills/html.png" 
                     title="HTML" 
-                    description={t("project.HTMLDescription")}
+                    description={t("skill.HTMLDescription")}
                 />
             </SkillsWrap>
-            <LearningSkills>{t("project.ProjectLearning")}</LearningSkills>
+            <LearningSkills>{t("skill.SkillLearning")}</LearningSkills>
             <SkillsWrap>
                 <LanguageSkill
                     icon="/skills/typescript.png" 
                     title="TypeScript" 
-                    description={t("project.TypeScriptDescription")}
+                    description={t("skill.TypeScriptDescription")}
                 />
                 <LanguageSkill
                     icon="/skills/angular.png" 
                     title="Angular" 
-                    description={t("project.AngularDescription")}
+                    description={t("skill.AngularDescription")}
                 />
                 <LanguageSkill
                     icon="/skills/sql.png" 
                     title="SQL" 
-                    description={t("project.SQLDescription")}
+                    description={t("skill.SQLDescription")}
                 />
                 <LanguageSkill
                     icon="/skills/nodejs.png" 
                     title="NodeJS" 
-                    description={t("project.NodeDescription")}
+                    description={t("skill.NodeDescription")}
                 />
             </SkillsWrap>
             <TextAboutSkills>
-                <h3>{t("project.SkillsTextT")}</h3>
-                <p>{t("project.SkillsText1")}</p>
-                <p>{t("project.SkillsText2")}</p>
-                <p>{t("project.SkillsText3")}</p>
+                <h3>{t("skill.SkillsTextT")}</h3>
+                <p>{t("skill.SkillsText1")}</p>
+                <p>{t("skill.SkillsText2")}</p>
+                <p>{t("skill.SkillsText3")}</p>
             </TextAboutSkills>
         </SkillsSize>
     </SkillsContainer>
