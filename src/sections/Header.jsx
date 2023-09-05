@@ -122,7 +122,7 @@ const Header = () => {
             </HeaderSize>
           </HeaderContainer>
         )}
-         {showProfile && <Profile />}
+         {showProfile && <Profile showProfile={showProfile} />}
       </div>
     );
   };

@@ -1,9 +1,18 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import LinkNavegation from '../components/LinkNavegation';
 import { FaInfoCircle, FaCode, FaEnvelope, FaLinkedin, FaGithub, FaFilePdf, FaDesktop } from 'react-icons/fa';
 import { useTranslation } from "react-i18next";
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
+const slideIn = keyframes`
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+`;
 const ContainerProfile = styled.div`
     position: relative;
     position: fixed;
@@ -19,6 +28,7 @@ const ContainerProfile = styled.div`
     flex-direction: column;
     padding: 1.7rem;
     
+    animation: ${props => props.showProfile ? slideIn : 'none'} 0.3s ease-in-out;
     @media (max-width: 320px) {
         width: 75%;
     }
@@ -116,7 +126,7 @@ const LinkToHome = styled.a`
     gap: 10px;
     margin-bottom: 1rem;
 `
-const Profile = () => {
+const Profile = ({ showProfile }) => {
 
     const { t, i18n } = useTranslation();
 
@@ -131,7 +141,7 @@ const Profile = () => {
     };
 
   return (
-    <ContainerProfile>
+    <ContainerProfile showProfile={showProfile}>
             <LinkToHome href="/">
                 <ImgProfile src="profile.jpeg" alt="Foto profile do Henrique" />
                 <div>
@@ -192,6 +202,10 @@ const Profile = () => {
 
     </ContainerProfile>
   )
-}
+};
+
+Profile.propTypes = {
+    showProfile: PropTypes.bool.isRequired,
+};
 
 export default Profile;
