@@ -19,7 +19,7 @@
 
 Welcome to the repository of my personal portfolio! This project showcases my skills and experiences as a developer. The portfolio is built using React, aiming to provide a comprehensive overview of my abilities.
 
-**To view my portfolio online, click [here](https://my-portfolio-henriquepx.vercel.app/).**
+**To view my portfolio online, click [here](https://portfolio-henriquepx.vercel.app/).**
 
 ## About Me
 

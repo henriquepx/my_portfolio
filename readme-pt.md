@@ -17,7 +17,7 @@
 
 Bem-vindo ao repositório do meu portfólio pessoal! Este projeto apresenta minhas habilidades e experiências como desenvolvedor. O portfólio é construído usando React, com o objetivo de fornecer uma visão abrangente das minhas capacidades.
 
-**Para visualizar meu portfólio online, clique [aqui](https://my-portfolio-henriquepx.vercel.app/).**
+**Para visualizar meu portfólio online, clique [aqui](https://portfolio-henriquepx.vercel.app/).**
 
 ## Sobre Mim
 
