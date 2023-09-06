@@ -81,5 +81,9 @@
     },
     "header": {
         "HeaderDesc": "Front-end Developer"
+    },
+    "projectcard": {
+        "Repositorio": "Repository",
+        "Web": "View online"
     }
 }
