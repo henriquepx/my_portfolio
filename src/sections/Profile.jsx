@@ -45,7 +45,7 @@ const TitleProfile = styled.h1`
     font-size: 1rem;
     color: #f2f2f2;
 `
-const DescProfile = styled.p`
+const DescProfile = styled.div`
     h3 {
         font-family: 'Montserrat', sans-serif;
         font-size: .9rem;
@@ -146,7 +146,9 @@ const Profile = ({ showProfile }) => {
                 <ImgProfile src="profile.jpeg" alt="Foto profile do Henrique" />
                 <div>
                     <TitleProfile>Henrique Pinheiro</TitleProfile>
-                    <DescProfile><h3 href="#" data-replace="Freelancer"><span>{t('profile.developer')}</span></h3></DescProfile>
+                    <DescProfile>
+                        <h3 href="#" data-replace="Freelancer"><span>{t('profile.developer')}</span></h3>
+                    </DescProfile>
                 </div>
             </LinkToHome>
 
@@ -187,8 +189,8 @@ const Profile = ({ showProfile }) => {
       <Nav2>
             <h2>Social</h2>
             <ul>
-            <LinkNavegation icon={<FaLinkedin />} name="LinkedIn" link="https://www.linkedin.com/in/henriquepinheiroxavier/" target='_blank' rel='noopener noreferrer' />
-            <LinkNavegation icon={<FaGithub/>} name="Github" link="https://github.com/henriquepx" target='_blank' rel='noopener noreferrer' />
+            <LinkNavegation icon={<FaLinkedin />} name="LinkedIn" target="_blank" rel="noopener noreferrer" link="https://www.linkedin.com/in/henriquepinheiroxavier/" />
+            <LinkNavegation icon={<FaGithub/>} name="Github" target="_blank" rel="noopener noreferrer" link="https://github.com/henriquepx" />
             <LinkNavegation icon={<FaFilePdf />} href="/cv.pdf" name="CV" download /> </ul>
         </Nav2>
 
