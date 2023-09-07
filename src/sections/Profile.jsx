@@ -187,11 +187,10 @@ const Profile = ({ showProfile }) => {
       <Nav2>
             <h2>Social</h2>
             <ul>
-                <LinkNavegation icon={<FaLinkedin />} name="LinkedIn" link="https://www.linkedin.com/in/henriquepinheiroxavier/" target='_blank' rel='noreferrer' />
-                <LinkNavegation icon={<FaGithub/>} name="Github" link="https://github.com/henriquepx" target='_blank' rel='noreferrer' />
-                <LinkNavegation icon={<FaFilePdf />} href="/cv.pdf" name="CV" download />
-            </ul>
-      </Nav2>
+            <LinkNavegation icon={<FaLinkedin />} name="LinkedIn" link="https://www.linkedin.com/in/henriquepinheiroxavier/" target='_blank' rel='noopener noreferrer' />
+            <LinkNavegation icon={<FaGithub/>} name="Github" link="https://github.com/henriquepx" target='_blank' rel='noopener noreferrer' />
+            <LinkNavegation icon={<FaFilePdf />} href="/cv.pdf" name="CV" download /> </ul>
+        </Nav2>
 
       <Language>
                 <ChangeLanguage>
