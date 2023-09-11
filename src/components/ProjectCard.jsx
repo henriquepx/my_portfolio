@@ -50,6 +50,12 @@ const DescriptionProject = styled.p`
     font-size: .9rem;
     color: #8a8a8a;
 `
+const LanguagesProject = styled.p`
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+  color: #bebdbd;
+  margin-top: 10px;
+`
 const LinkToWeb = styled.a`
   display: flex;
   gap: 10px;
@@ -74,6 +80,7 @@ const ProjectCard = ({
     altproject,
     titleproject,
     descproject,
+    languagesproject,
     linkrepository,
     linkdeploy, 
   }) => {
@@ -87,6 +94,7 @@ const ProjectCard = ({
           <div>
             <TitleProject>{titleproject}</TitleProject>
             <DescriptionProject>{descproject}</DescriptionProject>
+            <LanguagesProject>{languagesproject}</LanguagesProject>
           </div>
           <div>
             <LinkToWeb href={linkrepository} target='_blank' rel='noreferrer'>
@@ -108,6 +116,7 @@ const ProjectCard = ({
     altproject: PropTypes.string.isRequired,
     titleproject: PropTypes.string.isRequired,
     descproject: PropTypes.string.isRequired,
+    languagesproject: PropTypes.string.isRequired,
     language: PropTypes.string.isRequired,
     linkrepository: PropTypes.string.isRequired,
     linkdeploy: PropTypes.string.isRequired,

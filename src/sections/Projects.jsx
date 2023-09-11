@@ -12,6 +12,9 @@ const ProjectsContainer = styled.div`
   justify-content: center;
 
   padding: 10rem 0rem 10rem 10rem;
+  @media (max-width: 1600px) {
+    padding-left: 20rem;
+  }
   @media (max-width: 1024px) {
     padding: 1rem;
     height: 100%;
@@ -64,6 +67,7 @@ const projectData = [
     alt: t("project.SpotifyAlt"), 
     title: "Spotify",
     desc: t("project.SpotifyDescription"), 
+    languagesproject: "HTML, CSS & JavaScript",
     linkrepository: "https://github.com/henriquepx/spotify_clone",
     linkdeploy: "https://spotify-clone-henriqdev.netlify.app/index.html",
   },
@@ -72,6 +76,7 @@ const projectData = [
     alt: t("project.RXAlt"),
     title: "Rexpeita",
     desc: t("project.RXDescription"),
+    languagesproject: "HTML, CSS & JavaScript",
     linkrepository: "https://github.com/henriquepx/ecommerce_rexpeita",
     linkdeploy: "https://rexpeita-ecommerce.netlify.app/index.html",
   },
@@ -80,6 +85,7 @@ const projectData = [
     alt: t("project.JapapouAlt"),
     title: "Japapou?",
     desc: t("project.JapapouDescription"),
+    languagesproject: "ReactJS & CSS Modules",
     linkrepository: "https://github.com/henriquepx/app-order-food",
     linkdeploy: "https://app-order-food.vercel.app/",
   },
@@ -98,6 +104,7 @@ const projectData = [
             altproject={project.alt}
             titleproject={project.title}
             descproject={project.desc}
+            languagesproject={project.languagesproject}
             linkrepository={project.linkrepository}
             linkdeploy={project.linkdeploy}
           />
