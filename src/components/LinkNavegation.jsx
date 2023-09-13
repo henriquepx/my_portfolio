@@ -15,9 +15,10 @@ const LinkContainer = styled.a`
     color: #9e9b9b;
     font-family: 'Montserrat', sans-serif;
     &.certificado {
-    background-color: #6e6e6e;
+    background-color: #1b1b1b;
     color: #FFFFFF;
     border-radius: 10px;
+    border: 1px solid #757575;
   }
     &:hover {
         color: #cccbcb;
