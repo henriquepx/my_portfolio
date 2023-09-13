@@ -4,6 +4,7 @@ import { FaInfoCircle, FaCode, FaTrophy, FaEnvelope, FaLinkedin, FaGithub, FaFil
 import { useTranslation } from "react-i18next";
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { saveAs } from 'file-saver';
 
 const slideIn = keyframes`
   from {
@@ -140,6 +141,11 @@ const Profile = ({ showProfile }) => {
         }
     };
 
+    const handleDownloadCV = () => {
+        const cvPath = '/cv.pdf';
+        saveAs(cvPath, 'cv.pdf');
+    };
+
   return (
     <ContainerProfile showProfile={showProfile}>
             <LinkToHome href="/">
@@ -201,7 +207,7 @@ const Profile = ({ showProfile }) => {
             <ul>
             <LinkNavegation icon={<FaLinkedin />} name="LinkedIn" target="_blank" rel="noopener noreferrer" link="https://www.linkedin.com/in/henriquepinheiroxavier/" />
             <LinkNavegation icon={<FaGithub/>} name="Github" target="_blank" rel="noopener noreferrer" link="https://github.com/henriquepx" />
-            <LinkNavegation icon={<FaFilePdf />} href="/cv.pdf" name="CV" download /> </ul>
+            <LinkNavegation icon={<FaFilePdf />} onClick={handleDownloadCV} href="/cv.pdf" name="CV" download /> </ul>
         </Nav2>
 
       <Language>
