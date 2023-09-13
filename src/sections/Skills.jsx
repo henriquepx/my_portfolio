@@ -16,6 +16,9 @@ const SkillsContainer = styled.div`
       padding: 2rem 1rem 5rem 1rem;
       height: 100%;
     }
+    @media (min-width: 1024px) and (max-width: 1280px) {
+    padding-left: 19rem;
+    }
 `
 const SkillsSize = styled.div`
     width: 100%;

@@ -15,7 +15,7 @@ const LinkContainer = styled.a`
     color: #9e9b9b;
     font-family: 'Montserrat', sans-serif;
     &.certificado {
-    background-color: #3d3d3d;
+    background-color: #6e6e6e;
     color: #FFFFFF;
     border-radius: 10px;
   }
