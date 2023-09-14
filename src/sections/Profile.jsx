@@ -196,17 +196,14 @@ const Profile = ({ showProfile }) => {
                 link="certificates"
                 isSoon={true}
                 />
-
-                  
-
         </ul>
       </Nav2>
 
       <Nav2>
             <h2>Social</h2>
             <ul>
-            <LinkNavegation icon={<FaLinkedin />} name="LinkedIn" target="_blank" rel="noopener noreferrer" link="https://www.linkedin.com/in/henriquepinheiroxavier/" />
-            <LinkNavegation icon={<FaGithub/>} name="Github" target="_blank" rel="noopener noreferrer" link="https://github.com/henriquepx" />
+            <LinkNavegation icon={<FaLinkedin />}  link="https://www.linkedin.com/in/henriquepinheiroxavier/"  name="LinkedIn" target="_blank" rel="noopener,noreferrer"/>
+            <LinkNavegation icon={<FaGithub/>} link="https://github.com/henriquepx" name="Github" target="_blank" rel="noopener,noreferrer" />
             <LinkNavegation icon={<FaFilePdf />} onClick={handleDownloadCV} href="/cv.pdf" name="CV" download /> </ul>
         </Nav2>
 
@@ -215,7 +212,7 @@ const Profile = ({ showProfile }) => {
                     <img onClick={() => handleChangeLanguage('pt')} src="/brazilflag.png" alt="Bandeira do Brasil" />
                     <img onClick={() => handleChangeLanguage('en')} src="/euaflag.png" alt="Bandeira dos Estados Unidos" />
                 </ChangeLanguage>
-            </Language>
+      </Language>
 
     </ContainerProfile>
   )
