@@ -43,10 +43,10 @@ const SoonFeature = styled.div`
     }
 `
 
-const LinkNavegation = ({ name, icon, active, onClick, link, isSoon, ...rest }) => {
+const LinkNavegation = ({ name, icon, onClick, link, isSoon, ...rest }) => {
   const classes = isSoon ? 'certificado' : '';
   return (
-    <LinkContainer href={link} active={active} onClick={onClick} className={classes} {...rest}>
+    <LinkContainer href={link} active onClick={onClick} className={classes} {...rest}>
       {icon}
       {name}
       {isSoon && <SoonFeature>soon</SoonFeature>}

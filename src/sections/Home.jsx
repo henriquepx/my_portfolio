@@ -28,6 +28,9 @@ const ContainerHome = styled.div`
       justify-content: flex-start;
       text-align: left;
     }
+    @media (max-width: 360px) {
+      height: 100vh;
+    }
     h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 4.1rem;
@@ -105,6 +108,10 @@ const Faixa = styled.div`
   background-color: #272727;
   p {
     color: #dad9d9;
+  }
+  @media (max-width: 360px) {
+    bottom: 100px;
+    padding: .8rem 11rem .8rem 5rem;
   }
 `
 
