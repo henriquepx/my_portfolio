@@ -6,49 +6,53 @@ import { useTranslation } from "react-i18next";
 
 const ProjectContainerCard = styled.div`
     display: flex;
-    flex-direction: flex;
-    @media (max-width: 1240px) {
-      flex-direction: column;
-      margin-bottom: 3rem;
-    }
+    flex-direction: column;
 `
 const ImgProject = styled.img`
   background: #1f1f1f;
-  padding: 1.5rem 2rem 0rem 2rem;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  padding: 3rem 5rem 0rem 5rem;
+  width: 100%;
   @media (max-width: 1240px) {
     max-width: 100%;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
   }
 `;
 const DivTextProject = styled.div`
-  background: #252525;
-  padding: 1.1rem 2rem;
-  max-height: 65%;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  @media (max-width: 1240px) {
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+
+  margin-top: 5rem;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 30px;
   }
 `
+const TextDescLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+const TextDescRight = styled.div`
+  display: flex;
+  flex-direction: column;
+`
 const TitleProject = styled.h2`
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+
     color: #fffdfd;
-    margin-bottom: .4rem;
+    margin-bottom: 2rem;
 `
 const DescriptionProject = styled.p`
     font-family: 'Montserrat', sans-serif;
     font-size: .9rem;
     color: #8a8a8a;
+    padding-bottom: 1rem;
+
+    text-align: right;
+    max-width: 60ch;
+    @media (max-width: 1000px) {
+    text-align: left;
+  }
 `
 const LanguagesProject = styled.p`
   font-family: 'Montserrat', sans-serif;
@@ -58,21 +62,59 @@ const LanguagesProject = styled.p`
 `
 const LinkToWeb = styled.a`
   display: flex;
+  justify-content: center;
   gap: 10px;
   align-items: center;
-  padding: .5rem 2rem;
-  background-color: #6d6d6d;
-  max-width: 175px;
-  border: none;
-  position: relative;
-  transition:800ms ease all;
+  padding: 1rem 1rem;
+  background-color: transparent;
+
+  max-width: 200px;
   outline: none;
 
   font-family: 'Montserrat', sans-serif;
   font-size: .9rem;
   color: #ffffff;
 
-  margin-top: .5rem;
+  border: 2px solid #3d3d3d;
+  border-radius: 0px;
+  box-shadow: inset 0 0 0 0 #6d6d6d;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  &:hover {
+    box-shadow: inset 400px 0 0 0 #4d4d4d;
+  }
+`
+const SiteAr = styled.p`
+  font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #c2c1c1;
+  margin-bottom: 1rem;
+`
+const TecUsed = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 4px solid gray;
+  padding: 2rem 0rem;
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #c2c1c1;
+  }
+`
+const ThreeDots = styled.div`
+display: flex;
+flex-direction: column;
+gap: 10px;
+justify-content: center;
+align-items: center;
+margin: 5rem 0rem;
+span {
+  width: 5px;
+  height: 5px;
+  background-color: gray;
+}
 `
 
 const ProjectCard = ({
@@ -91,22 +133,38 @@ const ProjectCard = ({
       <ProjectContainerCard>
         <ImgProject src={imgproject} alt={altproject} />
         <DivTextProject>
-          <div>
-            <TitleProject>{titleproject}</TitleProject>
-            <DescriptionProject>{descproject}</DescriptionProject>
-            <LanguagesProject>{languagesproject}</LanguagesProject>
-          </div>
-          <div>
-            <LinkToWeb href={linkrepository} target='_blank' rel='noreferrer'>
-              <span>{t("projectcard.Repositorio")}</span>
-              <FaGithub />
-            </LinkToWeb>
+
+          <TextDescLeft>
+          <TitleProject>{titleproject}</TitleProject>
+            <SiteAr>Deploy:</SiteAr>
             <LinkToWeb href={linkdeploy} target='_blank' rel='noreferrer'>
               <span>{t("projectcard.Web")}</span>
               <BiLinkExternal />
             </LinkToWeb>
-          </div>
+          </TextDescLeft>
+
+          <TextDescRight>
+            <DescriptionProject>{descproject}</DescriptionProject>
+            <TecUsed>
+              <h3>Tecnologias:</h3>
+              <LanguagesProject>{languagesproject}</LanguagesProject>
+            </TecUsed>
+            <TecUsed>
+              <h3>Github:</h3>
+              <LinkToWeb href={linkrepository} target='_blank' rel='noreferrer'>
+                <span>{t("projectcard.Repositorio")}</span>
+                <FaGithub />
+              </LinkToWeb>
+            </TecUsed>
+          </TextDescRight>
+
         </DivTextProject>
+
+        <ThreeDots>
+          <span></span>
+          <span></span>
+          <span></span>
+        </ThreeDots>
       </ProjectContainerCard>
     );
   };

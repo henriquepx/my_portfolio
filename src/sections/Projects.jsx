@@ -40,6 +40,7 @@ const DescriptionProject = styled.p`
   color: #9e9b9b;
 `
 const EstimatePrice = styled.a`
+  margin-bottom: 4rem;
   max-width: 220px;
   color: #FFF;
   border: 2px solid #3d3d3d;
@@ -61,7 +62,16 @@ const Projects = () => {
   
 const { t } = useTranslation();
 
-const projectData = [
+  const projectData = [
+    {
+      img: "/rxscreen.png",
+      alt: t("project.RXAlt"),
+      title: "Rexpeita",
+      desc: t("project.RXDescription"),
+      languagesproject: "HTML, CSS & JavaScript",
+      linkrepository: "https://github.com/henriquepx/ecommerce_rexpeita",
+      linkdeploy: "https://rexpeita-ecommerce.netlify.app/index.html",
+    },
   {
     img: "/spotifyscreen.png",
     alt: t("project.SpotifyAlt"), 
@@ -70,15 +80,6 @@ const projectData = [
     languagesproject: "HTML, CSS & JavaScript",
     linkrepository: "https://github.com/henriquepx/spotify_clone",
     linkdeploy: "https://spotify-clone-henriqdev.netlify.app/index.html",
-  },
-  {
-    img: "/rexpeitascreen.png",
-    alt: t("project.RXAlt"),
-    title: "Rexpeita",
-    desc: t("project.RXDescription"),
-    languagesproject: "HTML, CSS & JavaScript",
-    linkrepository: "https://github.com/henriquepx/ecommerce_rexpeita",
-    linkdeploy: "https://rexpeita-ecommerce.netlify.app/index.html",
   },
   {
     img: "/japascreen.png",
