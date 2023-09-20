@@ -14,6 +14,19 @@ const GlobalStyle = createGlobalStyle`
   list-style: none;
   text-decoration: none;
   line-height: 1.4;
+  ::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+}
+
+/* Estilização da alça (polegar) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #dadada; /* Cor da alça */
+}
+
+/* Estilização do fundo da barra de rolagem (trilha) */
+::-webkit-scrollbar-track {
+    background-color: #1f1e1e; /* Cor da trilha */
+}
 }
 
   /* Variables */
