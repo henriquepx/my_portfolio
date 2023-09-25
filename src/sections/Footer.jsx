@@ -25,6 +25,9 @@ const FooterSize = styled.div`
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 const TitleFooter = styled.h1`
     font-family: 'Montserrat', sans-serif;
@@ -36,10 +39,43 @@ const TitleFooter = styled.h1`
 const DescFooter = styled.p`
     font-family: 'Montserrat', sans-serif;
     color: #9e9b9b;
-    margin-bottom: 2.5rem;
-    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
 `
+const CallToWpp = styled.p`
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+`
+const EstimatePrice = styled.a`
+  margin-bottom: 4rem;
+  max-width: 220px;
+  color: #FFF;
+  border: 2px solid #3d3d3d;
+  border-radius: 0px;
+  padding: 1rem 1rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif, monospace;
+  font-size: .9rem;
+  box-shadow: inset 0 0 0 0 #6d6d6d;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  &:hover {
+    box-shadow: inset 400px 0 0 0 #4d4d4d;
+  }
+`
+const CallToEmail = styled.p`
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+`
+
 
 const Footer = () => {
 
@@ -50,7 +86,10 @@ return (
             <FooterSize>
                 <TitleFooter>{t("footer.FooterName")}</TitleFooter>
                 <DescFooter>{t("footer.FooterDesc")}</DescFooter>
-                <Form />
+                <CallToWpp>{t("footer.FooterCallToWpp")}</CallToWpp>    
+                <EstimatePrice href="https://api.whatsapp.com/send?phone=5521964823939&text=Ol%C3%A1,%20Henrique.%20Gostaria%20de%20um%20or%C3%A7amento!" target='_blank' rel='noreferrer'>{t("footer.MessageWpp")}</EstimatePrice>    
+                <CallToEmail>{t("footer.FooterCalToEmail")}</CallToEmail>    
+            <Form />
             </FooterSize>
         </ContainerFooter>
 )

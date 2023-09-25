@@ -9,7 +9,7 @@ const ContainerAbout = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 12rem 2em 15rem 16rem;
+    padding: 12rem 2rem 15rem 18rem;
 
     text-align: left;
     @media (min-width: 1025px) and (max-width: 1400px) {

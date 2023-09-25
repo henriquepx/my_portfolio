@@ -11,7 +11,7 @@ const ProjectsContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  padding: 10rem 0rem 10rem 10rem;
+  padding: 10rem 0rem 10rem 18rem;
   @media (max-width: 1600px) {
     padding-left: 20rem;
   }

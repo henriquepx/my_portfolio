@@ -11,7 +11,7 @@ const SkillsContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    padding: 12rem 0rem 10rem 10rem;
+    padding: 12rem 0rem 10rem 18rem;
     @media (max-width: 1024px) {
       padding: 2rem 1rem 5rem 1rem;
       height: 100%;

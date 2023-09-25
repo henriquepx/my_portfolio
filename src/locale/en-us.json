@@ -77,7 +77,10 @@
     },
     "footer": {
         "FooterName": "Contact",
-        "FooterDesc": "Do you have a question, a proposal or just want to chat? Send us a message."
+        "FooterDesc": "Take the first step in your business and have a modern website or if you want to have a dedicated Front-end Developer on your team:",
+        "FooterCallToWpp": "Send me a message on Whatsapp:",
+        "FooterCalToEmail": "You can also send an e-mail:",
+        "MessageWpp": "Call on Whatsapp"
     },
     "header": {
         "HeaderDesc": "Front-end Developer"
