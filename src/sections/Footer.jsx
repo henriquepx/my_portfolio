@@ -18,7 +18,9 @@ const ContainerFooter = styled.footer`
         padding: 1rem;
     }
     @media (max-width: 600px) {
-        padding-top: 20rem;
+        padding-top: 5rem;
+        height: 100%;
+        padding-bottom: 2rem;
     }
     @media (min-width: 1025px) and (max-width: 1125px) {
         padding: 0rem 2rem 0rem 20rem;
