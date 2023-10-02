@@ -16,7 +16,7 @@ const ContainerHome = styled.div`
     position: relative;
 
     text-align: left;
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 767px) and (max-width: 1025px) {
       height: 90vh;
       padding: 8rem 1rem 1rem 1rem;
       justify-content: flex-start;

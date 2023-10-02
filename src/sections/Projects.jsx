@@ -64,7 +64,7 @@ const { t } = useTranslation();
 
   const projectData = [
     {
-      img: "/rxscreen.png",
+      img: "/rxscreen.jpg",
       alt: t("project.RXAlt"),
       title: "Rexpeita",
       desc: t("project.RXDescription"),
@@ -73,16 +73,16 @@ const { t } = useTranslation();
       linkdeploy: "https://rexpeita-ecommerce.netlify.app/index.html",
     },
   {
-    img: "/spotifyscreen.png",
-    alt: t("project.SpotifyAlt"), 
-    title: "Spotify",
-    desc: t("project.SpotifyDescription"), 
-    languagesproject: "HTML, CSS & JavaScript",
-    linkrepository: "https://github.com/henriquepx/spotify_clone",
-    linkdeploy: "https://spotify-clone-henriqdev.netlify.app/index.html",
+    img: "/realestate.jpg",
+    alt: t("project.RealEstateAlt"), 
+    title: "Real Estate",
+    desc: t("project.RealStateDescription"), 
+    languagesproject: "ReactJS & Styled Components",
+    linkrepository: "https://github.com/henriquepx/real_estate",
+    linkdeploy: "https://real-estate-omega-nine.vercel.app/",
   },
   {
-    img: "/japascreen.png",
+    img: "/japascreen.jpg",
     alt: t("project.JapapouAlt"),
     title: "Japapou?",
     desc: t("project.JapapouDescription"),

@@ -10,10 +10,10 @@ const ProjectContainerCard = styled.div`
 `
 const ImgProject = styled.img`
   background: #1f1f1f;
-  padding: 3rem 5rem 0rem 5rem;
   width: 100%;
   @media (max-width: 1240px) {
     max-width: 100%;
+    padding: 1rem;
   }
 `;
 const DivTextProject = styled.div`
@@ -131,7 +131,10 @@ const ProjectCard = ({
 
     return (
       <ProjectContainerCard>
-        <ImgProject src={imgproject} alt={altproject} />
+        <a href={linkdeploy} target='_blank' rel='noreferrer'>
+          <ImgProject src={imgproject} alt={altproject} />
+        </a>
+        
         <DivTextProject>
 
           <TextDescLeft>
