@@ -122,24 +122,24 @@ const Skills = () => {
                     icon="/skills/html.png" 
                     title="HTML" 
                     description={t("skill.HTMLDescription")}
+                  />
+                  <LanguageSkill
+                    icon="/skills/typescript.png" 
+                    title="TypeScript" 
+                    description={t("skill.TypeScriptDescription")}
+                  />
+                  <LanguageSkill
+                    icon="/skills/sql.png" 
+                    title="SQL" 
+                    description={t("skill.SQLDescription")}
                 />
             </SkillsWrap>
             <LearningSkills>{t("skill.SkillLearning")}</LearningSkills>
             <SkillsWrap>
                 <LanguageSkill
-                    icon="/skills/typescript.png" 
-                    title="TypeScript" 
-                    description={t("skill.TypeScriptDescription")}
-                />
-                <LanguageSkill
                     icon="/skills/angular.png" 
                     title="Angular" 
                     description={t("skill.AngularDescription")}
-                />
-                <LanguageSkill
-                    icon="/skills/sql.png" 
-                    title="SQL" 
-                    description={t("skill.SQLDescription")}
                 />
                 <LanguageSkill
                     icon="/skills/nodejs.png" 

@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import LinkNavegation from '../components/LinkNavegation';
-import { FaInfoCircle, FaCode, FaTrophy, FaEnvelope, FaLinkedin, FaGithub, FaFilePdf, FaDesktop } from 'react-icons/fa';
+import { FaInfoCircle, FaCode, FaEnvelope, FaLinkedin, FaGithub, FaFilePdf, FaDesktop } from 'react-icons/fa';
 import { useTranslation } from "react-i18next";
 import { useState } from 'react';
 import PropTypes from 'prop-types';
@@ -189,13 +189,6 @@ const Profile = ({ showProfile }) => {
                 name={t('profile.projectssections')}
                 link="projects"
                   />
-
-                <LinkNavegation
-                icon={<FaTrophy />}
-                name={t('profile.certificatessections')}
-                link="certificates"
-                isSoon={true}
-                />
         </ul>
       </Nav2>
 

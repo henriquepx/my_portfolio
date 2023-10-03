@@ -14,12 +14,6 @@ const LinkContainer = styled.a`
 
     color: #9e9b9b;
     font-family: 'Montserrat', sans-serif;
-    &.certificado {
-    background-color: #1b1b1b;
-    color: #FFFFFF;
-    border-radius: 10px;
-    border: 1px solid #757575;
-  }
     &:hover {
         color: #cccbcb;
         background-color: #333232;
@@ -27,29 +21,11 @@ const LinkContainer = styled.a`
     }
 `
 
-const SoonFeature = styled.div`
-    position: absolute;
-    top: 5px;
-    right: 20px; 
-    background-color: #333333;
-    color: #ffffff;
-    transform: rotate(45deg);
-    padding: 3px 8px;
-    font-size: 12px;
-    border-top-left-radius: 17px;
-    border-bottom-right-radius: 17px;
-    &:hover {
-      background-color: #333232;
-    }
-`
-
-const LinkNavegation = ({ name, icon, onClick, link, isSoon, ...rest }) => {
-  const classes = isSoon ? 'certificado' : '';
+const LinkNavegation = ({ name, icon, onClick, link, ...rest }) => {
   return (
-    <LinkContainer href={link} active onClick={onClick} className={classes} {...rest}>
+    <LinkContainer href={link} active onClick={onClick} {...rest}>
       {icon}
       {name}
-      {isSoon && <SoonFeature>soon</SoonFeature>}
     </LinkContainer>
   );
 };
