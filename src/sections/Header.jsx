@@ -32,10 +32,44 @@ const TitleProfile = styled.h1`
     font-size: 1rem;
     color: #d6d4d4;
 `
-const DescProfile = styled.p`
-    font-family: 'Montserrat', sans-serif;
-    font-size: .9rem;
-    color: #6b6b6b;
+const DescProfile = styled.div`
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: .9rem;
+        color: #6b6b6b;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+        }
+        &::after {
+            content: attr(data-replace);
+            height: 100%;
+            top: 0;
+            transform-origin: 50% 100%;
+            transform: translate3d(0, 100%, 0);
+            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+            color: #6b6b6b;
+        }
+        &:hover::before {
+            transform-origin: 50% 50%;
+            transform: scaleY(0);
+        }
+        &:hover::after {
+            transform: translate3d(0, 0, 0);
+        }
+        span {
+            display: inline-block;
+            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+        &:hover span {
+            transform: translate3d(0, 100%, 0);
+        }
+    }
 `
 const MenuHamburger = styled.div`
   cursor: pointer;
@@ -111,7 +145,9 @@ const Header = () => {
               <LinkToHome href="/">
                 <div>
                   <TitleProfile>Henrique Pinheiro</TitleProfile>
-                  <DescProfile>{t("header.HeaderDesc")}</DescProfile>
+                  <DescProfile>
+                    <h3 href="#" data-replace="Freelancer"><span>{t('profile.developer')}</span></h3>
+                  </DescProfile>
                 </div>
               </LinkToHome>
               <MenuHamburger open={isOpen} onClick={() => { toggleMenu(); toggleProfile(); }}>
