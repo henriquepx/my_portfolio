@@ -142,8 +142,9 @@ const Profile = ({ showProfile }) => {
     };
 
     const handleDownloadCV = () => {
-        const cvPath = '/cv.pdf';
-        saveAs(cvPath, 'cv.pdf');
+        const cvFileName = currentLanguage === 'en' ? 'CVenglish.pdf' : 'CV.pdf';
+        const cvPath = `/${cvFileName}`;
+        saveAs(cvPath, cvFileName);
     };
 
   return (
