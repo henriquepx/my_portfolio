@@ -149,7 +149,7 @@ const ProjectCard = ({
           <TextDescRight>
             <DescriptionProject>{descproject}</DescriptionProject>
             <TecUsed>
-              <h3>Tecnologias:</h3>
+              <h3>{t("projectcard.Tecnologias")}</h3>
               <LanguagesProject>{languagesproject}</LanguagesProject>
             </TecUsed>
             <TecUsed>

@@ -111,7 +111,7 @@ const Skills = () => {
                 <LanguageSkill
                     icon="/skills/bootstrap.png" 
                     title="Bootstrap" 
-                    description={t("skill.BoostrapDescription")}
+                    description={t("skill.BootstrapDescription")}
                 />
                 <LanguageSkill
                     icon="/skills/css.png" 

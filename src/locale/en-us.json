@@ -84,6 +84,7 @@
     },
     "projectcard": {
         "Repositorio": "Repository",
-        "Web": "View online"
+        "Web": "View online",
+        "Tecnologias": "Technologies"
     }
 }
