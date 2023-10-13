@@ -11,7 +11,7 @@ const ContainerHome = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 25rem;
+    padding: 0rem 1.5rem 0rem 20rem;
     overflow: hidden;
     position: relative;
 
@@ -28,8 +28,11 @@ const ContainerHome = styled.div`
       justify-content: flex-start;
       text-align: left;
     }
-    @media (max-width: 360px) {
-      height: 100vh;
+    @media (max-width: 365px) {
+      height: 110vh;
+    }
+    @media (min-width: 366px) and (max-width: 400px) {
+      height: 96vh;
     }
     h1 {
       font-family: 'Montserrat', sans-serif;
@@ -67,7 +70,7 @@ const LinkHome = styled.a`
 `
 const ArrowToAbout = styled.a`
   display: inline-block;
-  margin: 2rem 0;
+  padding: 2rem 0 4rem 0;
   font-family: 'Montserrat', sans-serif;
   color: white;
   border-radius: 5px;
@@ -109,7 +112,7 @@ const Faixa = styled.div`
   p {
     color: #dad9d9;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 361px) {
     bottom: 100px;
     padding: .8rem 11rem .8rem 5rem;
   }

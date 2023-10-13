@@ -196,10 +196,11 @@ const Profile = ({ showProfile }) => {
       <Nav2>
             <h2>Social</h2>
             <ul>
-            <LinkNavegation icon={<FaLinkedin />}  link="https://www.linkedin.com/in/henriquepinheiroxavier/"  name="LinkedIn" target="_blank" rel="noopener,noreferrer"/>
-            <LinkNavegation icon={<FaGithub/>} link="https://github.com/henriquepx" name="Github" target="_blank" rel="noopener,noreferrer" />
-            <LinkNavegation icon={<FaWhatsapp/>} link="https://api.whatsapp.com/send?phone=5521964823939&text=Ol%C3%A1,%20Henrique.%20Tenho%20uma%20ideia%20de%20trabalho%20e%20voc%C3%AA%20%C3%A9%20o%20Desenvolvedor%20que%20eu%20preciso!" name="Whatsapp" target="_blank" rel="noopener,noreferrer" />
-            <LinkNavegation icon={<FaFilePdf />} onClick={handleDownloadCV} name="CV" download /> </ul>
+                <LinkNavegation icon={<FaLinkedin />}  link="https://www.linkedin.com/in/henriquepinheiroxavier/"  name="LinkedIn" target="_blank" rel="noopener,noreferrer"/>
+                <LinkNavegation icon={<FaGithub/>} link="https://github.com/henriquepx" name="Github" target="_blank" rel="noopener,noreferrer" />
+                <LinkNavegation icon={<FaWhatsapp/>} link="https://api.whatsapp.com/send?phone=5521964823939&text=Ol%C3%A1,%20Henrique.%20Tenho%20uma%20ideia%20de%20trabalho%20e%20voc%C3%AA%20%C3%A9%20o%20Desenvolvedor%20que%20eu%20preciso!" name="Whatsapp" target="_blank" rel="noopener,noreferrer" />
+                <LinkNavegation icon={<FaFilePdf />} onClick={handleDownloadCV} name="CV" download />
+            </ul>
         </Nav2>
 
       <Language>
