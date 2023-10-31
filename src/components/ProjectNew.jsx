@@ -1,0 +1,139 @@
+import styled from 'styled-components';
+
+const Photo = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(/rxscreen.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s;
+`;
+
+const Meta = styled.div`
+  position: relative;
+  z-index: 0;
+  height: 200px;
+`;
+
+const Details = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  transition: left 0.2s;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-size: 0.9rem;
+`;
+
+const Description = styled.div`
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 0;
+
+  a {
+    line-height: 1;
+    margin: 0;
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #a2a2a2;
+    margin-top: 1rem;
+  }
+
+  p {
+    position: relative;
+    margin: 1rem 0 0;
+    margin-top: 1.25rem;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background: #000000;
+      width: 35px;
+      top: -0.75rem;
+      border-radius: 3px;
+    }
+  }
+`;
+
+const BlogCardContainer = styled.div`
+  position: relative;
+  display: flex;
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+
+  &:hover {
+    ${Photo} {
+      transform: scale(1.3) rotate(3deg);
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+    max-width: 1000px;
+    height: 300px;
+    ${Meta} {
+      flex-basis: 50%;
+      height: auto;
+    }
+    ${Description} {
+      flex-basis: 50%;
+      &:before {
+        transform: skewX(-3deg);
+        content: "";
+        background: #fff;
+        width: 30px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  @media (max-width: 639px) {
+    flex-direction: column;
+  }
+`;
+
+const ProjectNew = () => {
+  return (
+    <BlogCardContainer>
+      <Meta>
+        <Photo />
+        <Details>
+          <a href="#">Repositório</a>
+        </Details>
+      </Meta>
+      <Description>
+        <a href="#">Rexpeita</a>
+        <h2>ReactJS, Styled Components</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum
+          dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque
+          ad aliquam facilis numquam. Veritatis, sit.
+        </p>
+      </Description>
+    </BlogCardContainer>
+  );
+};
+
+export default ProjectNew;

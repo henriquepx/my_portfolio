@@ -117,6 +117,7 @@ span {
 }
 `
 
+
 const ProjectCard = ({
     imgproject,
     altproject,
@@ -169,6 +170,12 @@ const ProjectCard = ({
           <span></span>
         </ThreeDots>
       </ProjectContainerCard>
+      
+      
+      
+  
+      
+      
     );
   };
 

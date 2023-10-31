@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import ProjectCard from '../components/ProjectCard';
 import { useTranslation } from "react-i18next";
+import ProjectNew from '../components/ProjectNew';
 
 const ProjectsContainer = styled.div`
   height: 100%;
@@ -94,6 +95,7 @@ const { t } = useTranslation();
 
   return (
     <ProjectsContainer id="projects">
+      <ProjectNew />
       <ProjectSize>
         <TitleProject>{t("project.ProjectName")}</TitleProject>
         <DescriptionProject>{t("project.ProjectDesc1")}<br /><br />{t("project.ProjectDesc2")}</DescriptionProject>
