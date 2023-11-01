@@ -37,7 +37,6 @@ const Description = styled.div`
   background: #313131;
   position: relative;
   z-index: 0;
-  order: 2; /* Controla a ordem de exibição no flex container */
   a {
     line-height: 1;
     margin: 0;
@@ -80,8 +79,8 @@ const BlogCardContainer = styled.div`
   border-radius: 5px;
   overflow: hidden;
   z-index: 0;
-  &.reverse { /* Classe que controla a reversão */
-    flex-direction: row-reverse; /* Inverte a ordem dos filhos no flex container */
+  &.reverse { 
+    flex-direction: row-reverse;
   }
   &:hover {
     ${Photo} {

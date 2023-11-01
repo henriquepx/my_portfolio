@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import ProjectCard from '../components/ProjectCard';
 import { useTranslation } from "react-i18next";
 import ProjectNew from '../components/ProjectNew';
 
@@ -61,37 +60,7 @@ const EstimatePrice = styled.a`
 
 const Projects = () => {
   
-const { t } = useTranslation();
-
-  const projectData = [
-    {
-      img: "/rxscreen.jpg",
-      alt: t("project.RXAlt"),
-      title: "Rexpeita",
-      desc: t("project.RXDescription"),
-      languagesproject: "HTML, CSS & JavaScript",
-      linkrepository: "https://github.com/henriquepx/ecommerce_rexpeita",
-      linkdeploy: "https://rexpeita-ecommerce.netlify.app/index.html",
-    },
-  {
-    img: "/realestate.jpg",
-    alt: t("project.RealEstateAlt"), 
-    title: "Real Estate",
-    desc: t("project.RealStateDescription"), 
-    languagesproject: "ReactJS & Styled Components",
-    linkrepository: "https://github.com/henriquepx/real_estate",
-    linkdeploy: "https://real-estate-omega-nine.vercel.app/",
-  },
-  {
-    img: "/japascreen.jpg",
-    alt: t("project.JapapouAlt"),
-    title: "Japapou?",
-    desc: t("project.JapapouDescription"),
-    languagesproject: "ReactJS & CSS Modules",
-    linkrepository: "https://github.com/henriquepx/app-order-food",
-    linkdeploy: "https://app-order-food.vercel.app/",
-  },
-];
+  const { t } = useTranslation();
 
   return (
     <ProjectsContainer id="projects">
@@ -102,42 +71,30 @@ const { t } = useTranslation();
         <ProjectNew
           imgproject="/rxscreen.jpg"
           titleproject={'Rexpeita'}
-          descproject={'Descricao'}
-          languagesproject={'ReactJS'}
-          linkrepository={'WWW.'}
-          linkdeploy={'www.'}
+          descproject={t("project.RXDescription")}
+          languagesproject={'HTML, CSS & JavaScript'}
+          linkrepository={'https://github.com/henriquepx/ecommerce_rexpeita'}
+          linkdeploy={'https://rexpeita-ecommerce.netlify.app/index.html'}
           reverse={false}
         />
         <ProjectNew
-          imgproject="/rxscreen.jpg"
-          titleproject={'Rexpeita'}
-          descproject={'Descricao'}
-          languagesproject={'ReactJS'}
-          linkrepository={'WWW.'}
-          linkdeploy={'www.'}
+          imgproject="/realestate.jpg"
+          titleproject={'Real Estate'}
+          descproject={t("project.RealStateDescription")}
+          languagesproject={'ReactJS & Styled Components'}
+          linkrepository={'https://github.com/henriquepx/real_estate'}
+          linkdeploy={'https://real-estate-omega-nine.vercel.app/'}
           reverse={true}
         />
         <ProjectNew
-          imgproject="/rxscreen.jpg"
-          titleproject={'Rexpeita'}
-          descproject={'Descricao'}
+          imgproject="/japascreen.jpg"
+          titleproject={'Japapou?'}
+          descproject={t("project.JapapouDescription")}
           languagesproject={'ReactJS'}
-          linkrepository={'WWW.'}
-          linkdeploy={'www.'}
+          linkrepository={'https://github.com/henriquepx/app-order-food'}
+          linkdeploy={'https://app-order-food.vercel.app/'}
           reverse={false}
         />
-        {projectData.map((project, index) => (
-          <ProjectCard
-            key={index}
-            imgproject={project.img}
-            altproject={project.alt}
-            titleproject={project.title}
-            descproject={project.desc}
-            languagesproject={project.languagesproject}
-            linkrepository={project.linkrepository}
-            linkdeploy={project.linkdeploy}
-          />
-        ))}
       </ProjectSize>
     </ProjectsContainer>
   );
