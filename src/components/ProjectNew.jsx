@@ -33,7 +33,7 @@ const Details = styled.div`
 `;
 
 const Description = styled.div`
-  padding: 1rem;
+  padding: 1.2rem 1.5rem;
   background: #313131;
   position: relative;
   z-index: 0;
@@ -56,7 +56,7 @@ const Description = styled.div`
     position: relative;
     margin: 1rem 0 0;
     margin-top: 1.25rem;
-
+    color: #bebebe;
     &:before {
       content: "";
       position: absolute;
@@ -76,7 +76,7 @@ const BlogCardContainer = styled.div`
   background: #fff;
   line-height: 1.4;
   font-family: sans-serif;
-  border-radius: 5px;
+  border-radius: 15px;
   overflow: hidden;
   z-index: 0;
   &.reverse { 

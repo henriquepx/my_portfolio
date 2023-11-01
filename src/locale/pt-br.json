@@ -68,12 +68,9 @@
 	    "ProjectDesc1": "Bem-vindo ao meu portfólio de projetos! Aqui, você encontrará uma coleção de trabalhos que representam minha paixão e dedicação ao mundo da programação. Cada projeto é uma expressão da minha criatividade e habilidades técnicas, cuidadosamente desenvolvidos para oferecer soluções práticas e funcionais.",
 	    "ProjectDesc2": "Explore esses projetos abaixo e sinta-se à vontade para entrar em contato caso deseje solicitar um orçamento. Estou animado para trabalhar em novos desafios e transformar suas ideias em realidade.",
 	    "ProjectPrice": "Fazer um orçamento",
-        "RealEstateAlt": "Real Estate Tela",
-	    "RealStateDescription": "Existem muitas variações das passagens do Lorem Ipsum disponíveis, mas a maior parte sofreu alterações de alguma forma, pela injecção de humor",
- 	    "RXAlt": "Rexpeita Tela",
+	    "RealStateDescription": "Website de imobiliária com ênfase na prática de React, apresentando um ecrã básico e mostrando a componentização com Styled-components.",
 	    "RXDescription": "Projeto completo de um e-commerce, com tela de login, registo, carrinho de compras, páginas de produtos individuais e etc...",
- 	    "JapapouAlt": "Japapou Tela",
-	    "JapapouDescription": "Projeto de prática do React para aprimorar as habilidades, utilizando hooks e props pra comunicação de componentes, useState e useContext."
+	    "JapapouDescription": "Projeto de prática de React: Elevar e aperfeiçoar as competências em React através da implementação de Hooks, Módulos CSS e técnicas eficazes de estruturação de conteúdos."
     },
     "footer": {
         "FooterName": "Contato",

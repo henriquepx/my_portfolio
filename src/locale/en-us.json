@@ -68,12 +68,9 @@
         "ProjectDesc1": "Welcome to my project portfolio! Here you'll find a collection of work that represents my passion and dedication to the world of programming. Each project is an expression of my creativity and technical skills, carefully developed to offer practical and functional solutions.",
         "ProjectDesc2": "Explore these projects below and feel free to get in touch if you'd like to request a quote. I'm excited to work on new challenges and turn your ideas into reality.",
         "ProjectPrice": "Make an estimate",
-        "RealEstateAlt": "Real Estate Tela",
-        "RealStateDescription": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-        "RXAlt": "Rexpeita Screen",
+        "RealStateDescription": "Real Estate Website emphasizing React practice, featuring a basic screen and showcasing componentization with Styled-components.",
         "RXDescription": "Complete e-commerce project, with login screen, registration, shopping cart, individual product pages, etc...",
-        "JapapouAlt": "Japapou Screen",
-        "JapapouDescription": "React practice project to improve skills, using hooks and props to communicate components, useState and useContext."
+        "JapapouDescription": "React Practice Project: Elevating and refining React skills through the implementation of Hooks, CSS Modules, and effective content structuring techniques."
     },
     "footer": {
         "FooterName": "Contact",

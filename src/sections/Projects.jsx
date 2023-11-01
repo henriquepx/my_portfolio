@@ -90,7 +90,7 @@ const Projects = () => {
           imgproject="/japascreen.jpg"
           titleproject={'Japapou?'}
           descproject={t("project.JapapouDescription")}
-          languagesproject={'ReactJS'}
+          languagesproject={'ReactJS & CSS Modules'}
           linkrepository={'https://github.com/henriquepx/app-order-food'}
           linkdeploy={'https://app-order-food.vercel.app/'}
           reverse={false}
