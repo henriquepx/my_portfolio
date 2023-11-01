@@ -95,11 +95,21 @@ const { t } = useTranslation();
 
   return (
     <ProjectsContainer id="projects">
-      <ProjectNew />
       <ProjectSize>
         <TitleProject>{t("project.ProjectName")}</TitleProject>
         <DescriptionProject>{t("project.ProjectDesc1")}<br /><br />{t("project.ProjectDesc2")}</DescriptionProject>
         <EstimatePrice href="https://api.whatsapp.com/send?phone=5521964823939&text=Ol%C3%A1,%20Henrique.%20Gostaria%20de%20um%20or%C3%A7amento!" target='_blank' rel='noreferrer'>{t("project.ProjectPrice")}</EstimatePrice>
+        <ProjectNew
+          imgproject="/rxscreen.jpg"
+          titleproject={'Rexpeita'}
+          descproject={'Descricao'}
+          languagesproject={'ReactJS'}
+          linkrepository={'WWW.'}
+          linkdeploy={'www.'}
+        />
+
+
+
         {projectData.map((project, index) => (
           <ProjectCard
             key={index}

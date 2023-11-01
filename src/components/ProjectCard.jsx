@@ -185,7 +185,6 @@ const ProjectCard = ({
     titleproject: PropTypes.string.isRequired,
     descproject: PropTypes.string.isRequired,
     languagesproject: PropTypes.string.isRequired,
-    language: PropTypes.string.isRequired,
     linkrepository: PropTypes.string.isRequired,
     linkdeploy: PropTypes.string.isRequired,
   };

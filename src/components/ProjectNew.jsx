@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Photo = styled.div`
   position: absolute;
@@ -6,7 +7,7 @@ const Photo = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url(/rxscreen.jpg);
+  background-image: url(${props => props.imgproject});
   background-size: cover;
   background-position: center;
   transition: transform 0.2s;
@@ -33,7 +34,7 @@ const Details = styled.div`
 
 const Description = styled.div`
   padding: 1rem;
-  background: #fff;
+  background: #313131;
   position: relative;
   z-index: 0;
 
@@ -41,6 +42,8 @@ const Description = styled.div`
     line-height: 1;
     margin: 0;
     font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
   }
 
   h2 {
@@ -98,7 +101,7 @@ const BlogCardContainer = styled.div`
       &:before {
         transform: skewX(-3deg);
         content: "";
-        background: #fff;
+        background: #313131;
         width: 30px;
         position: absolute;
         left: -10px;
@@ -114,26 +117,38 @@ const BlogCardContainer = styled.div`
   }
 `;
 
-const ProjectNew = () => {
+const ProjectNew = ({
+  imgproject,
+  titleproject,
+  descproject,
+  languagesproject,
+  linkrepository,
+  linkdeploy, 
+}) => {
   return (
     <BlogCardContainer>
       <Meta>
-        <Photo />
+      <Photo imgproject={imgproject} />
         <Details>
-          <a href="#">Repositório</a>
+          <a href={linkrepository} target='_blank' rel='noreferrer'>Repositório</a>
         </Details>
       </Meta>
       <Description>
-        <a href="#">Rexpeita</a>
-        <h2>ReactJS, Styled Components</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum
-          dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque
-          ad aliquam facilis numquam. Veritatis, sit.
-        </p>
+        <a href={linkdeploy} target='_blank' rel='noreferrer'>{titleproject}</a>
+        <h2>{languagesproject}</h2>
+        <p>{descproject}</p>
       </Description>
     </BlogCardContainer>
   );
+};
+
+ProjectNew.propTypes = {
+  imgproject: PropTypes.string.isRequired,
+  titleproject: PropTypes.string.isRequired,
+  descproject: PropTypes.string.isRequired,
+  languagesproject: PropTypes.string.isRequired,
+  linkrepository: PropTypes.string.isRequired,
+  linkdeploy: PropTypes.string.isRequired,
 };
 
 export default ProjectNew;
