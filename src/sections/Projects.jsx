@@ -106,10 +106,26 @@ const { t } = useTranslation();
           languagesproject={'ReactJS'}
           linkrepository={'WWW.'}
           linkdeploy={'www.'}
+          reverse={false}
         />
-
-
-
+        <ProjectNew
+          imgproject="/rxscreen.jpg"
+          titleproject={'Rexpeita'}
+          descproject={'Descricao'}
+          languagesproject={'ReactJS'}
+          linkrepository={'WWW.'}
+          linkdeploy={'www.'}
+          reverse={true}
+        />
+        <ProjectNew
+          imgproject="/rxscreen.jpg"
+          titleproject={'Rexpeita'}
+          descproject={'Descricao'}
+          languagesproject={'ReactJS'}
+          linkrepository={'WWW.'}
+          linkdeploy={'www.'}
+          reverse={false}
+        />
         {projectData.map((project, index) => (
           <ProjectCard
             key={index}
