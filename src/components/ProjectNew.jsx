@@ -38,8 +38,6 @@ const Description = styled.div`
   position: relative;
   z-index: 0;
   a {
-    line-height: 1;
-    margin: 0;
     font-size: 1.7rem;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
@@ -61,7 +59,7 @@ const Description = styled.div`
       content: "";
       position: absolute;
       height: 2px;
-      background: #000000;
+      background: #e0e0e0;
       width: 35px;
       top: -0.75rem;
       border-radius: 3px;
@@ -77,6 +75,7 @@ const BlogCardContainer = styled.div`
   line-height: 1.4;
   font-family: sans-serif;
   border-radius: 15px;
+  border: 2px solid #363636;
   overflow: hidden;
   z-index: 0;
   &.reverse { 
