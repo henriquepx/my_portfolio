@@ -80,6 +80,9 @@ const BlogCardContainer = styled.div`
   z-index: 0;
   &.reverse { 
     flex-direction: row-reverse;
+    @media (max-width: 639px) {
+    flex-direction: column;
+  }
   }
   &:hover {
     ${Photo} {
