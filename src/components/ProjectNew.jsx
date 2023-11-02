@@ -81,19 +81,13 @@ const BlogCardContainer = styled.div`
   &.reverse { 
     flex-direction: row-reverse;
     @media (max-width: 639px) {
-    flex-direction: column;
-  }
-  ${Description} {
-    &:before {
-       transform: skewX(3deg);
-    }
+      flex-direction: column;
     }
   }
   &:hover {
     ${Photo} {
       transform: scale(1.3) rotate(3deg);
       width: 100%;
-
     }
   }
 
@@ -107,17 +101,6 @@ const BlogCardContainer = styled.div`
     }
     ${Description} {
       flex-basis: 50%;
-      &:before {
-        transform: skewX(-3deg);
-        content: "";
-        background: #1d1d1d;
-        width: 30px;
-        position: absolute;
-        left: -10px;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
-      }
     }
   }
 
