@@ -84,13 +84,16 @@ const BlogCardContainer = styled.div`
     flex-direction: column;
   }
   ${Description} {
-      transform: skewX(3deg);
+    &:before {
+       transform: skewX(3deg);
+    }
     }
   }
   &:hover {
     ${Photo} {
       transform: scale(1.3) rotate(3deg);
       width: 100%;
+
     }
   }
 
