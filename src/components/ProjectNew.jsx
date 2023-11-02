@@ -83,6 +83,9 @@ const BlogCardContainer = styled.div`
     @media (max-width: 639px) {
     flex-direction: column;
   }
+  ${Description} {
+      transform: skewX(3deg);
+    }
   }
   &:hover {
     ${Photo} {
