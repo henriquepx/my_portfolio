@@ -34,7 +34,7 @@ const Details = styled.div`
 
 const Description = styled.div`
   padding: 1.2rem 1.5rem;
-  background: #313131;
+  background: #1d1d1d;
   position: relative;
   z-index: 0;
   a {
@@ -75,7 +75,7 @@ const BlogCardContainer = styled.div`
   line-height: 1.4;
   font-family: sans-serif;
   border-radius: 15px;
-  border: 2px solid #363636;
+  border: 2px solid #3d3d3d;
   overflow: hidden;
   z-index: 0;
   &.reverse { 
@@ -104,7 +104,7 @@ const BlogCardContainer = styled.div`
       &:before {
         transform: skewX(-3deg);
         content: "";
-        background: #313131;
+        background: #1d1d1d;
         width: 30px;
         position: absolute;
         left: -10px;
