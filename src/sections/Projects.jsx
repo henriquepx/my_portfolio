@@ -69,6 +69,24 @@ const Projects = () => {
         <DescriptionProject>{t("project.ProjectDesc1")}<br /><br />{t("project.ProjectDesc2")}</DescriptionProject>
         <EstimatePrice href="https://api.whatsapp.com/send?phone=5521964823939&text=Ol%C3%A1,%20Henrique.%20Gostaria%20de%20um%20or%C3%A7amento!" target='_blank' rel='noreferrer'>{t("project.ProjectPrice")}</EstimatePrice>
         <ProjectNew
+          imgproject="/testdsm.jpg"
+          titleproject={t("project.DSMTitle")}
+          descproject={t("project.DSMDescription")}
+          languagesproject={'HTML, CSS & Sass'}
+          linkrepository={'https://github.com/henriquepx/dsm'}
+          linkdeploy={'https://dsmconsultoria.vercel.app/'}
+          reverse={false}
+        />
+        <ProjectNew
+          imgproject="/testphoto.jpg"
+          titleproject={t("project.PhotographerTitle")}
+          descproject={t("project.PhotographerDescription")}
+          languagesproject={'HTML, CSS & Sass'}
+          linkrepository={'https://github.com/henriquepx/photographer_portfolio'}
+          linkdeploy={'https://photographerportfolio.vercel.app/'}
+          reverse={true}
+        />
+        <ProjectNew
           imgproject="/testrx.jpg"
           titleproject={'Rexpeita'}
           descproject={t("project.RXDescription")}
