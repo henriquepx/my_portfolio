@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { FaGithub } from 'react-icons/fa'
 
 const Photo = styled.div`
   position: absolute;
@@ -55,7 +56,7 @@ const Description = styled.div`
   p {
     position: relative;
     margin: 1rem 0 0;
-    margin-top: 1.25rem;
+    margin-bottom: 4rem;
     color: #bebebe;
     &:before {
       content: "";
@@ -69,6 +70,37 @@ const Description = styled.div`
   }
 `;
 
+const LinkToRepository = styled.a`
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  &::before, &::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+  }
+  &:before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  &:after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+`
+
 const BlogCardContainer = styled.div`
   position: relative;
   display: flex;
@@ -81,6 +113,12 @@ const BlogCardContainer = styled.div`
   overflow: hidden;
   z-index: 0;
 
+  .github-icon {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
   &:hover {
     ${Photo} {
       transform: scale(1.3) rotate(3deg);
@@ -91,6 +129,20 @@ const BlogCardContainer = styled.div`
       right: 0;
       opacity: 1;
       visibility: visible;
+    }
+
+    ${LinkToRepository}::before {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    ${LinkToRepository}::after {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .github-icon {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 
@@ -112,13 +164,6 @@ const BlogCardContainer = styled.div`
   }
 `;
 
-const LinkToRepository = styled.a`
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  position: absolute;
-  bottom: 20px;
-`
-
 
 const ProjectNew = ({
   imgproject,
@@ -137,7 +182,9 @@ const ProjectNew = ({
         <TitleProject href={linkdeploy} target='_blank' rel='noreferrer'>{titleproject}</TitleProject>
         <h2>{languagesproject}</h2>
         <p>{descproject}</p>
-        <LinkToRepository href={linkrepository} target='_blank' rel='noreferrer'>Repositório</LinkToRepository>
+        <LinkToRepository href={linkrepository} target='_blank' rel='noreferrer'>Repositório
+          <FaGithub className="github-icon" />
+        </LinkToRepository>
       </Description>
     </BlogCardContainer>
   );
