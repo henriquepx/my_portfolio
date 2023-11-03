@@ -69,7 +69,7 @@ const Projects = () => {
         <DescriptionProject>{t("project.ProjectDesc1")}<br /><br />{t("project.ProjectDesc2")}</DescriptionProject>
         <EstimatePrice href="https://api.whatsapp.com/send?phone=5521964823939&text=Ol%C3%A1,%20Henrique.%20Gostaria%20de%20um%20or%C3%A7amento!" target='_blank' rel='noreferrer'>{t("project.ProjectPrice")}</EstimatePrice>
         <ProjectNew
-          imgproject="/rxscreen.jpg"
+          imgproject="/testrx.jpg"
           titleproject={'Rexpeita'}
           descproject={t("project.RXDescription")}
           languagesproject={'HTML, CSS & JavaScript'}
@@ -78,7 +78,7 @@ const Projects = () => {
           reverse={false}
         />
         <ProjectNew
-          imgproject="/realestate.jpg"
+          imgproject="/testreal.jpg"
           titleproject={'Real Estate'}
           descproject={t("project.RealStateDescription")}
           languagesproject={'ReactJS & Styled Components'}
@@ -87,7 +87,7 @@ const Projects = () => {
           reverse={true}
         />
         <ProjectNew
-          imgproject="/japascreen.jpg"
+          imgproject="/testjapa.jpg"
           titleproject={'Japapou?'}
           descproject={t("project.JapapouDescription")}
           languagesproject={'ReactJS & CSS Modules'}
