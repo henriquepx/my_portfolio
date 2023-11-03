@@ -86,6 +86,7 @@ const Projects = () => {
         />
         <ProjectNew
           imgproject="/testrx.jpg"
+          hoverImg="/rxscreen.jpg"
           titleproject={'Rexpeita'}
           descproject={t("project.RXDescription")}
           languagesproject={'HTML, CSS & JavaScript'}
@@ -94,6 +95,7 @@ const Projects = () => {
         />
         <ProjectNew
           imgproject="/testreal.jpg"
+          hoverImg="/realestate.jpg"
           titleproject={'Real Estate'}
           descproject={t("project.RealStateDescription")}
           languagesproject={'ReactJS & Styled Components'}
@@ -102,6 +104,7 @@ const Projects = () => {
         />
         <ProjectNew
           imgproject="/testjapa.jpg"
+          hoverImg="/japascreen.jpg"
           titleproject={'Japapou?'}
           descproject={t("project.JapapouDescription")}
           languagesproject={'ReactJS & CSS Modules'}

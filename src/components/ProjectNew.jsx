@@ -101,6 +101,19 @@ const LinkToRepository = styled.a`
   }
 `
 
+const HoverImage = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(${props => props.hoverImg});
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.4s;
+`;
+
 const BlogCardContainer = styled.div`
   position: relative;
   display: flex;
@@ -120,11 +133,6 @@ const BlogCardContainer = styled.div`
   }
 
   &:hover {
-    ${Photo} {
-      transform: scale(1.3) rotate(3deg);
-      width: 100%;
-    }
-
     ${TitleProject}:before {
       right: 0;
       opacity: 1;
@@ -143,6 +151,10 @@ const BlogCardContainer = styled.div`
     .github-icon {
       opacity: 1;
       transform: translateX(0);
+    }
+
+    ${HoverImage} {
+      opacity: 1;
     }
   }
 
@@ -167,6 +179,7 @@ const BlogCardContainer = styled.div`
 
 const ProjectNew = ({
   imgproject,
+  hoverImg,
   titleproject,
   descproject,
   languagesproject,
@@ -174,9 +187,10 @@ const ProjectNew = ({
   linkdeploy, 
 }) => {
   return (
-    <BlogCardContainer> 
+    <BlogCardContainer hoverImg={hoverImg}> 
       <Meta>
-      <Photo imgproject={imgproject} />
+        <Photo imgproject={imgproject} />
+        <HoverImage hoverImg={hoverImg}  />
       </Meta>
       <Description>
         <TitleProject href={linkdeploy} target='_blank' rel='noreferrer'>{titleproject}</TitleProject>
@@ -192,6 +206,7 @@ const ProjectNew = ({
 
 ProjectNew.propTypes = {
   imgproject: PropTypes.string.isRequired,
+  hoverImg: PropTypes.string.isRequired,
   titleproject: PropTypes.string.isRequired,
   descproject: PropTypes.string.isRequired,
   languagesproject: PropTypes.string.isRequired,
