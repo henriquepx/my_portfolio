@@ -78,12 +78,6 @@ const BlogCardContainer = styled.div`
   border: 2px solid #3d3d3d;
   overflow: hidden;
   z-index: 0;
-  &.reverse { 
-    flex-direction: row-reverse;
-    @media (max-width: 639px) {
-      flex-direction: column;
-    }
-  }
   &:hover {
     ${Photo} {
       transform: scale(1.3) rotate(3deg);
@@ -116,10 +110,9 @@ const ProjectNew = ({
   languagesproject,
   linkrepository,
   linkdeploy, 
-  reverse,
 }) => {
   return (
-    <BlogCardContainer  className={reverse ? 'reverse' : ''}> 
+    <BlogCardContainer> 
       <Meta>
       <Photo imgproject={imgproject} />
         <Details>
@@ -142,7 +135,6 @@ ProjectNew.propTypes = {
   languagesproject: PropTypes.string.isRequired,
   linkrepository: PropTypes.string.isRequired,
   linkdeploy: PropTypes.string.isRequired,
-  reverse: PropTypes.bool, 
 };
 
 export default ProjectNew;

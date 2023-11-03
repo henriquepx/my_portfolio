@@ -75,7 +75,6 @@ const Projects = () => {
           languagesproject={'HTML, CSS & Sass'}
           linkrepository={'https://github.com/henriquepx/dsm'}
           linkdeploy={'https://dsmconsultoria.vercel.app/'}
-          reverse={false}
         />
         <ProjectNew
           imgproject="/testphoto.jpg"
@@ -84,7 +83,6 @@ const Projects = () => {
           languagesproject={'HTML, CSS & Sass'}
           linkrepository={'https://github.com/henriquepx/photographer_portfolio'}
           linkdeploy={'https://photographerportfolio.vercel.app/'}
-          reverse={true}
         />
         <ProjectNew
           imgproject="/testrx.jpg"
@@ -93,7 +91,6 @@ const Projects = () => {
           languagesproject={'HTML, CSS & JavaScript'}
           linkrepository={'https://github.com/henriquepx/ecommerce_rexpeita'}
           linkdeploy={'https://rexpeita-ecommerce.netlify.app/index.html'}
-          reverse={false}
         />
         <ProjectNew
           imgproject="/testreal.jpg"
@@ -102,7 +99,6 @@ const Projects = () => {
           languagesproject={'ReactJS & Styled Components'}
           linkrepository={'https://github.com/henriquepx/real_estate'}
           linkdeploy={'https://real-estate-omega-nine.vercel.app/'}
-          reverse={true}
         />
         <ProjectNew
           imgproject="/testjapa.jpg"
@@ -111,7 +107,6 @@ const Projects = () => {
           languagesproject={'ReactJS & CSS Modules'}
           linkrepository={'https://github.com/henriquepx/app-order-food'}
           linkdeploy={'https://app-order-food.vercel.app/'}
-          reverse={false}
         />
       </ProjectSize>
     </ProjectsContainer>
