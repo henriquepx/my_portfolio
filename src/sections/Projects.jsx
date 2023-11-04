@@ -70,6 +70,7 @@ const Projects = () => {
         <EstimatePrice href="https://api.whatsapp.com/send?phone=5521964823939&text=Ol%C3%A1,%20Henrique.%20Gostaria%20de%20um%20or%C3%A7amento!" target='_blank' rel='noreferrer'>{t("project.ProjectPrice")}</EstimatePrice>
         <ProjectNew
           imgproject="/testdsm.jpg"
+          hoverImg="/dsmscreen.jpg"
           titleproject={t("project.DSMTitle")}
           descproject={t("project.DSMDescription")}
           languagesproject={'HTML, CSS & Sass'}
@@ -78,6 +79,7 @@ const Projects = () => {
         />
         <ProjectNew
           imgproject="/testphoto.jpg"
+          hoverImg="/photoscreen.png"
           titleproject={t("project.PhotographerTitle")}
           descproject={t("project.PhotographerDescription")}
           languagesproject={'HTML, CSS & Sass'}
