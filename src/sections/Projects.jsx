@@ -78,15 +78,6 @@ const Projects = () => {
           linkdeploy={'https://dsmconsultoria.vercel.app/'}
         />
         <ProjectNew
-          imgproject="/testphoto.jpg"
-          hoverImg="/photoscreen.png"
-          titleproject={t("project.PhotographerTitle")}
-          descproject={t("project.PhotographerDescription")}
-          languagesproject={'HTML, CSS & Sass'}
-          linkrepository={'https://github.com/henriquepx/photographer_portfolio'}
-          linkdeploy={'https://photographerportfolio.vercel.app/'}
-        />
-        <ProjectNew
           imgproject="/testrx.jpg"
           hoverImg="/rxscreen.jpg"
           titleproject={'Rexpeita'}
